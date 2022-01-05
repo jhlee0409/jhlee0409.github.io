@@ -2,6 +2,7 @@
   "name": "jhlee0409.github.io",
   "version": "0.1.0",
   "private": true,
+  "type": "commonjs",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -20,6 +21,14 @@
   "devDependencies": {
     "babel-plugin-transform-define": "^2.0.1",
     "eslint": "8.5.0",
-    "eslint-config-next": "12.0.7"
+    "eslint-config-next": "12.0.7",
+    "gh-pages": "^3.2.3"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "parser": "babel-eslint",
+      "sourceType": "module",
+      "allowImportExportEverywhere": true
+    }
   }
 }
