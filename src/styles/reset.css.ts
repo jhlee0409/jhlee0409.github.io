@@ -20,7 +20,6 @@ globalStyle("button", {
 });
 
 globalStyle("a", {
-  color: "black",
   outline: "none",
   cursor: "pointer",
   textDecoration: "none",

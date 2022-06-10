@@ -3,6 +3,7 @@ import MainNavComponent from "./MainNav";
 import { main } from "./main.css.ts";
 import MainContent from "./MainContent";
 import MainTop from "./MainTop";
+
 const MainComponent = () => {
   return (
     <div className={main}>

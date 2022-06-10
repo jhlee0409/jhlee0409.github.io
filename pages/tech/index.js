@@ -1,28 +1,38 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { getPost, getPostCategory } from "../../src/helper/getPosts";
 import {
   wrapper,
   card,
-  cardImage,
   cardTextBox,
   dateBox,
-  nav,
   articlesBox,
 } from "./index.css.ts";
 
-const Tech = () => {
+export const getStaticProps = () => {
+  const categories = getPostCategory();
+  const data = getPost("tech", "sample");
+  return {
+    props: {
+      categories,
+      data,
+    },
+  };
+};
+
+const Tech = ({ data }) => {
   const router = useRouter();
   return (
     <div className={wrapper}>
       <div className={articlesBox}>
-        {Array.from({ length: 5 }, (v) => v).map((item, i) => {
-          // if (i === 0) return <div>뭐에 대한 설명을 넣을까 고민중</div>;
+        {[data].map(({ data }, i) => {
           return (
-            <Link passHref href={`${router.route}/${i}`} key={i}>
+            <Link passHref href={`${router.route}/${data.title}`} key={i}>
               <div className={card}>
-                <div className={dateBox}>20 January 2022</div>
+                <div className={dateBox}>{data.date}</div>
                 <div className={cardTextBox}>
-                  이것은 제목이라고 말할 수 있는 부분이지 그렇지 암암
+                  <p>{data.title}</p>
+                  <p>{data.preview}</p>
                 </div>
               </div>
             </Link>

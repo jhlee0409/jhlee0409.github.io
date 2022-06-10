@@ -1,20 +1,29 @@
-import { createVanillaExtractPlugin } from "@vanilla-extract/next-plugin";
+const { createVanillaExtractPlugin } = require("@vanilla-extract/next-plugin");
 const withVanillaExtract = createVanillaExtractPlugin();
-import rehypeHighlight from "https://esm.sh/rehype-highlight@5";
+
 const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
   options: {
     providerImportSource: "@mdx-js/react",
-    remarkPlugins: [],
-    rehypePlugins: [rehypeHighlight],
-    // If you use `MDXProvider`, uncomment the following line.
-    // providerImportSource: "@mdx-js/react",
+    // rehypePlugins: [rehypeExternalLinks],
+    // remarkPlugins: [
+    //   remarkGfm,
+    //   remarkFrontmatter,
+    //   [remarkEmbedder, { transformers: [oembedTransformer] }],
+    // ],
   },
 });
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  pageExtensions: ["js", "jsx", "md", "mdx"],
-};
-
-module.exports = withVanillaExtract(withMDX(nextConfig));
+module.exports = withVanillaExtract(
+  withMDX({
+    // Append the default value with md extensions
+    reactStrictMode: true,
+    experimental: { esmExternals: true },
+    pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+    webpack(config) {
+      config.resolve.fallback = {
+        fs: false,
+      };
+      return config;
+    },
+  })
+);

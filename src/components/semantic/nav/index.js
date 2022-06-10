@@ -1,12 +1,10 @@
 import Link from "next/link";
 import { nav } from "./nav.css.ts";
 
-const arr = ["tech", "algorithm"];
-
-const Nav = () => {
+const Nav = ({ categories }) => {
   return (
     <nav className={nav}>
-      {arr.map((item, i) => {
+      {categories?.map((item, i) => {
         return (
           <Link key={i} href={`/${item}`}>
             <a>{`${item}`}</a>

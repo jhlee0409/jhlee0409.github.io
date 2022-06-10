@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { mainNav, rotateBox } from "./main.css.ts";
-import { sprinkles } from "../../../styles/sprinkles.css.ts";
+// import { sprinkles } from "../../src/styles/sprinkles.css.ts";
 const MainNavComponent = () => {
   return (
     <aside>
