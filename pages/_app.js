@@ -1,5 +1,6 @@
 import "../src/styles/globals.css.ts";
 import "../src/styles/reset.css.ts";
+import "../src/styles/styles.css";
 import { themeClass } from "../src/styles/theme.css.ts";
 import Layout from "../src/components/Layout";
 import { MDXProvider } from "@mdx-js/react";

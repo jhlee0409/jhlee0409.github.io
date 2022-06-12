@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { getPost, getPostCategory } from "../../src/helper/getPosts";
+import { getPostCategory, getPosts } from "../../src/helper/getPosts";
 import {
   wrapper,
   card,
@@ -9,9 +9,10 @@ import {
   articlesBox,
 } from "./index.css.ts";
 
-export const getStaticProps = () => {
+export const getStaticProps = async () => {
   const categories = getPostCategory();
-  const data = getPost("tech", "sample");
+  const data = getPosts("tech");
+
   return {
     props: {
       categories,
@@ -25,7 +26,7 @@ const Tech = ({ data }) => {
   return (
     <div className={wrapper}>
       <div className={articlesBox}>
-        {[data].map(({ data }, i) => {
+        {data.map(({ data, content }, i) => {
           return (
             <Link passHref href={`${router.route}/${data.title}`} key={i}>
               <div className={card}>

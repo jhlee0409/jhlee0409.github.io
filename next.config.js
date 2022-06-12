@@ -5,12 +5,8 @@ const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
   options: {
     providerImportSource: "@mdx-js/react",
-    // rehypePlugins: [rehypeExternalLinks],
-    // remarkPlugins: [
-    //   remarkGfm,
-    //   remarkFrontmatter,
-    //   [remarkEmbedder, { transformers: [oembedTransformer] }],
-    // ],
+    rehypePlugins: [],
+    remarkPlugins: [],
   },
 });
 module.exports = withVanillaExtract(
