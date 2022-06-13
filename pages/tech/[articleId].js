@@ -1,31 +1,23 @@
-import { micromark } from "micromark";
-import { useRouter } from "next/router";
-import * as acorn from "acorn";
+/* eslint-disable react-hooks/rules-of-hooks */
 import {
   getPost,
   getPostCategory,
   getPostPaths,
 } from "../../src/helper/getPosts";
-import { gfm, gfmHtml } from "micromark-extension-gfm";
-import { mdxJsx } from "micromark-extension-mdx-jsx";
-import { mdx } from "micromark-extension-mdx";
-import { mdxjs } from "micromark-extension-mdxjs";
-import { mdxExpression } from "micromark-extension-mdx-expression";
-import { mdxjsEsm } from "micromark-extension-mdxjs-esm";
-import { mdxMd } from "micromark-extension-mdx-md";
-import { fromMarkdown } from "mdast-util-from-markdown";
-import { toMarkdown } from "mdast-util-to-markdown";
-import { mdxFromMarkdown, mdxToMarkdown } from "mdast-util-mdx";
-import { gfmTagfilterHtml } from "micromark-extension-gfm-tagfilter";
-import { defList, defListHtml } from "micromark-extension-definition-list";
-import { gfmTable, gfmTableHtml } from "micromark-extension-gfm-table";
+
+import { nanoid } from "nanoid";
+import { tagWrapper, overviewWrapper } from "./article.css";
+import { useMemo } from "react";
+import { getMDXComponent } from "mdx-bundler/client";
+import Pre from "../../src/components/Pre";
+
 export const getStaticProps = async ({ params }) => {
   const categories = getPostCategory();
-  const data = getPost("tech", params.articleId);
+  const data = await getPost("tech", params.articleId);
   return {
     props: {
       categories,
-      data,
+      ...data,
     },
   };
 };
@@ -38,39 +30,25 @@ export const getStaticPaths = async () => {
   };
 };
 
-const Article = ({ data }) => {
-  const router = useRouter();
-  console.log(data);
+const tagKey = nanoid();
+const Article = ({ code, frontmatter }) => {
+  if (!code) return <span>none</span>;
+  const Component = useMemo(() => getMDXComponent(code), [code]);
   return (
-    <article className="w-full">
-      <main>
-        <h1>{router.query.articleId}</h1>
-      </main>
-      <div
-        className="prose  max-w-full "
-        dangerouslySetInnerHTML={{
-          __html: micromark(data.content, {
-            allowDangerousHtml: true,
-            extensions: [
-              gfm(),
-              mdx(),
-              mdxExpression(),
-              mdxjsEsm({ acorn }),
-              mdxJsx(),
-              mdxMd,
-              defList,
-              gfmTable,
-            ],
-            htmlExtensions: [
-              gfmHtml(),
-              gfmTagfilterHtml,
-              defListHtml,
-              gfmTableHtml,
-            ],
-          }),
-        }}
-      />
-    </article>
+    <div>
+      <div className={overviewWrapper}>
+        <h1>{frontmatter.title}</h1>
+        <p>{frontmatter.date}</p>
+        <div className={tagWrapper}>
+          {frontmatter.tags.map((tag) => {
+            return <span key={`${tagKey}-${tag}`}>{`#${tag}`}</span>;
+          })}
+        </div>
+      </div>
+      <article className="w-full relative  prose dark:prose-invert max-w-full">
+        <Component components={{ pre: Pre }} />
+      </article>
+    </div>
   );
 };
 

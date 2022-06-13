@@ -1,14 +1,14 @@
 ---
-title: "hello wo2rld"
+title: "리팩터링 2판 스터디"
 date: "2022-04-01"
-tags: ["TIL", "Java", "Modern Java In Action"]
+tags: ["TIL", "Javascrpit", "Refactoring 2nd"]
 draft: false
-summary: "Chapter 1. 자바 8, 9, 10, 11: 무슨 일이 일어나고 있는가?"
+summary: "Chapter 1. 리팩터링: 첫 번째 예시"
 ---
 
 # 리팩터링 2판 스터디
 
-# Chapter 01 - 리팩터링: 첫 번째 예시
+## Chapter 01 - 리팩터링: 첫 번째 예시
 
 1. 프로그램이 새로운 기능을 추가하기에 편한 구조가 아니라면, 먼저 기능을 추가하기 쉬운 형태로 리팩터링하고 나서 원하는 기능을 추가한다.
 2. 리팩터링하기 전에 제대로 된 테스트부터 마련한다. 테스트는 반드시 자가진단하도록 만든다.
@@ -24,25 +24,25 @@ summary: "Chapter 1. 자바 8, 9, 10, 11: 무슨 일이 일어나고 있는가?"
 - 조건부 로직을 다형성으로 바꾸기
 - 임시변수 삭제 및 변수 인라인하기
 
-  ```jsx
-  //리팩터링 전...
-  let result = ``;
-  const sampleFunction = () => {
-    //...
-  };
+```jsx
+//리팩터링 전...
+let result = ``;
+const sampleFunction = () => {
+  //...
+};
 
-  let sample = sampleFunction();
-  result += sample;
+let sample = sampleFunction();
+result += sample;
 
-  //리팩터링 후
-  let result = ``;
-  const sampleFunction = () => {
-    //...
-  };
+//리팩터링 후
+let result = ``;
+const sampleFunction = () => {
+  //...
+};
 
-  // 임시변수 제거 => let sample = sampleFunction();
-  result += sampleFunction();
-  ```
+// 임시변수 제거 => let sample = sampleFunction();
+result += sampleFunction();
+```
 
 - 매개변수 간소화
 
@@ -51,4 +51,4 @@ summary: "Chapter 1. 자바 8, 9, 10, 11: 무슨 일이 일어나고 있는가?"
 3. 함수 추출하기→ 특정 내부 로직을 별도 함수로 추출
 4. 변수 인라인하기 → 변수 제거
 
-# Chapter 02 - 리팩터링 원칙
+## Chapter 02 - 리팩터링 원칙

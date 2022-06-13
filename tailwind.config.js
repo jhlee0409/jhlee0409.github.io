@@ -2,8 +2,8 @@ module.exports = {
   purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      typography: {
-        DEFAULT: {
+      typography: () => ({
+        default: {
           css: {
             color: "#333",
             a: {
@@ -24,7 +24,7 @@ module.exports = {
             },
           },
         },
-      },
+      }),
     },
   },
   variants: {},

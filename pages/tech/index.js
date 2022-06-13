@@ -1,3 +1,4 @@
+import { nanoid } from "nanoid";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { getPostCategory, getPosts } from "../../src/helper/getPosts";
@@ -21,19 +22,31 @@ export const getStaticProps = async () => {
   };
 };
 
+const tagKey = nanoid();
+const articleKey = nanoid();
+
 const Tech = ({ data }) => {
   const router = useRouter();
   return (
     <div className={wrapper}>
       <div className={articlesBox}>
-        {data.map(({ data, content }, i) => {
+        {data.map(({ data }) => {
           return (
-            <Link passHref href={`${router.route}/${data.title}`} key={i}>
+            <Link
+              passHref
+              href={`${router.route}/${data.title.replaceAll(" ", "_")}`}
+              key={`${articleKey}-${data.title}`}
+            >
               <div className={card}>
                 <div className={dateBox}>{data.date}</div>
                 <div className={cardTextBox}>
-                  <p>{data.title}</p>
-                  <p>{data.preview}</p>
+                  <h2>{data.title}</h2>
+                  <p>: {data.summary}</p>
+                  <div>
+                    {data.tags?.map((tag) => {
+                      return <span key={`${tagKey}-${tag}`}>{`#${tag}`}</span>;
+                    })}
+                  </div>
                 </div>
               </div>
             </Link>

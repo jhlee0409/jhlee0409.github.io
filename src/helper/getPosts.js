@@ -1,42 +1,79 @@
 import matter from "gray-matter";
 import path from "path";
 import fs from "fs";
-import { gfm, gfmHtml } from "micromark-extension-gfm";
-import { mdxJsx } from "micromark-extension-mdx-jsx";
-import * as acorn from "acorn";
-import { gfmTableFromMarkdown, gfmTableToMarkdown } from "mdast-util-gfm-table";
+import { bundleMDX } from "mdx-bundler";
 
-import { mdx } from "micromark-extension-mdx";
-import { mdxjs } from "micromark-extension-mdxjs";
-import { mdxExpression } from "micromark-extension-mdx-expression";
-import { mdxjsEsm } from "micromark-extension-mdxjs-esm";
-import { mdxMd } from "micromark-extension-mdx-md";
-import { fromMarkdown } from "mdast-util-from-markdown";
-import { toMarkdown } from "mdast-util-to-markdown";
-import { mdxFromMarkdown, mdxToMarkdown } from "mdast-util-mdx";
-import { gfmTable, gfmTableHtml } from "micromark-extension-gfm-table";
+import rehypeCodeTitles from "rehype-code-titles";
+import rehypeImagePlaceholder from "rehype-image-placeholder";
+import rehypePrism from "rehype-prism-plus";
+import remarkGfm from "remark-gfm";
+import remarkHeadings from "remark-autolink-headings";
+import remarkSlug from "remark-slug";
+import remarkSmartypants from "@silvenon/remark-smartypants";
+import remarkTableofContents from "remark-toc";
+import remarkUnwrapImages from "remark-unwrap-images";
 
 const files = fs.readdirSync(path.join("pages"));
+const root = process.cwd();
 
 export const getPostCategory = () => {
   return files.filter((i) => i.search(/.js|.jsx|.ts|.tsx/g) === -1);
 };
 
-export const getPost = (folder, id) => {
-  const { data, content } = matter(
-    fs.readFileSync(path.join(`posts/${folder}/${id}.mdx`), "utf8")
+export const getPost = async (folder, id) => {
+  const source = fs.readFileSync(
+    path.join(`posts/${folder}/${id}.mdx`),
+    "utf8"
   );
-  const out = toMarkdown(
-    fromMarkdown(content, {
-      extensions: [mdxjs(), gfmTable],
-      mdastExtensions: [mdxFromMarkdown(), gfmTableFromMarkdown],
-    }),
-    { extensions: [mdxToMarkdown(), gfmTableToMarkdown()] }
-  );
+  if (process.platform === "win32") {
+    process.env.ESBUILD_BINARY_PATH = path.join(
+      root,
+      "node_modules",
+      "esbuild",
+      "esbuild.exe"
+    );
+  } else {
+    process.env.ESBUILD_BINARY_PATH = path.join(
+      root,
+      "node_modules",
+      "esbuild",
+      "bin",
+      "esbuild"
+    );
+  }
+
+  const { code, frontmatter } = await bundleMDX({
+    source,
+    cwd: path.join(root, `posts/${folder}`),
+    xdmOptions(options) {
+      options.remarkPlugins = [
+        ...(options.remarkPlugins ?? []),
+        remarkGfm,
+        remarkHeadings,
+        remarkSlug,
+        remarkSmartypants,
+        [remarkTableofContents, { tight: true }],
+        remarkUnwrapImages,
+      ];
+      options.rehypePlugins = [
+        ...(options.rehypePlugins ?? []),
+        rehypeCodeTitles,
+        rehypePrism,
+        [rehypeImagePlaceholder, { dir: "public" }],
+      ];
+      return options;
+    },
+    esbuildOptions: (options) => {
+      options.loader = {
+        ...options.loader,
+        ".js": "jsx",
+      };
+      return options;
+    },
+  });
   return {
-    data,
-    content,
-    out,
+    frontmatter,
+    code,
   };
 };
 
