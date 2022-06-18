@@ -47,7 +47,7 @@ export const getPosts = (folder: string) => {
       .filter((i) => i.search(/.js|.jsx|categoryId|.ts|.tsx/g) === -1)
       .filter((i) => i === folder).length === 0
   ) {
-    return [];
+    return null;
   }
   const posts = fs.readdirSync(path.join(`posts/${folder}`));
   const fileContents = posts.map((item) => {

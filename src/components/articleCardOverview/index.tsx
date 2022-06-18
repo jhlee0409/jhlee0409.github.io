@@ -16,7 +16,7 @@ const ArticleCardOverview = ({ data }: any) => {
   return (
     <Link
       passHref
-      href={`${router.query.categoryId}/article/${data.title.replaceAll(
+      href={`/${router.query.categoryId}/article/${data.title.replaceAll(
         " ",
         "_"
       )}`}

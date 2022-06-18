@@ -9,6 +9,8 @@ const ArticleList = ({ data }: any) => {
       <div className={articlesBox}>
         {data?.length === 0 ? (
           <div>등록된 게시물이 없습니다</div>
+        ) : !data ? (
+          <div>존재하지 않는 카테고리 입니다.</div>
         ) : (
           data?.map(({ data }: any) => {
             return (
