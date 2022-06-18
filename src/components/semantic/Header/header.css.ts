@@ -1,7 +1,6 @@
 import { fontFace, style } from "@vanilla-extract/css";
-
 const myFont = fontFace({
-  src: "BRANCHE",
+  src: "public/assets/fonts/BRANCHE/BRANCHÉ Demo.ttf",
 });
 
 export const headerStyle = style({
@@ -24,7 +23,7 @@ export const innerHeaderStyle = style({
 });
 
 export const headerTitle = style({
-  fontFamily: "BRANCHE, sans-serif",
+  fontFamily: "Tipo PRESS, sans-serif",
   fontSize: "2rem",
   letterSpacing: "0.5rem",
   padding: "1% 0",

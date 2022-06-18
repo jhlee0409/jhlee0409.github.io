@@ -1,10 +1,5 @@
 import Link from "next/link";
-import {
-  headerStyle,
-  headerTitle,
-  Flex,
-  innerHeaderStyle,
-} from "./header.css.ts";
+import { headerStyle, headerTitle, Flex, innerHeaderStyle } from "./header.css";
 
 const Header = () => {
   return (

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import MainNavComponent from "./MainNav";
-import { main } from "./main.css.ts";
+import { main } from "./main.css";
 import MainContent from "./MainContent";
 import MainTop from "./MainTop";
 

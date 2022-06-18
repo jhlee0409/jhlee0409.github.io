@@ -24,6 +24,7 @@ export const overviewWrapper = style({
   padding: 20,
   borderRadius: 20,
 });
+
 globalStyle(`${overviewWrapper} > h1`, {
   fontWeight: "bold",
   fontSize: "1.8em",

@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { copyButton } from "./pre.css";
-const Pre = ({ children }) => {
-  const textInput = useRef(null);
+const Pre = ({ children }: any) => {
+  const textInput = useRef<any>(null);
   const [hovered, setHovered] = useState(false);
   const [copied, setCopied] = useState(false);
 
@@ -13,8 +13,9 @@ const Pre = ({ children }) => {
     setCopied(false);
   };
   const onCopy = () => {
+    if (!textInput.current) return;
     setCopied(true);
-    navigator.clipboard.writeText(textInput.current.textContent);
+    navigator.clipboard.writeText(textInput?.current?.textContent);
     setTimeout(() => {
       setCopied(false);
     }, 2000);
@@ -25,15 +26,10 @@ const Pre = ({ children }) => {
       ref={textInput}
       onMouseEnter={onEnter}
       onMouseLeave={onExit}
-      className="relative"
+      className="relative "
     >
       {hovered && (
-        <button
-          // aria-label="Copy code"
-          type="button"
-          className={copyButton}
-          onClick={onCopy}
-        >
+        <button type="button" className={copyButton} onClick={onCopy}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -63,8 +59,7 @@ const Pre = ({ children }) => {
           </svg>
         </button>
       )}
-
-      <pre>{children}</pre>
+      {children}
     </div>
   );
 };

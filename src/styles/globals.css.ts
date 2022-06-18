@@ -6,17 +6,22 @@ const fadeInAnimation = keyframes({
 });
 
 globalStyle("html, body", {
-  fontFamily: "Noto Sans KR, sans-serif",
+  fontFamily: "Noto Sans KR, Noto Sans, sans-serif",
 });
+
 globalStyle("body", {
   backgroundColor: "#1b1b1b",
 });
+
 globalStyle("main > div", {
   animation: `${fadeInAnimation} ease 500ms`,
   animationFillMode: "forwards",
   animationIterationCount: 1,
 });
 
-globalStyle("p, span, label, button, a, div", {
+globalStyle("p, label, button, a, div", {
   color: "white",
+});
+globalStyle("article", {
+  backgroundColor: "transparent !important",
 });

@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { Base } from "./article.css.ts";
+import { Base } from "./article.css";
 const Article = () => {
   const router = useRouter();
   console.log(router.query);

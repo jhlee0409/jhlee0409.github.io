@@ -6,9 +6,8 @@ import {
   cardImage,
   cardTextBox,
   dateBox,
-  nav,
   articlesBox,
-} from "./index.css.ts";
+} from "./index.css";
 
 const Tech = () => {
   const router = useRouter();

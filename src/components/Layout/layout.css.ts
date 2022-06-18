@@ -11,4 +11,5 @@ export const contentWrapper = style({
   overflow: "hidden",
   display: "flex",
   gap: 50,
+  width: "100%",
 });

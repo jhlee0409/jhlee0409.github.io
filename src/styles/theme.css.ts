@@ -5,7 +5,8 @@ export const [themeClass, vars] = createTheme({
     brand: "blue",
   },
   font: {
-    body: "arial",
+    heading: "Inter, sans-serif",
+    body: "system-ui",
   },
 });
 

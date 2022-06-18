@@ -1,4 +1,4 @@
-import { mainTopWrapper } from "./main.css.ts";
+import { mainTopWrapper } from "./main.css";
 
 const MainTop = () => {
   return (

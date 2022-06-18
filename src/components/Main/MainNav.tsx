@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { mainNav, rotateBox } from "./main.css.ts";
+import { mainNav } from "./main.css";
 // import { sprinkles } from "../../src/styles/sprinkles.css.ts";
 const MainNavComponent = () => {
   return (
