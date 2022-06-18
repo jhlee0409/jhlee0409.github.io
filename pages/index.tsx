@@ -1,5 +1,5 @@
-import MainComponent from "../src/components/Main";
-import { getPostCategory } from "../src/helper/getPosts";
+import MainComponent from "@/components/Main";
+import { getPostCategory } from "@/helper/getPosts";
 
 export const getStaticProps = () => {
   const categories = getPostCategory();

@@ -25,12 +25,13 @@ globalStyle(`${wrapper} > :last-child`, {
 export const articlesBox = style({
   display: "flex",
   flexDirection: "column",
+  paddingTop: 30,
   gap: 50,
 });
 
 export const card = style({
   position: "relative",
-  height: 100,
+  // height: 100,
   borderRadius: baseBorderRadius,
   transition: "transform 150ms linear",
   cursor: "pointer",

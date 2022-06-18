@@ -1,5 +1,4 @@
 import { nanoid } from "nanoid";
-import { tagWrapper, overviewWrapper } from "./index.css";
 import Pre from "@/components/Pre";
 import ReactMarkdown from "react-markdown";
 import Code from "@/components/Code";
@@ -13,21 +12,13 @@ import remarkUnwrapImages from "remark-unwrap-images";
 import rehypeCodeTitles from "rehype-code-titles";
 import rehypeLinks from "rehype-external-links";
 import remarkTableofContents from "remark-toc";
+import ArticleFrontMatter from "./ArticleFrontMatter";
 
 const Article = ({ data, content }: any) => {
   if (!content) return <span>로딩 중</span>;
-  const tagKey = nanoid();
   return (
     <div>
-      <div className={overviewWrapper}>
-        <h1>{data.title}</h1>
-        <p>{data.date}</p>
-        <div className={tagWrapper}>
-          {data.tags.map((tag: any) => {
-            return <span key={`${tagKey}-${tag}`}>{`#${tag}`}</span>;
-          })}
-        </div>
-      </div>
+      <ArticleFrontMatter data={data} />
       <article className="markdown-body">
         <ReactMarkdown
           remarkPlugins={[

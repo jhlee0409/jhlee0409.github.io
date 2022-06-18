@@ -1,13 +1,16 @@
 import Link from "next/link";
-import { nav } from "./nav.css";
+import { nav, categoryLink } from "./nav.css";
 
 const Nav = ({ categories }: any) => {
   return (
     <nav className={nav}>
-      {categories?.map((item: any, i: number) => {
+      {categories?.map(({ title, count }: any, i: number) => {
         return (
-          <Link key={i} href={`/${item}`}>
-            <a>{`${item}`}</a>
+          <Link key={i} href={`/${title}`}>
+            <a className={categoryLink}>{`${title.replace(
+              title[0],
+              title[0].toUpperCase()
+            )} (${count})`}</a>
           </Link>
         );
       })}

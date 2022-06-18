@@ -2,11 +2,17 @@ import matter from "gray-matter";
 import path from "path";
 import fs from "fs";
 
-const files = fs.readdirSync(path.join("pages"));
-const root = process.cwd();
+const files = fs.readdirSync(path.join("posts"));
 
 export const getPostCategory = () => {
-  return files.filter((i) => i.search(/.js|.jsx|.ts|.tsx/g) === -1);
+  return files
+    .filter((i) => i.search(/.js|.jsx|categoryId|.ts|.tsx/g) === -1)
+    .map((item, i) => {
+      return {
+        title: item,
+        count: fs.readdirSync(path.join(`posts/${files[i]}`)).length,
+      };
+    });
 };
 
 export const getPost = (folder: string, id: string) => {
@@ -23,63 +29,6 @@ export const getPost = (folder: string, id: string) => {
   };
 };
 
-// export const getPost = async (folder, id) => {
-//   const source = fs.readFileSync(
-//     path.join(`posts/${folder}/${id}.mdx`),
-//     "utf8"
-//   );
-//   if (process.platform === "win32") {
-//     process.env.ESBUILD_BINARY_PATH = path.join(
-//       root,
-//       "node_modules",
-//       "esbuild",
-//       "esbuild.exe"
-//     );
-//   } else {
-//     process.env.ESBUILD_BINARY_PATH = path.join(
-//       root,
-//       "node_modules",
-//       "esbuild",
-//       "bin",
-//       "esbuild"
-//     );
-//   }
-
-//   const { code, frontmatter } = await bundleMDX({
-//     source,
-//     cwd: path.join(root, `posts/${folder}`),
-//     xdmOptions(options) {
-//       options.remarkPlugins = [
-//         ...(options.remarkPlugins ?? []),
-//         remarkGfm,
-//         remarkHeadings,
-//         remarkSlug,
-//         remarkSmartypants,
-//         [remarkTableofContents, { tight: true }],
-//         remarkUnwrapImages,
-//       ];
-//       options.rehypePlugins = [
-//         ...(options.rehypePlugins ?? []),
-//         rehypeCodeTitles,
-//         rehypePrism,
-//         [rehypeImagePlaceholder, { dir: "public" }],
-//       ];
-//       return options;
-//     },
-//     esbuildOptions: (options) => {
-//       options.loader = {
-//         ...options.loader,
-//         ".js": "jsx",
-//       };
-//       return options;
-//     },
-//   });
-//   return {
-//     frontmatter,
-//     code,
-//   };
-// };
-
 export const getPostPaths = (folder: string) => {
   const posts = fs.readdirSync(path.join(`posts/${folder}`));
   const fileContents = posts.map((item) => {
@@ -93,6 +42,13 @@ export const getPostPaths = (folder: string) => {
 };
 
 export const getPosts = (folder: string) => {
+  if (
+    files
+      .filter((i) => i.search(/.js|.jsx|categoryId|.ts|.tsx/g) === -1)
+      .filter((i) => i === folder).length === 0
+  ) {
+    return [];
+  }
   const posts = fs.readdirSync(path.join(`posts/${folder}`));
   const fileContents = posts.map((item) => {
     const { data, content } = matter(

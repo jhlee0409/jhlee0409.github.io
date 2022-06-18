@@ -16,13 +16,13 @@ export const tagWrapper = style({
 globalStyle(`${tagWrapper} > span`, {});
 
 export const overviewWrapper = style({
-  backgroundColor: "violet",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   gap: 10,
   padding: 20,
   borderRadius: 20,
+  marginBottom: 30,
 });
 
 globalStyle(`${overviewWrapper} > h1`, {
