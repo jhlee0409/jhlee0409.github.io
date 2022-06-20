@@ -1,0 +1,209 @@
+---
+title: "Typescript Section5"
+date: "2022-04-01"
+tags: ["TIL", "TypeScript", "Udemy"]
+draft: false
+summary: "Section 5 클래스 & 인터페이스"
+---
+
+# Section 5 : 클래스 & 인터페이스
+
+## 57. 모듈 소개
+
+## 58. 클래스란무엇인가
+
+## 59. 퍼스트 클래스 만들기
+
+## 60. 자바스크립트로 컴파일하기
+
+## 61. 생성자 함수 및 “this” 키워드
+
+## 62. 개인 및 “공용” 액세스 수정자
+
+## 63. 약식 초기화
+
+## 64. “읽기전용” 속성
+
+## 65. 상속
+
+- **KEYWORD : class** ExtraClass **extends** BaseClass **{…}**
+- 공통적인 기능을 공유하면서 특수화된 청사진을 생성할 수 있다.
+- 기본 클래스를 설정한 다음 이를 상속하는 특수화된 클래스 생성 가능
+
+## 66. 속성 및 “보호된” 수정자 재정의
+
+## 67. 게터 & 세터
+
+## 68. 정적 메서드 & 속성
+
+- 정적 메소드 : 클래스를 기반으로 생성된 객첵 X ⇒ 클래스에서 직접 호출하드 메소드
+
+## 69. 추상클래스
+
+- **KEYWORD : abstract Class & (private method or private property)**
+- 상속 받는 클래스에서 abstract를 매긴 메소드가 필히 구현되어야할 때 정의
+- 공통 메소드 or 속성을 공유하도록 하려는 경우 유용
+- abstract할 메소드와 해당 메소드가 속한 클래스 앞에 abstract 추가
+- abstract 메소드에는 리턴타입도 명시
+- 추상 클래스는 기본적으로 상속되어야 할 클래스일 뿐
+- 인스턴스화 할 수 없고 확정되어야 한다.
+
+```tsx
+**abstract** Class Sample {
+	**abstract** value:number = 0; //property
+	**abstract** Add(): void; //method
+}
+```
+
+## 70. 싱글톤 & 개인 생성자
+
+1. 싱글톤
+
+   - **KEYWORD : private constructor**
+   - 특정 클래스의 인스턴스를 정확히 하나만 갖도록 한다
+   - “new”로 생성하지 않고 메소드를 호출하여 구성 ⇒ 특정 시점에 반드시 하나의 클래스 인스턴스가 존재한다.
+   - 정적 메소드 or 속성을 사용할 수 없거나 사용하지 않고자 하는 동시에 클래스를 기반으로 여러 객체를 만들 수는 없지만 항상 클래스를 기반으로 정확히 하나의 객체만 가질 수 있도록 하고자 하는 경우에 유용
+
+   ```tsx
+   class OnlyOne {
+   	**private** constructor(){}
+   	private static instance: OnlyOne;
+   	//! SOLUTION
+   	// 인스턴스를 가지고 있다면 이를 반환 아니면 새 인스턴스 생성
+   	**static getInstance(){
+   		if(OnlyOne.instance) {
+   			return this.instance
+   		}
+   		this.instance = new OnlyOne();
+   		return this.instance
+   	}**
+   }
+
+   //! ERROR
+   const one = new OnlyOne()
+
+   //! RESULT
+   const one = OnlyOne.getInstance();
+   const one2 = OnlyOne.getInstance();
+   ```
+
+## 71. 클래스 - 요약
+
+## 72. 인터페이스
+
+- **KEYWORD : interface**
+- 객체의 구조를 설명한다.
+- 초기값 할당 불가, 구체적인 값X, 구조만 있을 뿐
+- 해당 인터페이스의 구조를 가져야 하는 객체의 타입을 확인하는 타입으로 사용
+
+```tsx
+interface Person {
+  name: string;
+  age: number; //age: number = 15; !ERROR 값 할당 시
+  greet(phase: string): void; // return nothing!
+}
+
+let user1: Person;
+
+// 인터페이스의 정의를 충족하는 올바른 객체
+user1 = {
+  name: "Lee",
+  age: 27,
+  greet(phrse: string) {
+    consle.log(phrase + " " + thi.name);
+  },
+};
+
+user1.greet("Hi there - I am");
+// result => Hi there - I am Lee
+```
+
+## 73. 클래스와 인터페이스 사용하기
+
+- **KEYWORD :** **Class** Sample **implements** TestInterface {}
+- What is different between type and interface
+  1. 인터페이스는 객체의 구조를 설명하기 위해서만 사용한다는 것이다.
+  2. 이 경우에도 타입 사용은 가능하지만
+     사용자 정의 타입 대신 유니온 타입 등을 저장할 수도 있다.
+  3. 인터페이스를 자주 사용하는 이유
+     - 클래스가 인터페이스를 이행하고 준수해야 하는 약속처럼 사용할 수 있기 때문
+- 상속은 한 클래스로부터만 상속할 수 있지만 인터페이스는 “,”로 구분하여 여러개 구현 가능
+- 인터페이스는 주로 구체적인 구현이 아닌 서로 다른 클래스 간의 기능을 공유하기 위해 사용됨
+- 인터페이스 내 ⇒ 구현 or 값을 입력하는 게 아닌 ⇒ 구조와 클래스가 가져야할 기능을 입력
+- 추상 클래스로 작업하는 것과 다소 비슷
+  - 인터페이스 ⇒ 구현 세부 사항이 전혀 없다
+  - 추상 클래스 ⇒ 덮어써야 했던 부분과 본인이 수행한 구체적 구현 부분을 혼합할 수 있다.
+- 인터페이스를 어떤 상수나 변수의 타입으로 사용하여 인터페이스 타입을 기반으로 하는 다른 타입의 다른 클래스를 저장할 수 있다. ⇒ inplements 덕분
+
+```tsx
+interface Greetable {
+  name: string;
+  greet(phase: string): void; // return nothing!
+}
+
+// extends(상속)와 달리 여러 개의 인터페이스 적용 가능 / ","로 구분하여 추가
+class Person implements Greetable, Sample {
+  name: string;
+  age = 30; // 추가 가능
+  constructor(n: string) {
+    this.name = n;
+  }
+
+  greet(phase: string) {
+    consle.log(phrase + " " + thi.name);
+  }
+}
+// Greetable 타입도 가능하고 Person 타입으로도 지정 가능
+// Why? Person 객체도 결국 Greetable 인터페이스에 기반한 것이기 때문
+let user1: Greetable;
+
+user1 = new Person("Lee");
+user1.greet("Hi there - I am");
+// result => Hi there - I am Lee
+```
+
+## 74. 왜 인터페이스인가
+
+- 메소드의 경우
+  - 인터페이스에 해당 메소드를 정의해두면
+  - implements하는 모든 클래스들이 인터페이스 내의 메소드를 구현하게 해야할 경우
+- 인터페이스를 사용하여 특정 구조를 구현
+-
+
+```tsx
+// user1에 무엇을 저장하는 Greetable이어야하고
+// 객체나 클래스에 대한 모든 것을 알 필요가 없는 강력하고 유연한  코드를 작성할 수 있지만
+// user1에는 greet 메소드가 있어야 한다는 것은 알 수 있다.
+let user1: Greetable;
+// Person이 여기서 무엇을 갖고 있든 상관없다. greet만 관건
+user1 = new Person("Lee");
+user1.greet("Hi there - I am");
+```
+
+## 75. 읽기 전용 인터페이스 속성
+
+- **KEYWORD : readonly in interface**
+- public, private 등은 지정할 수 없다.
+- readonly를 추가 ⇒ 인터페이스를 기반으로 구축하는 모든 객체의 property가 한 번만 설정 ⇒ 이후 읽기 전용으로 설정 ⇒ 객체가 초기화되면 변경할 수 없도록 할 수 있다.
+
+```tsx
+interface Greetable {
+	readonly name: string;
+	greet(phase: string): void; // return nothing!
+}
+
+class Person implements Greetable, Sample {
+// 클래스 내에서 readonly를 지정하지 않아도 Greetable을 구현해야하는 것을 인지
+// => name이 읽기 전용임을 자동으로 추론하기 떄문
+// Why? 인터페이스 안에서 그렇게 설정했기 때문
+	name: string;
+	 ...
+}
+
+let user1: Greetable ;
+user1 = new Person('Lee')
+//! ERROR 일기 전용이기 때문, 처음에만 셋업
+user1.name = 'Kim'
+```
+
+## 76. 인터페이스 확장하기

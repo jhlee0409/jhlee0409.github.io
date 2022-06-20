@@ -1,8 +1,8 @@
 import { nanoid } from "nanoid";
 import ArticleCardOverview from "../articleCardOverview";
 import { articlesBox, wrapper } from "./index.css";
-const articleKey = nanoid();
 
+const articleKey = nanoid();
 const ArticleList = ({ data }: any) => {
   return (
     <div className={wrapper}>

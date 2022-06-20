@@ -12,9 +12,9 @@ export const headerStyle = style({
 });
 
 export const innerHeaderStyle = style({
-  maxWidth: "1200px",
+  maxWidth: "1400px",
   margin: "0 auto",
-  padding: "0 5%",
+  padding: "0 2vw",
   position: "sticky",
   height: "inherit",
   display: "flex",
@@ -26,7 +26,7 @@ export const headerTitle = style({
   fontFamily: "Tipo PRESS, sans-serif",
   fontSize: "2rem",
   letterSpacing: "0.5rem",
-  padding: "1% 0",
+  padding: "1vw 0",
   cursor: "pointer",
 });
 

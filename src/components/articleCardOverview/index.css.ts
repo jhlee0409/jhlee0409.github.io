@@ -6,7 +6,10 @@ export const card = style({
   borderRadius: vars.borderRadius.base,
   transition: "transform 150ms linear",
   cursor: "pointer",
-  boxShadow: "rgb(255 255 255 / 4%) 0px 4px 16px 0px",
+  background: "rgba( 255, 255, 255, 0.35 )",
+  boxShadow: " rgb(255 255 255 / 4%) 0 8px 16px 0",
+  backdropFilter: " blur( 11px )",
+  WebkitBackdropFilter: " blur( 11px )",
   ":hover": {
     boxShadow: "rgb(255 255 255 / 4%) 0px 8px 16px 0px",
     transform: "translateY(-5px)",
@@ -52,9 +55,7 @@ export const cardTagBox = style({
 });
 
 globalStyle(`${cardTagBox} > span`, {
-  border: "1px solid white",
   padding: "1px 10px",
-  backgroundColor: "white",
   borderRadius: 8,
   color: "black",
 });

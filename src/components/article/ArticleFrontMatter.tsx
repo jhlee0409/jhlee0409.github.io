@@ -3,12 +3,12 @@ import { nanoid } from "nanoid";
 import { overviewWrapper, tagWrapper } from "./index.css";
 
 const tagKey = nanoid();
-
 const ArticleFrontMatter = ({ data }: any) => {
+  const random = Math.floor(Math.random() * 10);
   return (
     <div
       className={`${overviewWrapper} ${sprinkles({
-        background: "blue-200",
+        backgroundColor: `rainbow-${random === 0 ? 1 : random}00`,
       })}`}
     >
       <h1>{data.title}</h1>

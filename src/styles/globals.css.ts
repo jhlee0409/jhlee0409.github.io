@@ -15,7 +15,7 @@ globalStyle("body", {
 
 globalStyle("main > div", {
   animation: `${fadeInAnimation} ease 500ms`,
-  animationFillMode: "forwards",
+  animationFillMode: "linear",
   animationIterationCount: 1,
 });
 

@@ -45,6 +45,7 @@ const colorModeProperties = defineProperties({
   properties: {
     color: vars.color,
     background: vars.color,
+    backgroundColor: vars.color,
   },
 });
 

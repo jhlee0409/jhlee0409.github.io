@@ -1,3 +1,5 @@
+import { sprinkles } from "@/styles/sprinkles.css";
+import { vars } from "@/styles/vars.css";
 import { nanoid } from "nanoid";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -10,8 +12,17 @@ import {
   cardSummary,
 } from "./index.css";
 
+interface ArticleCardOverviewType {
+  data: {
+    date: string;
+    title: string;
+    summary: string;
+    tags: string[];
+  };
+}
+
 const tagKey = nanoid();
-const ArticleCardOverview = ({ data }: any) => {
+const ArticleCardOverview = ({ data }: ArticleCardOverviewType) => {
   const router = useRouter();
   return (
     <Link
@@ -27,8 +38,15 @@ const ArticleCardOverview = ({ data }: any) => {
           <h2 className={cardTitle}>{data.title}</h2>
           <p className={cardSummary}>{data.summary}</p>
           <div className={cardTagBox}>
-            {data.tags?.map((tag: any) => {
-              return <span key={`${tagKey}-${tag}`}>{`#${tag}`}</span>;
+            {data.tags?.map((tag: string, i: number) => {
+              return (
+                <span
+                  key={`${tagKey}-${tag}`}
+                  className={sprinkles({
+                    backgroundColor: `rainbow-${i + 1}00`,
+                  })}
+                >{`#${tag}`}</span>
+              );
             })}
           </div>
         </div>
