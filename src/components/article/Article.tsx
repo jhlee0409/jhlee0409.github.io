@@ -13,11 +13,12 @@ import rehypeCodeTitles from "rehype-code-titles";
 import rehypeLinks from "rehype-external-links";
 import remarkTableofContents from "remark-toc";
 import ArticleFrontMatter from "./ArticleFrontMatter";
+import ArticleLayout from "../Layout/ArticleLayout";
 
 const Article = ({ data, content }: any) => {
   if (!content) return <span>로딩 중</span>;
   return (
-    <div>
+    <ArticleLayout title={data.title}>
       <ArticleFrontMatter data={data} />
       <article className="markdown-body">
         <ReactMarkdown
@@ -38,7 +39,7 @@ const Article = ({ data, content }: any) => {
           {content}
         </ReactMarkdown>
       </article>
-    </div>
+    </ArticleLayout>
   );
 };
 

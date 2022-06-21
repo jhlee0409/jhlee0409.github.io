@@ -4,6 +4,7 @@ import { nav, categoryLink } from "./nav.css";
 const Nav = ({ categories }: any) => {
   return (
     <nav className={nav}>
+      <h3>CATEGORY</h3>
       {categories?.map(({ title, count }: any, i: number) => {
         return (
           <Link key={i} href={`/${title}`}>

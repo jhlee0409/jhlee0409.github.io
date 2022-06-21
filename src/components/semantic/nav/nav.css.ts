@@ -14,6 +14,11 @@ export const nav = style({
   height: 200,
 });
 
+globalStyle(`${nav} h3`, {
+  color: "black",
+  borderBottom: "1px solid black",
+});
+
 export const categoryLink = style({
   color: "black",
   position: "relative",
