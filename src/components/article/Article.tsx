@@ -39,6 +39,30 @@ const Article = ({ data, content }: any) => {
           {content}
         </ReactMarkdown>
       </article>
+      {/* <script
+        src="https://utteranc.es/client.js"
+        repo="jhlee0409/jhlee0409.github.io"
+        issue-term="url"
+        theme="github-dark"
+        crossOrigin="anonymous"
+        async
+      ></script> */}
+      <section
+        ref={(elem) => {
+          if (!elem) {
+            return;
+          }
+          const scriptElem = document.createElement("script");
+          scriptElem.src = "https://utteranc.es/client.js";
+          scriptElem.async = true;
+          scriptElem.setAttribute("repo", "jhlee0409/jhlee0409.github.io");
+          scriptElem.setAttribute("issue-term", "title");
+          scriptElem.setAttribute("theme", "github-dark");
+          scriptElem.setAttribute("label", "blog-comment");
+          scriptElem.crossOrigin = "anonymous";
+          elem.appendChild(scriptElem);
+        }}
+      />
     </ArticleLayout>
   );
 };
