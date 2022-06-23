@@ -49,9 +49,9 @@ summary: "Section 5 클래스 & 인터페이스"
 - 인스턴스화 할 수 없고 확정되어야 한다.
 
 ```tsx
-**abstract** Class Sample {
-	**abstract** value:number = 0; //property
-	**abstract** Add(): void; //method
+abstract Class Sample {
+	abstract value:number = 0; //property
+	abstract Add(): void; //method
 }
 ```
 
@@ -66,21 +66,21 @@ summary: "Section 5 클래스 & 인터페이스"
 
    ```tsx
    class OnlyOne {
-   	**private** constructor(){}
-   	private static instance: OnlyOne;
-   	//! SOLUTION
-   	// 인스턴스를 가지고 있다면 이를 반환 아니면 새 인스턴스 생성
-   	**static getInstance(){
-   		if(OnlyOne.instance) {
-   			return this.instance
-   		}
-   		this.instance = new OnlyOne();
-   		return this.instance
-   	}**
+     private constructor() {}
+     private static instance: OnlyOne;
+     //! SOLUTION
+     // 인스턴스를 가지고 있다면 이를 반환 아니면 새 인스턴스 생성
+     static getInstance() {
+       if (OnlyOne.instance) {
+         return this.instance;
+       }
+       this.instance = new OnlyOne();
+       return this.instance;
+     }
    }
 
    //! ERROR
-   const one = new OnlyOne()
+   const one = new OnlyOne();
 
    //! RESULT
    const one = OnlyOne.getInstance();
