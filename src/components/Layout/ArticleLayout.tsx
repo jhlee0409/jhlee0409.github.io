@@ -6,7 +6,7 @@ export default function ArticleLayout({ title, children }: any) {
       <Head>
         <title>{title}</title>
       </Head>
-      {children}
+      <div>{children}</div>
     </>
   );
 }
