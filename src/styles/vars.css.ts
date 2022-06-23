@@ -42,6 +42,7 @@ export const vars = createGlobalTheme(":root", {
     "10x": "100vh",
   },
   color: {
+    none: "none",
     red: "red",
     "rainbow-100": "#FF9AA2",
     "rainbow-200": "#FFB7B2",

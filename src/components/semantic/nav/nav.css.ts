@@ -12,7 +12,12 @@ export const nav = style({
   borderRadius: vars.borderRadius.base,
   position: "sticky",
   top: 100,
-  height: 200,
+  height: "50vh",
+});
+
+globalStyle(`${nav} h3`, {
+  textAlign: "center",
+  overflow: "hidden",
 });
 
 const line = style({
@@ -20,7 +25,7 @@ const line = style({
     content: "",
     position: "absolute",
     height: 1,
-    width: "15%",
+    width: "600px",
     backgroundColor: "white",
     top: "50%",
     transform: "translateY(-50%)",
@@ -29,7 +34,7 @@ const line = style({
     content: "",
     position: "absolute",
     height: 1,
-    width: "15%",
+    width: "1000px",
     backgroundColor: "white",
     top: "50%",
     transform: "translateY(-50%)",
@@ -39,27 +44,43 @@ const line = style({
 export const bigTitle = style([
   line,
   {
-    // color: "black",
+    display: "inline-block",
     position: "relative",
-    textAlign: "center",
     ":after": {
-      left: 0,
+      left: "100%",
+      marginLeft: 15,
     },
     ":before": {
-      right: 0,
+      right: "100%",
+      marginRight: 15,
     },
   },
 ]);
 
 export const categoryLink = style({
   position: "relative",
-  fontWeight: "bold",
+  // fontWeight: "bold",
   transition: "all 150ms linear",
-  padding: "5px 10px",
+  padding: "10px",
   borderRadius: 8,
-  ":hover": {
-    color: "black",
-    background: "#ececec",
-    textDecoration: "underline",
+  textAlign: "center",
+  ":before": {
+    position: "absolute",
+    content: "",
+    bottom: 0,
+    height: 2,
+    width: "100%",
+    left: 0,
+    backgroundColor: "white",
+    transformOrigin: "bottom right",
+    transform: "scaleX(0)",
+    transition: "transform 0.25s ease-out",
+    borderRadius: 4,
+  },
+  selectors: {
+    "&:hover:before": {
+      transform: "scaleX(1)",
+      transformOrigin: "bottom left",
+    },
   },
 });
