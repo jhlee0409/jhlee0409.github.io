@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { nav, categoryLink } from "./nav.css";
+import { nav, categoryLink, bigTitle } from "./nav.css";
 
 const Nav = ({ categories }: any) => {
   return (
     <nav className={nav}>
-      <h3>CATEGORY</h3>
+      <h3 className={bigTitle}>CATEGORY</h3>
       {categories?.map(({ title, count }: any, i: number) => {
         return (
           <Link key={i} href={`/${title}`}>
