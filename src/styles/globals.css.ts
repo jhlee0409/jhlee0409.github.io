@@ -8,10 +8,9 @@ const fadeInAnimation = keyframes({
 globalStyle("html, body", {
   fontFamily: "Noto Sans KR, Noto Sans, sans-serif",
 });
-
 globalStyle("body", {
   backgroundColor: "#1b1b1b",
-  overflow: "overlay",
+  overflow: "auto",
 });
 
 globalStyle("main > div", {
