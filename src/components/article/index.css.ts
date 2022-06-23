@@ -27,5 +27,13 @@ export const overviewWrapper = style({
 
 globalStyle(`${overviewWrapper} > h1`, {
   fontWeight: "bold",
-  fontSize: "1.8em",
+  fontSize: "1.6em",
+});
+
+export const line = style({
+  height: 4,
+  backgroundColor: "white",
+  width: "100%",
+  marginTop: "2em",
+  borderRadius: 12,
 });

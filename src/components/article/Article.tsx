@@ -1,4 +1,3 @@
-import { nanoid } from "nanoid";
 import Pre from "@/components/Pre";
 import ReactMarkdown from "react-markdown";
 import Code from "@/components/Code";
@@ -14,6 +13,7 @@ import rehypeLinks from "rehype-external-links";
 import remarkTableofContents from "remark-toc";
 import ArticleFrontMatter from "./ArticleFrontMatter";
 import ArticleLayout from "../Layout/ArticleLayout";
+import { line } from "./index.css";
 
 const Article = ({ data, content }: any) => {
   if (!content) return <span>로딩 중</span>;
@@ -39,14 +39,7 @@ const Article = ({ data, content }: any) => {
           {content}
         </ReactMarkdown>
       </article>
-      {/* <script
-        src="https://utteranc.es/client.js"
-        repo="jhlee0409/jhlee0409.github.io"
-        issue-term="url"
-        theme="github-dark"
-        crossOrigin="anonymous"
-        async
-      ></script> */}
+      <div className={line} />
       <section
         ref={(elem) => {
           if (!elem) {
