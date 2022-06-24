@@ -16,10 +16,11 @@ export const getServerSideProps = async ({ params }: any) => {
 
 const ArticleListPage = ({ data }: any) => {
   const router = useRouter();
+  const categoryId = router.query.categoryId as string;
   return (
     <>
       <Head>
-        <title>{`JACK : ${router.query.categoryId}`}</title>
+        <title>{`JACK : ${categoryId.toUpperCase()}`}</title>
       </Head>
       <ArticleList data={data} />
     </>

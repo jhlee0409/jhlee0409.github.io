@@ -26,7 +26,7 @@ const Pre = ({ children }: any) => {
       ref={textInput}
       onMouseEnter={onEnter}
       onMouseLeave={onExit}
-      className="relative "
+      style={{ position: "relative" }}
     >
       {hovered && (
         <button type="button" className={copyButton} onClick={onCopy}>

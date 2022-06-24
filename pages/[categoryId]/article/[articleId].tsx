@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { getPost, getPostCategory, getPostPaths } from "@/helper/getPosts";
+import { getPost, getPostCategory } from "@/helper/getPosts";
 import Article from "@/components/article/Article";
 export const getServerSideProps = ({ params }: any) => {
   const categories = getPostCategory();

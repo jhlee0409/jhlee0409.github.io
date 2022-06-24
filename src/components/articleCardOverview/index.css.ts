@@ -1,9 +1,17 @@
 import { vars } from "@/styles/vars.css";
 import { globalStyle, style } from "@vanilla-extract/css";
 
+const border = 4;
+
+export const layout = style({
+  // borderRadius: vars.borderRadius.base,
+  // overflow: "hidden",
+  // padding: 1.5,
+});
+
 export const card = style({
   position: "relative",
-  borderRadius: vars.borderRadius.base,
+  // borderRadius: vars.borderRadius.base,
   transition: "transform 150ms linear",
   cursor: "pointer",
   background: "rgba( 255, 255, 255, 0.35 )",
@@ -12,7 +20,81 @@ export const card = style({
   WebkitBackdropFilter: " blur( 11px )",
   ":hover": {
     boxShadow: "rgb(255 255 255 / 4%) 0px 8px 16px 0px",
-    transform: "translateY(-5px)",
+    // transform: "translateY(-5px)",
+  },
+  ":before": {
+    position: "absolute",
+    content: "",
+    bottom: 0,
+    width: border,
+    height: "100%",
+    right: 0,
+    backgroundColor: "white",
+    transformOrigin: "left bottom",
+    transform: "scaleY(0)",
+    transition: "transform 0.15s 0.25s ease-out",
+  },
+  ":after": {
+    position: "absolute",
+    content: "",
+    top: 0,
+    width: border,
+    height: "100%",
+    left: 0,
+    backgroundColor: "white",
+    transformOrigin: "right top",
+    transform: "scaleY(0)",
+    transition: "transform 0.15s 0.25s ease-out",
+  },
+  selectors: {
+    "&:hover:before": {
+      transform: "scaleY(1)",
+      transformOrigin: "left top",
+    },
+    "&:hover:after": {
+      transform: "scaleY(1)",
+      transformOrigin: "right bottom",
+    },
+  },
+});
+
+export const line = style({
+  position: "relative",
+  transition: "all 150ms linear",
+  // textAlign: "center",
+  ":before": {
+    position: "absolute",
+    content: "",
+    bottom: 0,
+    height: border,
+    width: "100%",
+    left: 0,
+    backgroundColor: "white",
+    transformOrigin: "bottom left",
+    transform: "scaleX(0)",
+    transition: "transform 0.25s ease-out",
+  },
+  ":after": {
+    position: "absolute",
+    content: "",
+    top: 0,
+    height: border,
+    width: "100%",
+    left: 0,
+    backgroundColor: "white",
+    transformOrigin: "top right",
+    transform: "scaleX(0)",
+    transition: "transform 0.25s ease-out",
+  },
+  selectors: {
+    "&:hover:before": {
+      transform: "scaleX(1)",
+      transformOrigin: "bottom right",
+    },
+    "&:hover:after": {
+      transform: "scaleX(1)",
+      transformOrigin: "top left",
+    },
   },
 });
 
@@ -64,4 +146,5 @@ export const cardTitle = style({});
 
 export const cardSummary = style({
   fontSize: "0.9em",
+  paddingBottom: 5,
 });

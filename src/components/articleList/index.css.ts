@@ -12,14 +12,6 @@ globalStyle(`${wrapper} > :first-child`, {
 
 globalStyle(`${wrapper} > :last-child`, {
   flex: 15,
-  // "@supports": {
-  //   "(display: grid)": {
-  //     display: "grid",
-  //     gridTemplateColumns: "repeat(auto-fill, minmax(350px, 1fr))",
-  //     rowGap: 50,
-  //     columnGap: 30,
-  //   },
-  // },
 });
 
 export const articlesBox = style({

@@ -10,6 +10,8 @@ import {
   cardTagBox,
   cardTitle,
   cardSummary,
+  line,
+  layout,
 } from "./index.css";
 
 interface ArticleCardOverviewType {
@@ -32,22 +34,26 @@ const ArticleCardOverview = ({ data }: ArticleCardOverviewType) => {
         "_"
       )}`}
     >
-      <div className={card}>
-        <div className={dateBox}>{data.date}</div>
-        <div className={cardTextBox}>
-          <h2 className={cardTitle}>{data.title}</h2>
-          <p className={cardSummary}>{data.summary}</p>
-          <div className={cardTagBox}>
-            {data.tags?.map((tag: string, i: number) => {
-              return (
-                <span
-                  key={`${tagKey}-${tag}`}
-                  className={sprinkles({
-                    backgroundColor: `rainbow-${i + 1}00`,
-                  })}
-                >{`#${tag}`}</span>
-              );
-            })}
+      <div className={layout}>
+        <div className={card}>
+          <div className={line}>
+            <div className={dateBox}>{data.date}</div>
+            <div className={cardTextBox}>
+              <h2 className={cardTitle}>{data.title}</h2>
+              <p className={cardSummary}>{data.summary}</p>
+              <div className={cardTagBox}>
+                {data.tags?.map((tag: string, i: number) => {
+                  return (
+                    <span
+                      key={`${tagKey}-${tag}`}
+                      className={sprinkles({
+                        backgroundColor: `rainbow-${i + 1}00`,
+                      })}
+                    >{`#${tag}`}</span>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </div>

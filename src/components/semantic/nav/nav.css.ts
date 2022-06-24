@@ -4,7 +4,7 @@ import { globalStyle, style } from "@vanilla-extract/css";
 
 export const nav = style({
   padding: vars.space["1x"],
-  width: 230,
+  width: 270,
   display: "flex",
   flexDirection: "column",
   gap: 10,
@@ -12,7 +12,19 @@ export const nav = style({
   borderRadius: vars.borderRadius.base,
   position: "sticky",
   top: 100,
-  height: "50vh",
+  // height: "10vh",
+});
+
+export const subSection = style({
+  paddingTop: vars.space["1x"],
+  paddingBottom: vars.space["1x"],
+  // width: 270,
+  display: "flex",
+  flexDirection: "column",
+  gap: 10,
+  // backgroundColor: "rgba(255,255,255)",
+  // borderRadius: vars.borderRadius.base,
+  // height: "10vh",
 });
 
 globalStyle(`${nav} h3`, {
@@ -46,6 +58,7 @@ export const bigTitle = style([
   {
     display: "inline-block",
     position: "relative",
+    textTransform: "uppercase",
     ":after": {
       left: "100%",
       marginLeft: 15,
