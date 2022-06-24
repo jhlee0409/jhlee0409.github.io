@@ -39,7 +39,7 @@ const ArticleCardOverview = ({ data }: ArticleCardOverviewType) => {
           <div className={line}>
             <div className={dateBox}>{data.date}</div>
             <div className={cardTextBox}>
-              <h2 className={cardTitle}>{data.title}</h2>
+              <h1 className={cardTitle}>{data.title}</h1>
               <p className={cardSummary}>{data.summary}</p>
               <div className={cardTagBox}>
                 {data.tags?.map((tag: string, i: number) => {
@@ -47,7 +47,7 @@ const ArticleCardOverview = ({ data }: ArticleCardOverviewType) => {
                     <span
                       key={`${tagKey}-${tag}`}
                       className={sprinkles({
-                        backgroundColor: `rainbow-${i + 1}00`,
+                        color: `rainbow-${i + 1}00`,
                       })}
                     >{`#${tag}`}</span>
                   );
@@ -56,6 +56,7 @@ const ArticleCardOverview = ({ data }: ArticleCardOverviewType) => {
             </div>
           </div>
         </div>
+        <span />
       </div>
     </Link>
   );

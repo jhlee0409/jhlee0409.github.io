@@ -28,7 +28,7 @@ export const subSection = style({
 });
 
 globalStyle(`${nav} h3`, {
-  textAlign: "center",
+  // textAlign: "center",
   overflow: "hidden",
 });
 
@@ -54,19 +54,19 @@ const line = style({
 });
 
 export const bigTitle = style([
-  line,
+  // line,
   {
     display: "inline-block",
     position: "relative",
     textTransform: "uppercase",
-    ":after": {
-      left: "100%",
-      marginLeft: 15,
-    },
-    ":before": {
-      right: "100%",
-      marginRight: 15,
-    },
+    // ":after": {
+    //   left: "100%",
+    //   marginLeft: 15,
+    // },
+    // ":before": {
+    //   right: "100%",
+    //   marginRight: 15,
+    // },
   },
 ]);
 
@@ -76,7 +76,7 @@ export const categoryLink = style({
   transition: "all 150ms linear",
   padding: "10px",
   borderRadius: 8,
-  textAlign: "center",
+  // textAlign: "center",
   ":before": {
     position: "absolute",
     content: "",
@@ -84,7 +84,7 @@ export const categoryLink = style({
     height: 2,
     width: "100%",
     left: 0,
-    backgroundColor: "white",
+    backgroundColor: "#ececec",
     transformOrigin: "bottom right",
     transform: "scaleX(0)",
     transition: "transform 0.25s ease-out",

@@ -10,18 +10,18 @@ const Nav = ({ categories }: any) => {
       {categories?.map(({ title: bigCategory, sub }: any, i: number) => {
         return (
           <div key={bigCategory + i}>
-            <h3>
+            <h2>
               <span className={bigTitle}>{bigCategory}</span>
-            </h3>
+            </h2>
             <div className={subSection}>
               {sub.map(({ title, count }: any, i: number) => {
                 return (
                   <Link key={title + i} href={`/${bigCategory}_${title}`}>
                     <a
                       className={`${categoryLink} ${sprinkles({
-                        backgroundColor:
+                        color:
                           router.query.categoryId === `${bigCategory}_${title}`
-                            ? "gray-700"
+                            ? "point"
                             : "none",
                       })}`}
                     >{`${title.replace(
@@ -31,6 +31,11 @@ const Nav = ({ categories }: any) => {
                   </Link>
                 );
               })}
+              {sub.length === 0 && (
+                <div className={subSection}>
+                  <p>No Category</p>
+                </div>
+              )}
             </div>
           </div>
         );

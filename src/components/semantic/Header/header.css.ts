@@ -25,7 +25,7 @@ export const innerHeaderStyle = style({
 export const headerTitle = style({
   fontFamily: "Tipo PRESS, sans-serif",
   fontSize: "2rem",
-  letterSpacing: "0.5rem",
+  letterSpacing: "1rem",
   padding: "1vw 0",
   cursor: "pointer",
 });

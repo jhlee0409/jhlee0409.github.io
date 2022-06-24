@@ -44,6 +44,7 @@ export const vars = createGlobalTheme(":root", {
   color: {
     none: "none",
     red: "red",
+    point: "#eaeff9",
     "rainbow-100": "#FF9AA2",
     "rainbow-200": "#FFB7B2",
     "rainbow-300": "#FFDAC1",
@@ -64,6 +65,9 @@ export const vars = createGlobalTheme(":root", {
     base: "12px",
   },
   fontFamily: {},
-  fontSize: {},
+  fontSize: {
+    "1x": "1.2rem",
+    none: "none",
+  },
   lineHeight: {},
 });
