@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-
+import { bodyLayout } from "@/components/Layout/layout.css";
 export default class CustomDocument extends Document {
   render() {
     return (
@@ -26,7 +26,7 @@ export default class CustomDocument extends Document {
             rel="stylesheet"
           ></link>
         </Head>
-        <body>
+        <body className={bodyLayout}>
           <Main />
           <NextScript />
         </body>

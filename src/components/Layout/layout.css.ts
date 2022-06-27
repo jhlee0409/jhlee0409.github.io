@@ -14,3 +14,31 @@ export const contentWrapper = style({
   width: "100%",
   position: "relative",
 });
+
+export const bodyLayout = style({
+  overflow: "overlay",
+  "::-webkit-scrollbar": {
+    width: 16,
+  },
+  "::-webkit-scrollbar-track": {
+    borderRadius: 5,
+    backgroundColor: "white",
+    display: "none",
+  },
+  "::-webkit-scrollbar-thumb": {
+    backgroundColor: "#ddd",
+    borderRadius: 20,
+    border: "5px solid #1b1b1b",
+  },
+  "::-webkit-scrollbar-button": {
+    display: "none",
+  },
+  selectors: {
+    "&::-webkit-scrollbar-thumb:hover": {
+      backgroundColor: "#404040",
+    },
+    "&::-webkit-scrollbar-thumb:active": {
+      backgroundColor: "#dcdcdc",
+    },
+  },
+});
