@@ -26,6 +26,7 @@ const responsiveProperties = defineProperties({
     fontSize: vars.fontSize,
     lineHeight: vars.lineHeight,
     textAlign: ["center"],
+    fontWeight: ["bold", "normal"],
   },
   shorthands: {
     padding: ["paddingTop", "paddingBottom", "paddingLeft", "paddingRight"],

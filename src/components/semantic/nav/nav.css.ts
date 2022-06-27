@@ -1,4 +1,3 @@
-import { sprinkles } from "./../../../styles/sprinkles.css";
 import { vars } from "@/styles/vars.css";
 import { globalStyle, style } from "@vanilla-extract/css";
 
@@ -8,75 +7,37 @@ export const nav = style({
   display: "flex",
   flexDirection: "column",
   gap: 10,
-  // backgroundColor: "rgba(255,255,255)",
   borderRadius: vars.borderRadius.base,
   position: "sticky",
   top: 100,
-  // height: "10vh",
 });
 
 export const subSection = style({
   paddingTop: vars.space["1x"],
   paddingBottom: vars.space["1x"],
-  // width: 270,
   display: "flex",
   flexDirection: "column",
   gap: 10,
-  // backgroundColor: "rgba(255,255,255)",
-  // borderRadius: vars.borderRadius.base,
-  // height: "10vh",
 });
 
 globalStyle(`${nav} h3`, {
-  // textAlign: "center",
   overflow: "hidden",
 });
 
-const line = style({
-  ":after": {
-    content: "",
-    position: "absolute",
-    height: 1,
-    width: "600px",
-    backgroundColor: "white",
-    top: "50%",
-    transform: "translateY(-50%)",
-  },
-  ":before": {
-    content: "",
-    position: "absolute",
-    height: 1,
-    width: "1000px",
-    backgroundColor: "white",
-    top: "50%",
-    transform: "translateY(-50%)",
-  },
-});
-
 export const bigTitle = style([
-  // line,
   {
     display: "inline-block",
     position: "relative",
+    color: vars.color["gray-800"],
     textTransform: "uppercase",
-    // ":after": {
-    //   left: "100%",
-    //   marginLeft: 15,
-    // },
-    // ":before": {
-    //   right: "100%",
-    //   marginRight: 15,
-    // },
   },
 ]);
 
 export const categoryLink = style({
   position: "relative",
-  // fontWeight: "bold",
-  transition: "all 150ms linear",
+  transition: "color 150ms linear",
   padding: "10px",
   borderRadius: 8,
-  // textAlign: "center",
   ":before": {
     position: "absolute",
     content: "",

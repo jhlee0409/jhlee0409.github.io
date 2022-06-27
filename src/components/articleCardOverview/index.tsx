@@ -1,5 +1,4 @@
 import { sprinkles } from "@/styles/sprinkles.css";
-import { vars } from "@/styles/vars.css";
 import { nanoid } from "nanoid";
 import Link from "next/link";
 import { useRouter } from "next/router";
