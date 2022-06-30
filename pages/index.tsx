@@ -1,5 +1,6 @@
 import MainComponent from "@/components/Main";
 import { getPostCategory } from "@/helper/getPosts";
+import HeadMeta from "@/helper/HeadMeta";
 
 export const getServerSideProps = () => {
   const categories = getPostCategory();
@@ -11,5 +12,10 @@ export const getServerSideProps = () => {
 };
 
 export default function Home() {
-  return <MainComponent />;
+  return (
+    <>
+      <HeadMeta title="" url="" />
+      <MainComponent />
+    </>
+  );
 }
