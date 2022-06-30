@@ -1,10 +1,11 @@
-import { getPostCategory, getPosts } from "@/helper/getPosts";
+import { getPostCategory, getCategoryPaths, getPosts } from "@/helper/getPosts";
 import ArticleList from "@/components/articleList";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import HeadMeta from "@/helper/HeadMeta";
+import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 
-export const getServerSideProps = async ({ params }: any) => {
+export const getStaticProps: GetStaticProps = async ({ params }: any) => {
   const categories = getPostCategory();
   const data = getPosts(params.categoryId);
   return {
@@ -15,7 +16,16 @@ export const getServerSideProps = async ({ params }: any) => {
   };
 };
 
-const ArticleListPage = ({ data }: any) => {
+export const getStaticPaths: GetStaticPaths = async () => {
+  const data = getCategoryPaths();
+  const combine = data[0].concat(data[1]);
+  return {
+    paths: [...combine],
+    fallback: false,
+  };
+};
+
+const ArticleListPage: NextPage = ({ data }: any) => {
   const router = useRouter();
   const categoryId = router.query.categoryId as string;
   return (

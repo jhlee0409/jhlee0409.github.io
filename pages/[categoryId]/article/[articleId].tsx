@@ -1,9 +1,10 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { getPost, getPostCategory } from "@/helper/getPosts";
+import { getPost, getPostCategory, getPostPaths } from "@/helper/getPosts";
 import Article from "@/components/article/Article";
 import HeadMeta from "@/helper/HeadMeta";
 import { useRouter } from "next/router";
-export const getServerSideProps = ({ params }: any) => {
+import { GetStaticPaths } from "next";
+export const getStaticProps = ({ params }: any) => {
   const categories = getPostCategory();
   const data = getPost(params.categoryId, params.articleId);
   return {
@@ -14,9 +15,16 @@ export const getServerSideProps = ({ params }: any) => {
   };
 };
 
+export const getStaticPaths: GetStaticPaths = async () => {
+  const data = getPostPaths();
+  return {
+    paths: data,
+    fallback: false,
+  };
+};
+
 const ArticlePage = ({ data, content }: any) => {
   const router = useRouter();
-
   return (
     <>
       <HeadMeta title={data.title} url={router.asPath} />

@@ -2,7 +2,7 @@ import MainComponent from "@/components/Main";
 import { getPostCategory } from "@/helper/getPosts";
 import HeadMeta from "@/helper/HeadMeta";
 
-export const getServerSideProps = () => {
+export const getStaticProps = () => {
   const categories = getPostCategory();
   return {
     props: {
