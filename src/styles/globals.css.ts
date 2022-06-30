@@ -11,6 +11,7 @@ globalStyle("html, body", {
 globalStyle("body", {
   backgroundColor: "#1b1b1b",
   overflow: "auto",
+  width: "100%",
 });
 
 globalStyle("main > div", {
