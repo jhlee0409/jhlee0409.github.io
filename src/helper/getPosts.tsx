@@ -23,7 +23,9 @@ export const getPostCategory = () => {
 };
 
 export const getPost = (folder: string, id: string) => {
-  const [big, sub] = folder.split("_");
+  const [big, sub] = folder.split("-");
+  console.log(big, sub);
+
   const source = fs.readFileSync(
     path.join(`posts/${big}/${sub}/${id}.mdx`),
     "utf8"
@@ -37,27 +39,9 @@ export const getPost = (folder: string, id: string) => {
   };
 };
 
-// export const getPostPaths = (folder: string) => {
-//   const posts = fs.readdirSync(path.join(`posts/${folder}`));
-//   const fileContents = posts.map((item) => {
-//     const { data } = matter(
-//       fs.readFileSync(path.join(`posts/${folder}/${item}`), "utf8")
-//     );
-//     return { params: { articleId: data.title } };
-//   });
-
-//   return fileContents;
-// };
-
 export const getPosts = (folder: string) => {
-  // if (
-  //   files
-  //     .filter((i) => i.search(/.js|.jsx|categoryId|.ts|.tsx/g) === -1)
-  //     .filter((i) => i === folder).length === 0
-  // ) {
-  //   return null;
-  // }
-  const [big, sub] = folder.split("_");
+  const [big, sub] = folder.split("-");
+  console.log(big, sub);
   const posts = fs.readdirSync(path.join(`posts/${big}/${sub}`));
   const fileContents = posts.map((item) => {
     const { data, content } = matter(

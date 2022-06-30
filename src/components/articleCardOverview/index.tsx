@@ -30,7 +30,7 @@ const ArticleCardOverview = ({ data }: ArticleCardOverviewType) => {
       passHref
       href={`/${router.query.categoryId}/article/${data.title.replaceAll(
         " ",
-        "_"
+        "-"
       )}`}
     >
       <div className={layout}>

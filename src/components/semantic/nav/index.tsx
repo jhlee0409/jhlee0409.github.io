@@ -16,11 +16,11 @@ const Nav = ({ categories, className }: any) => {
             <div className={subSection}>
               {sub.map(({ title, count }: any, i: number) => {
                 return (
-                  <Link key={title + i} href={`/${bigCategory}_${title}`}>
+                  <Link key={title + i} href={`/${bigCategory}-${title}`}>
                     <a
                       className={`${categoryLink} ${sprinkles({
                         color:
-                          router.query.categoryId === `${bigCategory}_${title}`
+                          router.query.categoryId === `${bigCategory}-${title}`
                             ? "point"
                             : "none",
                       })}`}
