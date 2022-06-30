@@ -1,15 +1,12 @@
 import { vars } from "@/styles/vars.css";
 import { globalStyle, style } from "@vanilla-extract/css";
 
-const borderWidth = 2;
-const borderColor = "#4374D9";
-
 export const layout = style({
   // position: "relative",
 });
 
 globalStyle(`${layout} > span`, {
-  width: "90%",
+  width: "calc(100% - 40px)",
   textAlign: "center",
   display: "block",
   borderBottom: "2px solid rgba(64, 64, 64, 0.5)",
@@ -25,8 +22,8 @@ export const card = style({
   ":before": {
     content: "",
     position: "absolute",
-    width: "150%",
-    height: "200%",
+    width: "1500px",
+    height: "200px",
     backgroundColor: vars.color["gray-900"],
     transition: "transform 0.1s ease-out",
     transform: "rotate(0) translateY(-50%) scaleX(0)",
@@ -88,6 +85,11 @@ globalStyle(`${cardTagBox} > span`, {
 
 export const cardTitle = style({
   color: "#ececec",
+  "@media": {
+    "screen and (max-width: 578px)": {
+      fontSize: "1.5em",
+    },
+  },
 });
 
 export const cardSummary = style({
