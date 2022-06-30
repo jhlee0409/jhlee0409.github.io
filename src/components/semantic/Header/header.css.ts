@@ -1,8 +1,4 @@
 import { fontFace, style } from "@vanilla-extract/css";
-const myFont = fontFace({
-  src: "public/assets/fonts/BRANCHE/BRANCHÉ Demo.ttf",
-});
-
 export const headerStyle = style({
   height: "10vh",
   position: "sticky",
@@ -20,6 +16,11 @@ export const innerHeaderStyle = style({
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
+  "@media": {
+    "screen and (max-width: 578px)": {
+      padding: "0 35px 0px 20px",
+    },
+  },
 });
 
 export const headerTitle = style({
