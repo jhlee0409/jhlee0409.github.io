@@ -4,12 +4,21 @@ import { globalStyle, style } from "@vanilla-extract/css";
 export const nav = style({
   padding: vars.space["1x"],
   width: 270,
-  display: "flex",
   flexDirection: "column",
   gap: 10,
+  height: "fit-content",
   borderRadius: vars.borderRadius.base,
   position: "sticky",
   top: 100,
+  "@media": {
+    "screen and (max-width: 578px)": {
+      position: "fixed",
+      backgroundColor: "#1b1b1b",
+      top: 80,
+      right: 0,
+      zIndex: 10,
+    },
+  },
 });
 
 export const subSection = style({

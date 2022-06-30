@@ -1,3 +1,4 @@
+import { vars } from "@/styles/vars.css";
 import { style } from "@vanilla-extract/css";
 
 export const contentLayout = style({
@@ -13,6 +14,11 @@ export const contentWrapper = style({
   gap: 50,
   width: "100%",
   position: "relative",
+  "@media": {
+    "screen and (max-width: 578px)": {
+      padding: "20px 25px 0 20px",
+    },
+  },
 });
 
 export const bodyLayout = style({
@@ -29,13 +35,14 @@ export const bodyLayout = style({
     backgroundColor: "#ddd",
     borderRadius: 20,
     border: "5px solid #1b1b1b",
+    transition: "background-color 300ms ease-in",
   },
   "::-webkit-scrollbar-button": {
     display: "none",
   },
   selectors: {
     "&::-webkit-scrollbar-thumb:hover": {
-      backgroundColor: "#404040",
+      backgroundColor: vars.color.point,
     },
     "&::-webkit-scrollbar-thumb:active": {
       backgroundColor: "#dcdcdc",

@@ -3,10 +3,10 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { nav, categoryLink, bigTitle, subSection } from "./nav.css";
 
-const Nav = ({ categories }: any) => {
+const Nav = ({ categories, className }: any) => {
   const router = useRouter();
   return (
-    <nav className={nav}>
+    <nav className={`${nav} ${className}`}>
       {categories?.map(({ title: bigCategory, sub }: any, i: number) => {
         return (
           <div key={bigCategory + i}>
