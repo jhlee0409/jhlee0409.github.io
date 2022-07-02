@@ -1,5 +1,5 @@
 import { vars } from "@/styles/vars.css";
-import { style } from "@vanilla-extract/css";
+import { globalStyle, style } from "@vanilla-extract/css";
 
 export const contentLayout = style({
   width: "100%",
@@ -48,4 +48,17 @@ export const bodyLayout = style({
       backgroundColor: "#dcdcdc",
     },
   },
+});
+
+// 10vh + 2vw
+export const loadingLogoBox = style({
+  width: "100%",
+  height: "60vh",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+});
+
+globalStyle(`${loadingLogoBox} > div`, {
+  width: 100,
 });
