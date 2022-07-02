@@ -9,6 +9,11 @@ module.exports = withVanillaExtract({
   // assetPrefix: !debug ? `/${name}/` : "",
   experimental: { esmExternals: true },
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+  images: {
+    formats: ["image/avif", "image/webp"],
+    loader: "akamai",
+    path: "/",
+  },
   webpack(config) {
     config.resolve.fallback = {
       fs: false,
