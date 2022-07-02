@@ -1,12 +1,12 @@
 import { sprinkles } from "@/styles/sprinkles.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { nav, categoryLink, bigTitle, subSection } from "./nav.css";
+import { categoryLink, bigTitle, subSection } from "./nav.css";
 
-const Nav = ({ categories, className }: any) => {
+const Nav = ({ categories, className, setClick }: any) => {
   const router = useRouter();
   return (
-    <nav className={`${nav} ${className}`}>
+    <nav className={`${className}`}>
       {categories?.map(({ title: bigCategory, sub }: any, i: number) => {
         return (
           <div key={bigCategory + i}>
@@ -18,6 +18,7 @@ const Nav = ({ categories, className }: any) => {
                 return (
                   <Link key={title + i} href={`/${bigCategory}-${title}`}>
                     <a
+                      onClick={setClick && setClick}
                       className={`${categoryLink} ${sprinkles({
                         color:
                           router.query.categoryId === `${bigCategory}-${title}`

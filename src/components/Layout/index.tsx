@@ -1,21 +1,14 @@
 import Nav from "../semantic/nav";
 import Header from "../semantic/Header";
 import { contentLayout, contentWrapper } from "./layout.css";
-import { useState } from "react";
-import { sprinkles } from "@/styles/sprinkles.css";
+import { nav } from "../semantic/nav/nav.css";
 
 const Layout = ({ children, categories }: any) => {
-  const [click, setClick] = useState(true);
   return (
     <>
-      <Header setClick={setClick} />
+      <Header categories={categories} />
       <div className={contentWrapper}>
-        <Nav
-          categories={categories}
-          className={sprinkles({
-            display: click ? "flex" : "none",
-          })}
-        />
+        <Nav categories={categories} className={nav} />
         <main className={contentLayout}>{children}</main>
       </div>
     </>

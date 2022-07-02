@@ -62,6 +62,7 @@ export const vars = createGlobalTheme(":root", {
   },
   borderRadius: {
     base: "12px",
+    mobile: "8px",
   },
   fontFamily: {},
   fontSize: {

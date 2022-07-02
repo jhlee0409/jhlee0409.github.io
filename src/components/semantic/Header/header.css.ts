@@ -35,3 +35,13 @@ export const Flex = style({
   display: "flex",
   gap: 15,
 });
+
+export const rightHeaderSection = style({
+  display: "flex",
+  gap: 15,
+  "@media": {
+    "screen and (max-width: 578px)": {
+      display: "none",
+    },
+  },
+});

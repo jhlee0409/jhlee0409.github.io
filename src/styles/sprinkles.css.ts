@@ -3,13 +3,16 @@ import { vars } from "./vars.css";
 
 const responsiveProperties = defineProperties({
   conditions: {
-    mobile: {},
+    mobile: { "@media": "screen and (max-width: 578px)" },
     tablet: { "@media": "screen and (min-width: 768px)" },
-    desktop: { "@media": "screen and (min-width: 1024px)" },
+    desktop: {},
   },
   defaultCondition: "mobile",
+  responsiveArray: ["mobile", "tablet", "desktop"],
   properties: {
+    position: ["sticky", "fixed"],
     display: ["none", "flex"],
+    transform: ["translateX(0)", "translateX(-100%)"],
     flexDirection: ["row", "column"],
     alignItems: ["stretch", "flex-start", "center", "flex-end"],
     justifyContent: ["stretch", "flex-start", "center", "flex-end"],

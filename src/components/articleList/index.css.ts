@@ -19,6 +19,12 @@ export const articlesBox = style({
   flexDirection: "column",
   paddingTop: 30,
   gap: 50,
+  "@media": {
+    "screen and (max-width: 578px)": {
+      paddingTop: 0,
+      gap: 20,
+    },
+  },
 });
 
 export const card = style({

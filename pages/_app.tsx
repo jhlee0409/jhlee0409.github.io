@@ -1,10 +1,10 @@
 import React from "react";
 import "@/styles/globals.css";
 import "@/styles/reset.css";
-import { themeClass } from "@/styles/theme.css";
 import Layout from "@/components/Layout";
 import { NextPage } from "next";
 import { getPostCategory } from "@/helper/getPosts";
+import LoadingPage from "@/components/Layout/Loading";
 
 export const getServerSideProps = () => {
   const categories = getPostCategory();
@@ -18,7 +18,9 @@ export const getServerSideProps = () => {
 const MyApp: NextPage = ({ Component, pageProps }: any) => {
   return (
     <Layout categories={pageProps.categories || []}>
-      <Component {...pageProps} />
+      <LoadingPage>
+        <Component {...pageProps} />
+      </LoadingPage>
     </Layout>
   );
 };

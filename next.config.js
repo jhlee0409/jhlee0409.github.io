@@ -1,16 +1,12 @@
 const { createVanillaExtractPlugin } = require("@vanilla-extract/next-plugin");
 const withVanillaExtract = createVanillaExtractPlugin();
 
-// const withMDX = require("@next/mdx")({
-//   extension: /\.mdx?$/,
-//   options: {
-//     providerImportSource: "@mdx-js/react",
-//     rehypePlugins: [],
-//     remarkPlugins: [],
-//   },
-// });
+// const debug = process.env.NODE_ENV !== "production";
+// const name = "jhlee0409.github.io";
+
 module.exports = withVanillaExtract({
   reactStrictMode: true,
+  // assetPrefix: !debug ? `/${name}/` : "",
   experimental: { esmExternals: true },
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   webpack(config) {
