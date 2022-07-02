@@ -8,15 +8,35 @@ export const nav = style({
   gap: 10,
   height: "fit-content",
   borderRadius: vars.borderRadius.base,
-  position: "sticky",
+  // position: "sticky",
   top: 100,
   "@media": {
     "screen and (max-width: 578px)": {
+      display: "none",
+    },
+  },
+});
+
+export const navMobile = style({
+  padding: vars.space["1x"],
+  width: 270,
+  flexDirection: "column",
+  gap: 10,
+  height: "fit-content",
+  borderRadius: vars.borderRadius.base,
+  top: 100,
+  display: "none",
+  "@media": {
+    "screen and (max-width: 578px)": {
+      display: "flex",
+      transition: "transform 100ms cubic-bezier(0.1, 0.57, 0.1, 1)",
       position: "fixed",
       backgroundColor: "#1b1b1b",
       top: 80,
       right: 0,
       zIndex: 10,
+      width: "100%",
+      height: "max-content",
     },
   },
 });

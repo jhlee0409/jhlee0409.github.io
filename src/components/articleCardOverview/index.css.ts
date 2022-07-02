@@ -1,9 +1,7 @@
 import { vars } from "@/styles/vars.css";
 import { globalStyle, style } from "@vanilla-extract/css";
 
-export const layout = style({
-  // position: "relative",
-});
+export const layout = style({});
 
 globalStyle(`${layout} > span`, {
   width: "calc(100% - 40px)",
@@ -29,6 +27,15 @@ export const card = style({
     transform: "rotate(0) translateY(-50%) scaleX(0)",
     transformOrigin: "top left",
   },
+  "@media": {
+    "screen and (max-width: 578px)": {
+      ":before": {
+        borderRadius: vars.borderRadius.mobile,
+        width: "1000px",
+        height: "200px",
+      },
+    },
+  },
   selectors: {
     "&:hover:before": {
       transform: "rotate(45deg) translateY(-50%) scaleX(0.05)",
@@ -52,6 +59,11 @@ export const cardTextBox = style({
   display: "flex",
   flexDirection: "column",
   gap: 15,
+  "@media": {
+    "screen and (max-width: 578px)": {
+      padding: "10px",
+    },
+  },
 });
 
 export const dateBox = style({
@@ -76,6 +88,13 @@ export const cardTagBox = style({
   gap: 10,
   borderTop: `1px solid ${vars.color.point}`,
   paddingTop: 20,
+  "@media": {
+    "screen and (max-width: 578px)": {
+      paddingTop: 10,
+      gap: 0,
+      fontSize: "0.8em",
+    },
+  },
 });
 
 globalStyle(`${cardTagBox} > span`, {
@@ -87,7 +106,7 @@ export const cardTitle = style({
   color: "#ececec",
   "@media": {
     "screen and (max-width: 578px)": {
-      fontSize: "1.5em",
+      fontSize: "1.2em",
     },
   },
 });
@@ -96,4 +115,9 @@ export const cardSummary = style({
   fontSize: "0.9em",
   paddingBottom: 5,
   color: vars.color["gray-800"],
+  "@media": {
+    "screen and (max-width: 578px)": {
+      fontSize: "0.8em",
+    },
+  },
 });

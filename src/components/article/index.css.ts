@@ -1,3 +1,4 @@
+import { vars } from "@/styles/vars.css";
 import { style, globalStyle } from "@vanilla-extract/css";
 
 export const Base = style({
@@ -11,6 +12,11 @@ globalStyle(`${Base} > section`, {});
 export const tagWrapper = style({
   display: "flex",
   gap: 10,
+  "@media": {
+    "screen and (max-width: 578px)": {
+      fontSize: "0.8em",
+    },
+  },
 });
 
 globalStyle(`${tagWrapper} > span`, {});
@@ -21,13 +27,32 @@ export const overviewWrapper = style({
   alignItems: "center",
   gap: 10,
   padding: 20,
-  borderRadius: 20,
+  borderRadius: 12,
   marginBottom: 30,
+  "@media": {
+    "screen and (max-width: 578px)": {
+      padding: 10,
+      borderRadius: vars.borderRadius.mobile,
+    },
+  },
 });
 
 globalStyle(`${overviewWrapper} > h1`, {
   fontWeight: "bold",
   fontSize: "1.6em",
+  "@media": {
+    "screen and (max-width: 578px)": {
+      fontSize: "1.2em",
+    },
+  },
+});
+globalStyle(`${overviewWrapper} > p`, {
+  fontSize: "1em",
+  "@media": {
+    "screen and (max-width: 578px)": {
+      fontSize: "0.8em",
+    },
+  },
 });
 
 export const line = style({
@@ -35,5 +60,10 @@ export const line = style({
   backgroundColor: "white",
   width: "100%",
   marginTop: "2em",
-  borderRadius: 12,
+  borderRadius: vars.borderRadius.base,
+  "@media": {
+    "screen and (max-width: 578px)": {
+      borderRadius: vars.borderRadius.mobile,
+    },
+  },
 });
