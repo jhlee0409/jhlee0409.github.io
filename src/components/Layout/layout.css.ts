@@ -4,6 +4,7 @@ import { globalStyle, style } from "@vanilla-extract/css";
 export const contentLayout = style({
   width: "100%",
   overflow: "hidden",
+  minHeight: `90vh`,
 });
 
 export const contentWrapper = style({
