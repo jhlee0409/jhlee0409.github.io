@@ -20,10 +20,11 @@ interface ArticleCardOverviewType {
     summary: string;
     tags: string[];
   };
+  isLast: boolean;
 }
 
 const tagKey = nanoid();
-const ArticleCardOverview = ({ data }: ArticleCardOverviewType) => {
+const ArticleCardOverview = ({ data, isLast }: ArticleCardOverviewType) => {
   const router = useRouter();
   return (
     <Link
@@ -55,7 +56,7 @@ const ArticleCardOverview = ({ data }: ArticleCardOverviewType) => {
             </div>
           </div>
         </div>
-        <span />
+        {!isLast && <span />}
       </div>
     </Link>
   );

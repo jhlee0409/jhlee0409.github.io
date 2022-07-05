@@ -20,25 +20,37 @@ export const card = style({
   ":before": {
     content: "",
     position: "absolute",
-    width: "1500px",
-    height: "200px",
-    backgroundColor: vars.color["gray-900"],
+    width: "3px",
+    height: "90%",
+    backgroundColor: vars.color.point,
+    borderRadius: vars.borderRadius.base,
+    transition: "all 0.1s ease-out",
+    transform: "translate(-5px, 5%)",
+    opacity: 0,
+    // transformOrigin: "",
+  },
+  ":hover": {
     transition: "transform 0.1s ease-out",
-    transform: "rotate(0) translateY(-50%) scaleX(0)",
-    transformOrigin: "top left",
+    transform: "translateX(5px)",
   },
   "@media": {
     "screen and (max-width: 578px)": {
-      ":before": {
-        borderRadius: vars.borderRadius.mobile,
-        width: "1000px",
-        height: "200px",
+      selectors: {
+        "&:hover:before": {
+          transform: "translate(0px, 5%)",
+          opacity: 1,
+        },
+      },
+      ":hover": {
+        transition: "transform 0.1s ease-out",
+        transform: "translateX(10px)",
       },
     },
   },
   selectors: {
     "&:hover:before": {
-      transform: "rotate(45deg) translateY(-50%) scaleX(0.05)",
+      transform: "translate(5px, 5%)",
+      opacity: 1,
     },
   },
 });
@@ -104,10 +116,14 @@ globalStyle(`${cardTagBox} > span`, {
 
 export const cardTitle = style({
   color: "#ececec",
+  transition: "color 300ms linear",
   "@media": {
     "screen and (max-width: 578px)": {
       fontSize: "1.2em",
     },
+  },
+  ":hover": {
+    color: vars.color.point,
   },
 });
 
