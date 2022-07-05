@@ -12,11 +12,12 @@ const ArticleList = ({ data }: any) => {
         ) : !data ? (
           <div>존재하지 않는 카테고리 입니다.</div>
         ) : (
-          data?.map(({ data }: any) => {
+          data?.map(({ data: item }: any, i: number) => {
             return (
               <ArticleCardOverview
-                data={data}
-                key={`${articleKey}-${data.title}`}
+                data={item}
+                key={`${articleKey}-${item.title}`}
+                isLast={data.length - 1 === i}
               />
             );
           })
