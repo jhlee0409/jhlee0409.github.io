@@ -25,7 +25,7 @@ const Header = ({ categories }: any) => {
             <label htmlFor="search">search</label>
             <input name="search" type="text" />
           </div>
-          <HamburgerMenu setClick={setClick} />
+          <HamburgerMenu setClick={setClick} click={click} />
         </div>
       </div>
       <Nav

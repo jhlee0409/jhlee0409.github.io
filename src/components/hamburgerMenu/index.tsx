@@ -1,11 +1,11 @@
-import { wrapper } from "./index.css";
+import { first, second, third, wrapper } from "./index.css";
 
-const HamburgerMenu = ({ setClick }: any) => {
+const HamburgerMenu = ({ setClick, click }: any) => {
   return (
     <button className={wrapper} onClick={() => setClick((p: any) => !p)}>
-      <div />
-      <div />
-      <div />
+      <div className={!click ? first : ""} />
+      <div className={!click ? second : ""} />
+      <div className={!click ? third : ""} />
     </button>
   );
 };
