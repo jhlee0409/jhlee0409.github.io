@@ -6,7 +6,7 @@ export const footerBox = style({
   alignItems: "center",
   padding: 20,
   fontSize: "0.8em",
-  borderTop: "1px solid white",
+  // borderTop: "1px solid white",
   flexDirection: "column",
   gap: 20,
 });
@@ -21,12 +21,16 @@ export const logoBox = style({
   },
 });
 
-globalStyle(`${logoBox} > a`, {
+export const logoLink = style({
   width: 40,
   filter: "invert(1)",
+  transition: "all 150ms linear",
   "@media": {
     "screen and (max-width: 578px)": {
       width: 30,
     },
+  },
+  ":hover": {
+    opacity: 0.4,
   },
 });
