@@ -1,10 +1,12 @@
+import { vars } from "@/styles/vars.css";
 import { fontFace, style } from "@vanilla-extract/css";
 export const headerStyle = style({
   height: "10vh",
   position: "sticky",
   top: 0,
   zIndex: 10,
-  backdropFilter: "blur(2px)",
+  // backdropFilter: "blur(2px)",
+  backgroundColor: vars.color.background,
 });
 
 export const innerHeaderStyle = style({

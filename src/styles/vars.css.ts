@@ -59,6 +59,7 @@ export const vars = createGlobalTheme(":root", {
     orange: "orange",
     black: "black",
     white: "white",
+    background: "#1b1b1b",
   },
   borderRadius: {
     base: "12px",
