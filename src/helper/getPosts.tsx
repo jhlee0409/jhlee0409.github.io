@@ -59,7 +59,6 @@ export const getCategoryPaths = () => {
         return { params: { categoryId: `${bigCategory}-${middleCategory}` } };
       });
   });
-
   return fileContents;
 };
 
