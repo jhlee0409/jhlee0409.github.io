@@ -24,6 +24,20 @@ export default class CustomDocument extends Document {
             href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown-dark.min.css"
             rel="stylesheet"
           ></link>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-GSXS4W26FH"
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-GSXS4W26FH', { page_path: window.location.pathname });
+            `,
+            }}
+          />
         </Head>
         <body className={bodyLayout}>
           <Main />
