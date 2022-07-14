@@ -8,13 +8,13 @@ interface HeadMetaType {
   image?: string;
 }
 
-const HeadMeta = ({ title, description, url, image }: HeadMetaType) => {
+const HeadMeta = ({ title = "", description, url, image }: HeadMetaType) => {
   return (
     <Head>
-      <title>{`JACK : ${title}` || "JACK"}</title>
+      <title>{`Jack's Tech World : ${title}` || "JACK"}</title>
       <meta name="description" content={description || "Jack's World"} />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta property="og:title" content={`JACK : ${title}` || "JACK"} />
+      <meta property="og:title" content={`Jack's Tech World : ${title}`} />
       <meta property="og:type" content="website" />
       <meta
         property="og:url"
