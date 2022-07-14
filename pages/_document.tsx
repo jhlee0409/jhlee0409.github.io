@@ -21,10 +21,6 @@ export default class CustomDocument extends Document {
             rel="stylesheet"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@600&display=swap"
-            rel="stylesheet"
-          ></link>
-          <link
             href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown-dark.min.css"
             rel="stylesheet"
           ></link>
