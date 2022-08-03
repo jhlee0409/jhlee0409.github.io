@@ -13,10 +13,36 @@ import rehypeLinks from "rehype-external-links";
 import remarkTableofContents from "remark-toc";
 import ArticleFrontMatter from "./ArticleFrontMatter";
 import { line } from "./index.css";
+import { useEffect, useRef } from "react";
+import { useAppDispatch } from "@/app/hooks";
+import { checkProgress } from "@/feature/articleProgressSlice";
 const Article = ({ data, content }: any) => {
+  const articleRef = useRef(null);
+  const dispatch = useAppDispatch();
+
+  const handleCheckProgress = () => {
+    if (!articleRef.current || !articleRef) return;
+    const progress = +(
+      (window.scrollY /
+        //@ts-ignore
+        (articleRef.current.getBoundingClientRect().height -
+          window.innerHeight)) *
+      100
+    ).toFixed(2);
+    dispatch(checkProgress(progress <= 100 ? progress : 100));
+  };
+
+  useEffect(() => {
+    document.addEventListener("scroll", handleCheckProgress);
+    return () => {
+      document.removeEventListener("scroll", handleCheckProgress);
+      dispatch(checkProgress(0));
+    };
+  }, []);
+
   if (!content) return <span>로딩 중</span>;
   return (
-    <div>
+    <div ref={articleRef}>
       <ArticleFrontMatter data={data} />
       <article className="markdown-body">
         <ReactMarkdown
@@ -32,12 +58,12 @@ const Article = ({ data, content }: any) => {
           components={{
             pre: Pre,
             code: Code,
-          }}
-        >
+          }}>
           {content}
         </ReactMarkdown>
       </article>
       <div className={line} />
+
       <section
         ref={(elem) => {
           if (!elem) {

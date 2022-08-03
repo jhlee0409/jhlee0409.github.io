@@ -23,7 +23,9 @@
       "@/pages/*": ["pages/*"],
       "@/styles/*": ["src/styles/*"],
       "@/helper/*": ["src/helper/*"],
-      "@/assets/*": ["public/assets/*"]
+      "@/assets/*": ["public/assets/*"],
+      "@/feature/*": ["src/feature/*"]
+
     }
   },
   "include": [

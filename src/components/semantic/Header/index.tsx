@@ -10,8 +10,13 @@ import {
   Flex,
   innerHeaderStyle,
   rightHeaderSection,
+  progressbar,
 } from "./header.css";
+import { useAppSelector } from "@/app/hooks";
 const Header = ({ categories }: any) => {
+  const articleProgress = useAppSelector(
+    (state) => state.articleProgress.value
+  );
   const [click, setClick] = useState(true);
   return (
     <header className={headerStyle}>
@@ -37,6 +42,9 @@ const Header = ({ categories }: any) => {
           },
         })}`}
       />
+      <div className={progressbar}>
+        <div style={{ width: `${articleProgress}%` }} />
+      </div>
     </header>
   );
 };

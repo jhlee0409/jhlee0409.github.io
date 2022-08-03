@@ -7,6 +7,7 @@ import { getPostCategory } from "@/helper/getPosts";
 import LoadingPage from "@/components/Layout/Loading";
 import { useRouter } from "next/router";
 import Script from "next/script";
+import {storeWrapper} from "@/app/store";
 
 export const getServerSideProps = () => {
   const categories = getPostCategory();
@@ -59,4 +60,4 @@ const MyApp: NextPage = ({ Component, pageProps }: any) => {
   );
 };
 
-export default MyApp;
+export default storeWrapper.withRedux(MyApp);

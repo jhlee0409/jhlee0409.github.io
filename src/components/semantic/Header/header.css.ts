@@ -1,5 +1,5 @@
 import { vars } from "@/styles/vars.css";
-import { fontFace, style } from "@vanilla-extract/css";
+import { fontFace, globalStyle, style } from "@vanilla-extract/css";
 export const headerStyle = style({
   height: "10vh",
   position: "sticky",
@@ -7,6 +7,19 @@ export const headerStyle = style({
   zIndex: 10,
   // backdropFilter: "blur(2px)",
   backgroundColor: vars.color.background,
+});
+
+export const progressbar = style({
+  position: "absolute",
+  bottom: 0,
+  left: 0,
+  width: "100%",
+  height: 3,
+});
+
+globalStyle(`${progressbar} > div`, {
+  backgroundColor: "white",
+  height: "100%",
 });
 
 export const innerHeaderStyle = style({
