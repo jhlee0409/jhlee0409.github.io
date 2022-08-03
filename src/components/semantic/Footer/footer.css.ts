@@ -22,15 +22,16 @@ export const logoBox = style({
 });
 
 export const logoLink = style({
-  width: 40,
+  width: 30,
   filter: "invert(1)",
   transition: "all 150ms linear",
+  opacity: 0.3,
   "@media": {
     "screen and (max-width: 578px)": {
       width: 30,
     },
   },
   ":hover": {
-    opacity: 0.4,
+    opacity: 1
   },
 });
