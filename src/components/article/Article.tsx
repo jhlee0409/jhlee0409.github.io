@@ -22,11 +22,12 @@ const Article = ({ data, content }: any) => {
 
   const handleCheckProgress = () => {
     if (!articleRef.current || !articleRef) return;
+    const { top, bottom, x } =
+      //@ts-ignore
+      articleRef.current.getBoundingClientRect();
     const progress = +(
       (window.scrollY /
-        //@ts-ignore
-        (articleRef.current.getBoundingClientRect().height -
-          window.innerHeight)) *
+        (bottom - top - (window.innerHeight - 90 - window.innerHeight * 0.1))) *
       100
     ).toFixed(2);
     dispatch(checkProgress(progress <= 100 ? progress : 100));
@@ -42,26 +43,28 @@ const Article = ({ data, content }: any) => {
 
   if (!content) return <span>로딩 중</span>;
   return (
-    <div ref={articleRef}>
-      <ArticleFrontMatter data={data} />
-      <article className="markdown-body">
-        <ReactMarkdown
-          remarkPlugins={[
-            remarkGfm,
-            remarkHeadings,
-            remarkSlug,
-            remarkSmartypants,
-            remarkUnwrapImages,
-            [remarkTableofContents, { tight: true }],
-          ]}
-          rehypePlugins={[rehypeCodeTitles, rehypeLinks]}
-          components={{
-            pre: Pre,
-            code: Code,
-          }}>
-          {content}
-        </ReactMarkdown>
-      </article>
+    <div>
+      <div ref={articleRef}>
+        <ArticleFrontMatter data={data} />
+        <article className="markdown-body">
+          <ReactMarkdown
+            remarkPlugins={[
+              remarkGfm,
+              remarkHeadings,
+              remarkSlug,
+              remarkSmartypants,
+              remarkUnwrapImages,
+              [remarkTableofContents, { tight: true }],
+            ]}
+            rehypePlugins={[rehypeCodeTitles, rehypeLinks]}
+            components={{
+              pre: Pre,
+              code: Code,
+            }}>
+            {content}
+          </ReactMarkdown>
+        </article>
+      </div>
       <div className={line} />
 
       <section
