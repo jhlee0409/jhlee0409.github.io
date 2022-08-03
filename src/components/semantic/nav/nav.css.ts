@@ -9,7 +9,7 @@ export const nav = style({
   height: "fit-content",
   borderRadius: vars.borderRadius.base,
   position: "sticky",
-  top: 100,
+  top: '10vh',
   "@media": {
     "screen and (max-width: 578px)": {
       display: "none",
