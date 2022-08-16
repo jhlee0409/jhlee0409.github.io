@@ -52,14 +52,13 @@ export const getPostPaths = () => {
 };
 export const getCategoryPaths = () => {
   const posts = fs.readdirSync(path.join(`posts/`));
-  const fileContents = posts.map((bigCategory) => {
+  return posts.map((bigCategory) => {
     return fs
       .readdirSync(path.join(`posts/${bigCategory}`))
       .map((middleCategory) => {
         return { params: { categoryId: `${bigCategory}-${middleCategory}` } };
       });
   });
-  return fileContents;
 };
 
 export const getPost = (folder: string, id: string) => {

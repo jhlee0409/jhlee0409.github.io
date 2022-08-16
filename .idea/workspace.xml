@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="add: import 파헤치기">
+      <change beforePath="$PROJECT_DIR$/posts/til/javascript/import-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/til/javascript/import-파헤치기.mdx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c37ca774-7989-47ef-b440-addc2f7006c7" />
+        <option name="url" value="https://github.com/jhlee0409/jhlee0409.github.io.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Cq0twf92ZvqKDBhRtUqJrwo9Bz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/jacklee/Desktop/jhlee0409.github.io",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\jacklee\\Desktop\\jhlee0409.github.io\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Users\\jacklee\\Desktop\\jhlee0409.github.io\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io" />
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\til\javascript" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.deploy" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="" />
+      <created>1659515026038</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659515026038</updated>
+      <workItem from="1659515027465" duration="3146000" />
+      <workItem from="1659518213554" duration="9190000" />
+      <workItem from="1659881302445" duration="4000" />
+      <workItem from="1660652068537" duration="3000" />
+      <workItem from="1660652082376" duration="2527000" />
+      <workItem from="1660660053499" duration="597000" />
+    </task>
+    <task id="LOCAL-00001" summary="fix: nav top css">
+      <created>1659515728453</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659515728453</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix: footer social icon opacity">
+      <created>1659515751631</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659515751631</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: set redux-toolkit / article progressbar / prettier">
+      <created>1659519684203</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659519684203</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix: fix position that checking article progress logic">
+      <created>1659524059660</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659524059660</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix: fix logic that check progress">
+      <created>1659524788164</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659524788164</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add: import 파헤치기">
+      <created>1660658917081</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660658917081</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix: nav top css" />
+    <MESSAGE value="fix: footer social icon opacity" />
+    <MESSAGE value="feat: set redux-toolkit / article progressbar / prettier" />
+    <MESSAGE value="fix: fix position that checking article progress logic" />
+    <MESSAGE value="fix: fix logic that check progress" />
+    <MESSAGE value="add: import 파헤치기" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: import 파헤치기" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

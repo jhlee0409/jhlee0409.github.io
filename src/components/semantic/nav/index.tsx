@@ -15,6 +15,7 @@ const Nav = ({ categories, className, setClick }: any) => {
             </h2>
             <div className={subSection}>
               {sub.map(({ title, count }: any, i: number) => {
+                console.log(title);
                 return (
                   <Link key={title + i} href={`/${bigCategory}-${title}`}>
                     <a
@@ -24,11 +25,9 @@ const Nav = ({ categories, className, setClick }: any) => {
                           router.query.categoryId === `${bigCategory}-${title}`
                             ? "point"
                             : "none",
-                      })}`}
-                    >{`${title.replace(
-                      title[0],
-                      title[0].toUpperCase()
-                    )} (${count})`}</a>
+                      })}`}>{`${title
+                      .replace(title[0], title[0].toUpperCase())
+                      .replaceAll("_", " ")} (${count})`}</a>
                   </Link>
                 );
               })}
@@ -41,6 +40,9 @@ const Nav = ({ categories, className, setClick }: any) => {
           </div>
         );
       })}
+      <a href="https://hits.seeyoufarm.com">
+        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fjhlee0409%2Fjhlee0409.github.io%2Ftree%2Fgh-pages&count_bg=%23CAF1F8&title_bg=%23555555&icon=checkmarx.svg&icon_color=%23E7E7E7&title=hitss&edge_flat=false" />
+      </a>
     </nav>
   );
 };

@@ -9,7 +9,7 @@ export const nav = style({
   height: "fit-content",
   borderRadius: vars.borderRadius.base,
   position: "sticky",
-  top: '10vh',
+  top: "10vh",
   "@media": {
     "screen and (max-width: 578px)": {
       display: "none",
@@ -67,6 +67,7 @@ export const categoryLink = style({
   transition: "color 150ms linear",
   padding: "10px",
   borderRadius: 8,
+  fontSize: "0.9rem",
   ":before": {
     position: "absolute",
     content: "",
