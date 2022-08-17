@@ -15,7 +15,6 @@ const Nav = ({ categories, className, setClick }: any) => {
             </h2>
             <div className={subSection}>
               {sub.map(({ title, count }: any, i: number) => {
-                console.log(title);
                 return (
                   <Link key={title + i} href={`/${bigCategory}-${title}`}>
                     <a

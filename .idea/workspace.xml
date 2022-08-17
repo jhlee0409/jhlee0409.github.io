@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="add: import 파헤치기">
-      <change beforePath="$PROJECT_DIR$/posts/til/javascript/import-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/til/javascript/import-파헤치기.mdx" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: import 파헤치기">
+      <change afterPath="$PROJECT_DIR$/posts/til/javascript/export-파헤치기.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/jacklee/Desktop/jhlee0409.github.io",
+    "last_opened_file_path": "C:/Users/jacklee/Desktop/jhlee0409.github.io/posts/til/javascript",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,6 +54,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\til\javascript" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\til\javascript" />
