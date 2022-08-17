@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: import 파헤치기">
-      <change afterPath="$PROJECT_DIR$/posts/til/javascript/export-파헤치기.mdx" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: export 파헤치기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pre/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pre/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660658917081</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="mdx: export 파헤치기">
+      <created>1660744980800</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660744980800</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +166,8 @@
     <MESSAGE value="fix: fix position that checking article progress logic" />
     <MESSAGE value="fix: fix logic that check progress" />
     <MESSAGE value="add: import 파헤치기" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: import 파헤치기" />
+    <MESSAGE value="mdx: export 파헤치기" />
+    <option name="LAST_COMMIT_MESSAGE" value="mdx: export 파헤치기" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

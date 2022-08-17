@@ -5,6 +5,8 @@ const Pre = ({ children }: any) => {
   const [hovered, setHovered] = useState(false);
   const [copied, setCopied] = useState(false);
 
+
+
   const onEnter = () => {
     setHovered(true);
   };
@@ -15,7 +17,11 @@ const Pre = ({ children }: any) => {
   const onCopy = () => {
     if (!textInput.current) return;
     setCopied(true);
-    navigator.clipboard.writeText(textInput?.current?.textContent);
+    const splitArr = textInput?.current?.textContent.split(`\n`)
+    const removeLineNumberCode = splitArr.map((item:string)=> {
+      return item.substring(1, item.length-1);
+    })
+    navigator.clipboard.writeText(removeLineNumberCode.join('\n'));
     setTimeout(() => {
       setCopied(false);
     }, 2000);
