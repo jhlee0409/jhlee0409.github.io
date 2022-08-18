@@ -39,9 +39,6 @@ const Nav = ({ categories, className, setClick }: any) => {
           </div>
         );
       })}
-      <a href="https://hits.seeyoufarm.com">
-        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fjhlee0409%2Fjhlee0409.github.io%2Ftree%2Fgh-pages&count_bg=%23CAF1F8&title_bg=%23555555&icon=checkmarx.svg&icon_color=%23E7E7E7&title=hitss&edge_flat=false" />
-      </a>
     </nav>
   );
 };
