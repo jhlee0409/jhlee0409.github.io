@@ -7,6 +7,7 @@ import remarkHeadings from "remark-autolink-headings";
 import remarkSlug from "remark-slug";
 import remarkSmartypants from "@silvenon/remark-smartypants";
 import remarkUnwrapImages from "remark-unwrap-images";
+import rehypeKatex  from 'rehype-katex'
 
 import rehypeCodeTitles from "rehype-code-titles";
 import rehypeLinks from "rehype-external-links";
@@ -56,7 +57,7 @@ const Article = ({ data, content }: any) => {
               remarkUnwrapImages,
               [remarkTableofContents, { tight: true }],
             ]}
-            rehypePlugins={[rehypeCodeTitles, rehypeLinks]}
+            rehypePlugins={[rehypeCodeTitles, rehypeLinks,rehypeKatex ]}
             components={{
               pre: Pre,
               code: Code,

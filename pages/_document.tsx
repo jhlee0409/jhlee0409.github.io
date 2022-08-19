@@ -24,6 +24,9 @@ export default class CustomDocument extends Document {
             href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown-dark.min.css"
             rel="stylesheet"
           ></link>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.0/dist/katex.min.css"
+                integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"
+                crossOrigin="anonymous"></link>
         </Head>
         <body className={bodyLayout}>
           <Main />

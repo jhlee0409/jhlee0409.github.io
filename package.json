@@ -47,6 +47,7 @@
     "rehype-code-titles": "^1.1.0",
     "rehype-external-links": "^1.0.1",
     "rehype-image-placeholder": "^1.0.1",
+    "rehype-katex": "^6.0.2",
     "remark-autolink-headings": "^7.0.1",
     "remark-gfm": "^3.0.1",
     "remark-parse": "^10.0.1",
