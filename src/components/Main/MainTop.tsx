@@ -5,7 +5,7 @@ const MainTop = () => {
     <div className={mainTopWrapper}>
       <h1>
         Welcome To <br />
-        {`Jack's`} World
+        Le Jack
       </h1>
     </div>
   );

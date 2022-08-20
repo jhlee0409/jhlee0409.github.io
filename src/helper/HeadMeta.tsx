@@ -11,10 +11,10 @@ interface HeadMetaType {
 const HeadMeta = ({ title = "", description, url, image }: HeadMetaType) => {
   return (
     <Head>
-      <title>{`Jack's Tech World : ${title}` || "JACK"}</title>
-      <meta name="description" content={description || "Jack's World"} />
+      <title>{`Le Jack : ${title}` || ""}</title>
+      <meta name="description" content={description || "Le Jack"} />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta property="og:title" content={`Jack's Tech World : ${title}`} />
+      <meta property="og:title" content={`Le Jack : ${title}`} />
       <meta property="og:type" content="website" />
       <meta
         property="og:url"

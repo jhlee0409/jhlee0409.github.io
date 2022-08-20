@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="remove: 방문 측정 임시 제거">
-      <change afterPath="$PROJECT_DIR$/posts/til/programming/네이밍-컨벤션-파헤치기.mdx" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: 네이밍 컨벤션 파헤치기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article/Article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/Article.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/MainTop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/MainTop.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/semantic/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/semantic/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/HeadMeta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/HeadMeta.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +98,8 @@
       <workItem from="1660652082376" duration="2527000" />
       <workItem from="1660660053499" duration="597000" />
       <workItem from="1660825653639" duration="3824000" />
-      <workItem from="1660923644872" duration="243000" />
+      <workItem from="1660923644872" duration="465000" />
+      <workItem from="1660968799494" duration="1235000" />
     </task>
     <task id="LOCAL-00001" summary="fix: nav top css">
       <created>1659515728453</created>
@@ -170,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660832056648</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="mdx: 네이밍 컨벤션 파헤치기">
+      <created>1660923996084</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660923996084</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +206,8 @@
     <MESSAGE value="fix: 소스코드 복사시 line number 제거" />
     <MESSAGE value="mdx: 부동-소수점" />
     <MESSAGE value="remove: 방문 측정 임시 제거" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove: 방문 측정 임시 제거" />
+    <MESSAGE value="mdx: 네이밍 컨벤션 파헤치기" />
+    <option name="LAST_COMMIT_MESSAGE" value="mdx: 네이밍 컨벤션 파헤치기" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

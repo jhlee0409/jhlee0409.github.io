@@ -22,7 +22,7 @@ const Header = ({ categories }: any) => {
     <header className={headerStyle}>
       <div className={innerHeaderStyle}>
         <Link href={"/"}>
-          <a className={headerTitle}>{`Jack's Tech World`}</a>
+          <a className={headerTitle}>{`Le Jack`}</a>
         </Link>
         <div className={Flex}>
           <div className={rightHeaderSection}>

@@ -7,7 +7,7 @@ import MainTop from "./MainTop";
 const MainComponent = () => {
   return (
     <div className={main}>
-      <HeadMeta title="JACK" />
+      <HeadMeta title="" />
       <MainTop />
       {/* <MainContent /> */}
     </div>

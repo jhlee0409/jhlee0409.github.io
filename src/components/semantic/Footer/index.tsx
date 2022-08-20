@@ -6,7 +6,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className={footerBox}>
-      <p>ⓒ 2022. JACK All rights reserved</p>
+      <p>ⓒ 2022. Le Jack All rights reserved</p>
       <div className={logoBox}>
         <a
           className={logoLink}
