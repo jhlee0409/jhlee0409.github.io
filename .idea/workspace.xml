@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: 스크롤바 커스텀하기">
-      <change afterPath="$PROJECT_DIR$/public/assets/posts/til/CSS/스크롤바-커스텀하기/Untitled (5).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx-fix: 스크롤바 커스텀하기">
       <change beforePath="$PROJECT_DIR$/posts/til/CSS/스크롤바-커스텀하기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/til/CSS/스크롤바-커스텀하기.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/layout.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/layout.css.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/main.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/main.css.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +99,7 @@
       <workItem from="1660825653639" duration="3824000" />
       <workItem from="1660923644872" duration="465000" />
       <workItem from="1660968799494" duration="3969000" />
-      <workItem from="1661078640341" duration="2943000" />
+      <workItem from="1661078640341" duration="3198000" />
     </task>
     <task id="LOCAL-00001" summary="fix: nav top css">
       <created>1659515728453</created>
@@ -197,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661081248084</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="mdx-fix: 스크롤바 커스텀하기">
+      <created>1661081765824</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1661081765824</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +230,8 @@
     <MESSAGE value="mdx: 네이밍 컨벤션 파헤치기" />
     <MESSAGE value="fix: 사이트 이름 변경 (주소는 그대로)" />
     <MESSAGE value="mdx: 스크롤바 커스텀하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="mdx: 스크롤바 커스텀하기" />
+    <MESSAGE value="mdx-fix: 스크롤바 커스텀하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="mdx-fix: 스크롤바 커스텀하기" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
