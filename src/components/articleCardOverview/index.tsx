@@ -40,7 +40,7 @@ const ArticleCardOverview = ({ data, isLast }: ArticleCardOverviewType) => {
             <div className={dateBox}>{data.date}</div>
             <div className={cardTextBox}>
               <h1 className={cardTitle}>{data.title}</h1>
-              <p className={cardSummary}>{data.summary}</p>
+              <p className={cardSummary}>{`- ${data.summary}`}</p>
               <div className={cardTagBox}>
                 {data.tags?.map((tag: string, i: number) => {
                   return (
