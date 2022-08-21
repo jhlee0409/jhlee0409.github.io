@@ -10,6 +10,7 @@ summary: "스크롤바를 직접 커스텀 해보자"
 - 이와 관련된 CSS 선택자들은 `비표준`이다
 
 
+## 사용법
 ```scss
 // scss 기준
 // 1. 전체 스크롤바
@@ -51,7 +52,7 @@ summary: "스크롤바를 직접 커스텀 해보자"
 ![scrollbar](/assets/posts/til/CSS/스크롤바-커스텀하기/button.png)
 
 ```scss
-// 4. track 범위 중 thumb를 제외한 부분
+// 5. track 범위 중 thumb를 제외한 부분
 // track에서 설정한 css 보다 track-piece의 우선순위가 높음
 &::-webkit-scrollbar-track-piece {
   background-color: violet;
@@ -71,12 +72,15 @@ summary: "스크롤바를 직접 커스텀 해보자"
 ![scrollbar](/assets/posts/til/CSS/스크롤바-커스텀하기/corner.png)
 
 ```scss
-// 7. 일부요소에서 사용 되는 드래그로 사이즈 조절 가능
+// 7. 일부 요소에서 사용 되는 드래그로 사이즈 조절 가능
 // e.g. textarea
-&::-webkit-resizer {  
-	...
+&::-webkit-resizer {
+  background-color: red;
 };
 ```
+![scrollbar](/assets/posts/til/CSS/스크롤바-커스텀하기/resizer.png)
+
+## 참고 사진
 ![scrollbar](/assets/posts/til/CSS/스크롤바-커스텀하기/scrollbar.png)
 
 
