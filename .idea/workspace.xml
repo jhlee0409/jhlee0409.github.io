@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx-fix: 스크롤바 커스텀하기 날짜 수정">
-      <change afterPath="$PROJECT_DIR$/posts/til/Google Analytics 4/GA4-세팅-01.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/posts/til/GA4/GA4-01/01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/posts/til/GA4/GA4-01/02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/posts/til/GA4/GA4-01/03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/posts/til/GA4/GA4-01/04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/posts/til/GA4/GA4-01/05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/posts/til/GA4/GA4-01/06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/posts/til/GA4/GA4-01/07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/posts/til/GA4/GA4-01/08.png" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: GA4-세팅-01">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/chunks/251-3726a435fd12b1d5.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/_next/static/chunks/251-3726a435fd12b1d5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/tech/refactoring/리팩터링-2판-스터디-Chapter-01.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/refactoring/리팩터링-2판-스터디-Chapter-01.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/Google Analytics 4/GA4-세팅-01.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/til/Google Analytics 4/GA4-세팅-01.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +101,7 @@
       <workItem from="1660923644872" duration="465000" />
       <workItem from="1660968799494" duration="3969000" />
       <workItem from="1661078640341" duration="3278000" />
-      <workItem from="1661180516554" duration="3014000" />
+      <workItem from="1661180516554" duration="3112000" />
     </task>
     <task id="LOCAL-00001" summary="fix: nav top css">
       <created>1659515728453</created>
@@ -218,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661081901468</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="mdx: GA4-세팅-01">
+      <created>1661183606101</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1661183606101</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +248,8 @@
     <MESSAGE value="mdx: 스크롤바 커스텀하기" />
     <MESSAGE value="mdx-fix: 스크롤바 커스텀하기" />
     <MESSAGE value="mdx-fix: 스크롤바 커스텀하기 날짜 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="mdx-fix: 스크롤바 커스텀하기 날짜 수정" />
+    <MESSAGE value="mdx: GA4-세팅-01" />
+    <option name="LAST_COMMIT_MESSAGE" value="mdx: GA4-세팅-01" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
