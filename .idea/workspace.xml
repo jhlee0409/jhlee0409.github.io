@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: GA4-세팅-01">
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: setState 파헤치기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/Google Analytics 4/GA4-세팅-01.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/til/Google Analytics 4/GA4-세팅-01.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/react/setState-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/til/react/setState-파헤치기.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
