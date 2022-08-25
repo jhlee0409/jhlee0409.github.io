@@ -22,11 +22,16 @@ export default class CustomDocument extends Document {
           />
           <link
             href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown-dark.min.css"
+            rel="stylesheet"></link>
+          <link
             rel="stylesheet"
-          ></link>
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.0/dist/katex.min.css"
-                integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"
-                crossOrigin="anonymous"></link>
+            href="https://cdn.jsdelivr.net/npm/katex@0.15.0/dist/katex.min.css"
+            integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"
+            crossOrigin="anonymous"></link>
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6927905151492991"
+            crossOrigin="anonymous"></script>
         </Head>
         <body className={bodyLayout}>
           <Main />
