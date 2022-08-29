@@ -6,13 +6,16 @@ import Nav from "../nav";
 import { navMobile } from "../nav/nav.css";
 import {
   headerStyle,
-  headerTitle,
   Flex,
   innerHeaderStyle,
   rightHeaderSection,
   progressbar,
+  aboutMeBtn,
+  searchBtn,
 } from "./header.css";
 import { useAppSelector } from "@/app/hooks";
+import search from "@/assets/icons/search.png";
+import Image from "next/image";
 const Header = ({ categories }: any) => {
   const articleProgress = useAppSelector(
     (state) => state.articleProgress.value
@@ -21,14 +24,16 @@ const Header = ({ categories }: any) => {
   return (
     <header className={headerStyle}>
       <div className={innerHeaderStyle}>
-        <Link href={"/"}>
-          <a className={headerTitle}>{`Le Jack`}</a>
-        </Link>
+        <div></div>
         <div className={Flex}>
           <div className={rightHeaderSection}>
-            <div>About me</div>
-            <label htmlFor="search">search</label>
-            <input name="search" type="text" />
+            <Link href={"/about"}>
+              <a className={aboutMeBtn}>About me</a>
+            </Link>
+
+            <button className={searchBtn} type={"button"}>
+              <Image src={search} alt="search" />
+            </button>
           </div>
           <HamburgerMenu setClick={setClick} click={click} />
         </div>

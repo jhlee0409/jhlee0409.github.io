@@ -1,25 +1,31 @@
 import { vars } from "@/styles/vars.css";
 import { globalStyle, style } from "@vanilla-extract/css";
 
-export const contentLayout = style({
-  width: "100%",
-  overflow: "hidden",
-  minHeight: `90vh`,
+export const LayoutWrapper = style({
+  display: "flex",
+  position: "relative",
 });
-
-export const contentWrapper = style({
+export const contentLayout = style({
   maxWidth: "1400px",
   margin: "0 auto",
   padding: "90px 2vw",
   display: "flex",
+  flexDirection: "column",
+  position: "relative",
   gap: 50,
   width: "100%",
-  position: "relative",
+  minHeight: `90vh`,
   "@media": {
     "screen and (max-width: 578px)": {
       padding: "20px 25px 0 20px",
     },
   },
+});
+
+export const contentWrapper = style({
+  width: "100%",
+  // overflow: "hidden",
+  position: "relative",
 });
 
 export const bodyLayout = style({

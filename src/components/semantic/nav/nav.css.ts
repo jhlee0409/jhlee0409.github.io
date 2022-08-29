@@ -3,13 +3,12 @@ import { globalStyle, style } from "@vanilla-extract/css";
 
 export const nav = style({
   padding: vars.space["1x"],
-  width: 270,
+  width: 220,
   flexDirection: "column",
   gap: 10,
-  height: "fit-content",
-  borderRadius: vars.borderRadius.base,
+  height: "100vh",
   position: "sticky",
-  top: "10vh",
+  top: 0,
   "@media": {
     "screen and (max-width: 578px)": {
       display: "none",
@@ -23,7 +22,7 @@ export const navMobile = style({
   flexDirection: "column",
   gap: 10,
   height: "fit-content",
-  borderRadius: vars.borderRadius.base,
+
   top: 100,
   display: "none",
   "@media": {
@@ -67,7 +66,7 @@ export const categoryLink = style({
   transition: "color 150ms linear",
   padding: "10px",
   borderRadius: 8,
-  fontSize: "0.9rem",
+  fontSize: "0.8rem",
   ":before": {
     position: "absolute",
     content: "",
@@ -87,4 +86,19 @@ export const categoryLink = style({
       transformOrigin: "bottom left",
     },
   },
+});
+
+export const headerBox = style({
+  display: "flex",
+  justifyContent: "center",
+  // borderBottom: "3px solid white",
+  marginBottom: 30,
+});
+
+export const headerTitle = style({
+  fontFamily: "Dancing Script, sans-serif",
+  fontSize: "2rem",
+  // letterSpacing: "1rem",
+  padding: "1vw 0",
+  cursor: "pointer",
 });

@@ -11,7 +11,7 @@ export const headerStyle = style({
 
 export const progressbar = style({
   position: "absolute",
-  bottom: 0,
+  top: 0,
   left: 0,
   width: "100%",
   height: 3,
@@ -38,14 +38,6 @@ export const innerHeaderStyle = style({
   },
 });
 
-export const headerTitle = style({
-  fontFamily: "Dancing Script, sans-serif",
-  fontSize: "2rem",
-  // letterSpacing: "1rem",
-  padding: "1vw 0",
-  cursor: "pointer",
-});
-
 export const Flex = style({
   display: "flex",
   gap: 15,
@@ -53,10 +45,53 @@ export const Flex = style({
 
 export const rightHeaderSection = style({
   display: "flex",
+  alignItems: "center",
+  height: "100%",
   gap: 15,
   "@media": {
     "screen and (max-width: 578px)": {
       display: "none",
     },
+  },
+});
+
+export const aboutMeBtn = style({
+  transition: "all 150ms linear",
+  position: "relative",
+  padding: "8px 0",
+  ":hover": {
+    color: vars.color.point,
+  },
+  ":before": {
+    position: "absolute",
+    content: "",
+    bottom: 0,
+    height: 2,
+    width: "100%",
+    left: 0,
+    backgroundColor: "#ececec",
+    transformOrigin: "bottom",
+    transform: "scaleY(0)",
+    transition: "transform 0.25s ease-out",
+    borderRadius: 4,
+  },
+  selectors: {
+    "&:hover:before": {
+      transform: "scaleY(1)",
+    },
+  },
+});
+
+export const searchBtn = style({
+  filter: "invert(1)",
+  width: 30,
+  padding: 5,
+  display: "flex",
+  alignItems: "center",
+  borderRadius: 8,
+  transition: "all 150ms linear",
+  border: "2px solid transparent",
+  ":hover": {
+    border: "2px solid black",
   },
 });

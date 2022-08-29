@@ -10,7 +10,6 @@ globalStyle(`${layout} > span`, {
   borderBottom: "2px solid rgba(64, 64, 64, 0.5)",
   margin: "20px auto 0 auto",
 });
-
 export const card = style({
   position: "relative",
   transition: "all 150ms linear",
@@ -32,6 +31,7 @@ export const card = style({
   ":hover": {
     transition: "transform 0.1s ease-out",
     transform: "translateX(5px)",
+
   },
   "@media": {
     "screen and (max-width: 578px)": {
@@ -54,6 +54,7 @@ export const card = style({
     },
   },
 });
+
 export const line = style({
   position: "relative",
   transition: "all 150ms linear",
@@ -122,9 +123,11 @@ export const cardTitle = style({
       fontSize: "1.2em",
     },
   },
-  ":hover": {
-    color: vars.color.point,
-  },
+selectors: {
+    [`${card}:hover &`] : {
+      color: vars.color.point
+    }
+}
 });
 
 export const cardSummary = style({
@@ -137,3 +140,5 @@ export const cardSummary = style({
     },
   },
 });
+
+
