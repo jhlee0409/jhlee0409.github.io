@@ -82,6 +82,17 @@ export const aboutMeBtn = style({
   },
 });
 
+export const logoMobileBox = style({
+  display:'none',
+  "@media": {
+    "screen and (max-width: 578px)": {
+      display: "flex",
+      justifyContent: "center",
+    },
+  },
+});
+
+
 export const searchBtn = style({
   filter: "invert(1)",
   width: 30,

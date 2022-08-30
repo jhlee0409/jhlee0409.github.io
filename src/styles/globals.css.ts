@@ -1,4 +1,4 @@
-import { keyframes, globalStyle } from "@vanilla-extract/css";
+import {keyframes, globalStyle, globalFontFace} from "@vanilla-extract/css";
 
 const fadeInAnimation = keyframes({
   "0%": { transform: "translateX(30px)", opacity: 0 },
@@ -6,7 +6,7 @@ const fadeInAnimation = keyframes({
 });
 
 globalStyle("html, body", {
-  fontFamily: "Noto Sans KR, Noto Sans, sans-serif",
+  fontFamily: "MaplestoryOTFLight, sans-serif",
 });
 globalStyle("body", {
   backgroundColor: "#1b1b1b",
@@ -25,4 +25,12 @@ globalStyle("p, label, button, a, div", {
 });
 globalStyle("article", {
   backgroundColor: "transparent !important",
+});
+
+globalFontFace('MaplestoryOTFLight',{
+  src:  "url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff')"
+})
+
+globalStyle("article *", {
+  fontFamily: "MaplestoryOTFLight, sans-serif !important",
 });

@@ -2,13 +2,14 @@ import { vars } from "@/styles/vars.css";
 import { globalStyle, style } from "@vanilla-extract/css";
 
 export const nav = style({
-  padding: vars.space["1x"],
+  padding: [vars.space["1x"], vars.space["3x"]],
   width: 220,
   flexDirection: "column",
   gap: 10,
   height: "100vh",
   position: "sticky",
   top: 0,
+
   "@media": {
     "screen and (max-width: 578px)": {
       display: "none",
@@ -93,6 +94,12 @@ export const headerBox = style({
   justifyContent: "center",
   // borderBottom: "3px solid white",
   marginBottom: 30,
+  "@media": {
+    "screen and (max-width: 578px)": {
+      display: "none",
+
+    },
+  },
 });
 
 export const headerTitle = style({

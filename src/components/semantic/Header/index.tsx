@@ -3,15 +3,15 @@ import { sprinkles } from "@/styles/sprinkles.css";
 import Link from "next/link";
 import { useState } from "react";
 import Nav from "../nav";
-import { navMobile } from "../nav/nav.css";
+import { headerTitle, navMobile} from "../nav/nav.css";
 import {
-  headerStyle,
-  Flex,
-  innerHeaderStyle,
-  rightHeaderSection,
-  progressbar,
-  aboutMeBtn,
-  searchBtn,
+    headerStyle,
+    Flex,
+    innerHeaderStyle,
+    rightHeaderSection,
+    progressbar,
+    aboutMeBtn,
+    searchBtn,logoMobileBox,
 } from "./header.css";
 import { useAppSelector } from "@/app/hooks";
 import search from "@/assets/icons/search.png";
@@ -24,7 +24,13 @@ const Header = ({ categories }: any) => {
   return (
     <header className={headerStyle}>
       <div className={innerHeaderStyle}>
-        <div></div>
+       <div>
+           <div className={logoMobileBox}>
+               <Link href={"/"}>
+                   <a className={headerTitle}>{`Le Jack`}</a>
+               </Link>
+           </div>
+       </div>
         <div className={Flex}>
           <div className={rightHeaderSection}>
             <Link href={"/about"}>
