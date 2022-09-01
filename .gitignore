@@ -14,7 +14,7 @@
 
 # production
 /build
-# /out
+/out
 
 # misc
 .DS_Store
@@ -38,4 +38,4 @@ yarn-error.log*
 # Contentlayer
 .contentlayer
 
-.idea
+/.idea

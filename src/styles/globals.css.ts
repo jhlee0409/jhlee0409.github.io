@@ -6,7 +6,7 @@ const fadeInAnimation = keyframes({
 });
 
 globalStyle("html, body", {
-  fontFamily: "MaplestoryOTFLight, sans-serif",
+  fontFamily: "NEXONLv1GothicOTFRegular, sans-serif",
 });
 globalStyle("body", {
   backgroundColor: "#1b1b1b",
@@ -23,14 +23,53 @@ globalStyle("main > div", {
 globalStyle("p, label, button, a, div", {
   color: "white",
 });
-globalStyle("article", {
-  backgroundColor: "transparent !important",
-});
+
+
+// global font
 
 globalFontFace('MaplestoryOTFLight',{
   src:  "url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff')"
 })
 
-globalStyle("article *", {
-  fontFamily: "MaplestoryOTFLight, sans-serif !important",
+globalFontFace('NEXONLv1GothicOTFRegular',{
+  src:  "url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff')"
+})
+
+
+globalFontFace('D2Coding',{
+  src:  "url('https://cdn.jsdelivr.net/gh/everydayminder/assets/subset-D2Codingligature.woff') format('woff')"
+})
+
+// article css
+globalStyle("article", {
+  backgroundColor: "transparent !important",
+});
+
+// article font
+
+globalStyle("article", {
+  fontFamily: "NEXONLv1GothicOTFRegular, sans-serif !important",
+});
+
+globalStyle("article code ", {
+  fontFamily: "NEXONLv1GothicOTFRegular, sans-serif !important",
+});
+
+globalStyle("article pre code", {
+  fontFamily: "D2Coding, sans-serif !important",
+});
+
+
+// article image
+
+globalStyle("article img", {
+  padding: 10,
+  // width: '50%'
+});
+
+globalStyle("article .markdown-image-box", {
+width:'100%',
+  display:'flex',
+  flexDirection:'column',
+  alignItems:'center'
 });

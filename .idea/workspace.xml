@@ -4,80 +4,64 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx-fix: solidity 01">
-      <change afterPath="$PROJECT_DIR$/posts/til/react/이미지를-어디에-저장할까.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/default-image.png" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: 폰트 변경 및 레이아웃 변경">
+      <change afterPath="$PROJECT_DIR$/src/components/Img.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.nojekyll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/blockchain-DApp.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/blockchain-DApp/article/DApp이란.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/blockchain-solidity.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/blockchain-solidity/article/Solidity-01.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/index.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/tech-refactoring.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/tech-refactoring/article/리팩터링-2판-스터디-Chapter-01.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/tech-refactoring/article/리팩터링-2판-스터디-Chapter-03.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/tech-refactoring/article/리팩터링-2판-스터디-Chapter-06.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/tech-typescript.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/tech-typescript/article/Typescript-Section5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/til-CS.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/til-CS/article/부동-소수점.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/til-CSS.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/til-CSS/article/스크롤바-커스텀하기.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/til-Google Analytics 4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/til-Google Analytics 4/article/GA4-세팅-01.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/til-javascript.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/til-javascript/article/export-파헤치기.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/til-javascript/article/import-파헤치기.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/til-programming.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/til-programming/article/.env-파헤치기.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/til-programming/article/네이밍-컨벤션-파헤치기.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/til-react.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/wwUUazJluhEqSNJphJyIv/til-react/article/setState-파헤치기.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/chunks/pages/[categoryId]-fd066ffca6b8c1b6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/chunks/pages/_app-b427e86a3197cc2d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/chunks/webpack-31f17819aab4b40d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/css/a738b2a743ea5fa8.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/css/c705ae5471d0e9d7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/media/loading.e820c970.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/wwUUazJluhEqSNJphJyIv/_buildManifest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/wwUUazJluhEqSNJphJyIv/_middlewareManifest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/wwUUazJluhEqSNJphJyIv/_ssgManifest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/blockchain-DApp.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/blockchain-DApp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/blockchain-DApp/article/DApp이란.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/blockchain-DApp/article/DApp이란.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/blockchain-solidity.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/blockchain-solidity.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/blockchain-solidity/article/Solidity-01.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/blockchain-solidity/article/Solidity-01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/tech-refactoring.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/tech-refactoring.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/tech-refactoring/article/리팩터링-2판-스터디-Chapter-01.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/tech-refactoring/article/리팩터링-2판-스터디-Chapter-01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/tech-refactoring/article/리팩터링-2판-스터디-Chapter-03.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/tech-refactoring/article/리팩터링-2판-스터디-Chapter-03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/tech-refactoring/article/리팩터링-2판-스터디-Chapter-06.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/tech-refactoring/article/리팩터링-2판-스터디-Chapter-06.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/tech-typescript.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/tech-typescript.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/tech-typescript/article/Typescript-Section5.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/tech-typescript/article/Typescript-Section5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/til-CS.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/til-CS.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/til-CS/article/부동-소수점.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/til-CS/article/부동-소수점.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/til-CSS.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/til-CSS.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/til-CSS/article/스크롤바-커스텀하기.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/til-CSS/article/스크롤바-커스텀하기.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/til-Google Analytics 4.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/til-Google Analytics 4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/til-Google Analytics 4/article/GA4-세팅-01.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/til-Google Analytics 4/article/GA4-세팅-01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/til-javascript.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/til-javascript.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/til-javascript/article/export-파헤치기.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/til-javascript/article/export-파헤치기.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/til-javascript/article/import-파헤치기.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/til-javascript/article/import-파헤치기.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/til-programming.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/til-programming.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/til-programming/article/.env-파헤치기.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/til-programming/article/.env-파헤치기.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/til-programming/article/네이밍-컨벤션-파헤치기.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/til-programming/article/네이밍-컨벤션-파헤치기.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/til-react.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/til-react.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/til-react/article/setState-파헤치기.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/til-react/article/setState-파헤치기.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/Header/header.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Header/header.css.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/nav/nav.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/nav/nav.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/about.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/blockchain-DApp.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/blockchain-DApp/article/DApp이란.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/blockchain-solidity.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/blockchain-solidity/article/Solidity-01.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/tech-refactoring.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/tech-refactoring/article/리팩터링-2판-스터디-Chapter-01.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/tech-refactoring/article/리팩터링-2판-스터디-Chapter-03.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/tech-refactoring/article/리팩터링-2판-스터디-Chapter-06.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/tech-typescript.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/tech-typescript/article/Typescript-Section5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-CS.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-CS/article/부동-소수점.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-CSS.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-CSS/article/스크롤바-커스텀하기.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-Google Analytics 4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-Google Analytics 4/article/GA4-세팅-01.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-javascript.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-javascript/article/export-파헤치기.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-javascript/article/import-파헤치기.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-programming.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-programming/article/.env-파헤치기.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-programming/article/네이밍-컨벤션-파헤치기.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-react.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-react/article/setState-파헤치기.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-react/article/이미지를-어디에-저장할까.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/static/IY9NGe7Pdmjartj4a291z/_buildManifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/static/IY9NGe7Pdmjartj4a291z/_middlewareManifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/static/IY9NGe7Pdmjartj4a291z/_ssgManifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/static/chunks/pages/[categoryId]-6740512dbb66a44e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/static/chunks/pages/_app-aa10ce4ef46110ec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/static/chunks/pages/about-57317b769aa0c7c7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/static/chunks/webpack-166ca4a7599265eb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/static/css/02423a0650edd0f5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/static/css/f5e686cb073094eb.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/static/media/loading.9af2fc55.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/_next/static/media/search.86702638.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/assets/icons/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/til-react/article/이미지를-어디에-저장할까.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/Google Analytics 4/GA4-세팅-01.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/til/Google Analytics 4/GA4-세팅-01.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/article/Article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/Article.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/globals.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -107,7 +91,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/jacklee/Desktop/jhlee0409.github.io/src/asset",
+    "last_opened_file_path": "C:/Users/jacklee/Desktop/jhlee0409.github.io/src/components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -121,17 +105,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\src\components" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\src\asset" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\til\react" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\CSS\스크롤바-커스텀하기" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\til\javascript" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\AWS\AWS-CodeBuild-Webhook-이벤트-설정하기" />
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\til\AWS" />
       <recent name="$PROJECT_DIR$/public/assets/icons" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\GA4\GA4-01" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\sample\GA4-01" />
-      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\sample\GA4" />
-      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\til\sample" />
     </key>
   </component>
   <component name="RunManager">
@@ -172,7 +157,8 @@
       <workItem from="1661180516554" duration="3112000" />
       <workItem from="1661435511573" duration="5300000" />
       <workItem from="1661611300598" duration="1132000" />
-      <workItem from="1661860957363" duration="5807000" />
+      <workItem from="1661860957363" duration="6154000" />
+      <workItem from="1662036641086" duration="4284000" />
     </task>
     <task id="LOCAL-00001" summary="fix: nav top css">
       <created>1659515728453</created>
@@ -321,7 +307,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661748533579</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="mdx: 이미지를 어디에 저장할까">
+      <created>1661873143545</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1661873143545</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fix: 폰트 변경 및 레이아웃 변경">
+      <created>1661873193750</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1661873193750</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +360,9 @@
     <MESSAGE value="mdx: .env 파헤치기" />
     <MESSAGE value="mdx-fix: .env 파헤치기" />
     <MESSAGE value="fix: 빅카테고리 증가에 따른 dynamic path 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: 빅카테고리 증가에 따른 dynamic path 수정" />
+    <MESSAGE value="mdx: 이미지를 어디에 저장할까" />
+    <MESSAGE value="fix: 폰트 변경 및 레이아웃 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: 폰트 변경 및 레이아웃 변경" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

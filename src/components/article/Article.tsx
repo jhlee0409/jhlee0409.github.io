@@ -17,6 +17,7 @@ import { line } from "./index.css";
 import { useEffect, useRef } from "react";
 import { useAppDispatch } from "@/app/hooks";
 import { checkProgress } from "@/feature/articleProgressSlice";
+import ImageComponent from "@/components/Img";
 const Article = ({ data, content }: any) => {
   const articleRef = useRef(null);
   const dispatch = useAppDispatch();
@@ -58,9 +59,11 @@ const Article = ({ data, content }: any) => {
               [remarkTableofContents, { tight: true }],
             ]}
             rehypePlugins={[rehypeCodeTitles, rehypeLinks,rehypeKatex ]}
+
             components={{
               pre: Pre,
               code: Code,
+                img: ImageComponent
             }}>
             {content}
           </ReactMarkdown>
