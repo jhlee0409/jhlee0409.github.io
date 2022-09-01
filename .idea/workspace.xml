@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: 폰트 수정 및 article image css">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx-fix: AWS CodeBuild Webhook 이벤트 설정하기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/posts/til/AWS/AWS-CodeBuild-Webhook-이벤트-설정하기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/til/AWS/AWS-CodeBuild-Webhook-이벤트-설정하기.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/CS/부동-소수점.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/til/CS/부동-소수점.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/CSS/스크롤바-커스텀하기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/til/CSS/스크롤바-커스텀하기.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/Google Analytics 4/GA4-세팅-01.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/til/Google Analytics 4/GA4-세팅-01.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Img.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Img.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +117,7 @@
       <workItem from="1661435511573" duration="5300000" />
       <workItem from="1661611300598" duration="1132000" />
       <workItem from="1661860957363" duration="6154000" />
-      <workItem from="1662036641086" duration="5066000" />
+      <workItem from="1662036641086" duration="5515000" />
     </task>
     <task id="LOCAL-00001" summary="fix: nav top css">
       <created>1659515728453</created>
@@ -291,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662046394664</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="mdx-fix: AWS CodeBuild Webhook 이벤트 설정하기">
+      <created>1662047107763</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1662047107763</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +319,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: nav top css" />
     <MESSAGE value="fix: footer social icon opacity" />
     <MESSAGE value="feat: set redux-toolkit / article progressbar / prettier" />
     <MESSAGE value="fix: fix position that checking article progress logic" />
@@ -334,7 +343,8 @@
     <MESSAGE value="fix: 폰트 변경 및 레이아웃 변경" />
     <MESSAGE value="mdx: AWS CodeBuild Webhook 이벤트 설정하기" />
     <MESSAGE value="fix: 폰트 수정 및 article image css" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: 폰트 수정 및 article image css" />
+    <MESSAGE value="mdx-fix: AWS CodeBuild Webhook 이벤트 설정하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="mdx-fix: AWS CodeBuild Webhook 이벤트 설정하기" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
