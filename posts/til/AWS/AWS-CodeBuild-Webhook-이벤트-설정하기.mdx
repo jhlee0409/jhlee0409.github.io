@@ -1,5 +1,5 @@
 ---
-title: "AWS-CodeBuild-Webhook-이벤트-설정하기"
+title: "AWS CodeBuild Webhook 이벤트 설정하기"
 date: "2022-09-02"
 tags: ["TIL", "AWS", "CodeBuild", 'Webhook 이벤트']
 draft: false
@@ -55,8 +55,8 @@ e.g. `master branch`에 `merge`가 되었을 때 빌드 시작
 
 - `HEAD_REF` : 출발점
 - `BASE_REF` : 도착점
-- e.g. 만약 위에서 `PULL_REQUEST_MERGED`만 선택했을 경우 ( 아래 두 경우는 같은 말 )
-    - `dev(HEAD_REF) branch`  에서 `main(BASE_REF) branch` 로 풀 리퀘스트가 생성되고 병합이 완료되었을 경우
+- e.g. 만약 위에서 `PULL_REQUEST_MERGED`만 선택했을 경우
+    - `dev(HEAD_REF) branch`  에서 `main(BASE_REF) branch` 로 풀 리퀘스트가 생성되고 병합이 완료되었을 때 빌드 시작
 - `BASE_REF`와 `HEAD_REF`에는 `정규식`을 입력해야하는 데 `^refs/heads/${브랜치 이름}$` 으로 입력해두면 일치하는 브랜치를 `참조`한다.
 - `BASE_REF` 의 경우 PULL 요청에서만 작동한다.
 

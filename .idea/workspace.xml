@@ -4,54 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: 폰트 변경 및 레이아웃 변경">
-      <change afterPath="$PROJECT_DIR$/src/components/Img.tsx" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: 폰트 수정 및 article image css">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/about.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/blockchain-DApp.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/blockchain-DApp/article/DApp이란.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/blockchain-solidity.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/blockchain-solidity/article/Solidity-01.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/index.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/tech-refactoring.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/tech-refactoring/article/리팩터링-2판-스터디-Chapter-01.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/tech-refactoring/article/리팩터링-2판-스터디-Chapter-03.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/tech-refactoring/article/리팩터링-2판-스터디-Chapter-06.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/tech-typescript.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/tech-typescript/article/Typescript-Section5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-CS.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-CS/article/부동-소수점.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-CSS.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-CSS/article/스크롤바-커스텀하기.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-Google Analytics 4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-Google Analytics 4/article/GA4-세팅-01.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-javascript.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-javascript/article/export-파헤치기.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-javascript/article/import-파헤치기.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-programming.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-programming/article/.env-파헤치기.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-programming/article/네이밍-컨벤션-파헤치기.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-react.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-react/article/setState-파헤치기.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/data/IY9NGe7Pdmjartj4a291z/til-react/article/이미지를-어디에-저장할까.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/IY9NGe7Pdmjartj4a291z/_buildManifest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/IY9NGe7Pdmjartj4a291z/_middlewareManifest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/IY9NGe7Pdmjartj4a291z/_ssgManifest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/chunks/pages/[categoryId]-6740512dbb66a44e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/chunks/pages/_app-aa10ce4ef46110ec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/chunks/pages/about-57317b769aa0c7c7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/chunks/webpack-166ca4a7599265eb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/css/02423a0650edd0f5.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/css/f5e686cb073094eb.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/media/loading.9af2fc55.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/media/search.86702638.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/assets/icons/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/til-react/article/이미지를-어디에-저장할까.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/Google Analytics 4/GA4-세팅-01.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/til/Google Analytics 4/GA4-세팅-01.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article/Article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/Article.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/globals.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/AWS/AWS-CodeBuild-Webhook-이벤트-설정하기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/til/AWS/AWS-CodeBuild-Webhook-이벤트-설정하기.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +114,7 @@
       <workItem from="1661435511573" duration="5300000" />
       <workItem from="1661611300598" duration="1132000" />
       <workItem from="1661860957363" duration="6154000" />
-      <workItem from="1662036641086" duration="4284000" />
+      <workItem from="1662036641086" duration="5066000" />
     </task>
     <task id="LOCAL-00001" summary="fix: nav top css">
       <created>1659515728453</created>
@@ -321,7 +277,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661873193750</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="mdx: AWS CodeBuild Webhook 이벤트 설정하기">
+      <created>1662046335580</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1662046335580</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fix: 폰트 수정 및 article image css">
+      <created>1662046394664</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1662046394664</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +332,9 @@
     <MESSAGE value="fix: 빅카테고리 증가에 따른 dynamic path 수정" />
     <MESSAGE value="mdx: 이미지를 어디에 저장할까" />
     <MESSAGE value="fix: 폰트 변경 및 레이아웃 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: 폰트 변경 및 레이아웃 변경" />
+    <MESSAGE value="mdx: AWS CodeBuild Webhook 이벤트 설정하기" />
+    <MESSAGE value="fix: 폰트 수정 및 article image css" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: 폰트 수정 및 article image css" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
