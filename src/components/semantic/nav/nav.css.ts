@@ -9,7 +9,7 @@ export const nav = style({
   height: "100vh",
   position: "sticky",
   top: 0,
-
+  backgroundColor:'#202020',
   "@media": {
     "screen and (max-width: 578px)": {
       display: "none",
@@ -23,7 +23,6 @@ export const navMobile = style({
   flexDirection: "column",
   gap: 10,
   height: "fit-content",
-
   top: 100,
   display: "none",
   "@media": {
@@ -93,7 +92,7 @@ export const headerBox = style({
   display: "flex",
   justifyContent: "center",
   // borderBottom: "3px solid white",
-  marginBottom: 30,
+  marginBottom: 10,
   "@media": {
     "screen and (max-width: 578px)": {
       display: "none",
@@ -108,4 +107,33 @@ export const headerTitle = style({
   // letterSpacing: "1rem",
   padding: "1vw 0",
   cursor: "pointer",
+});
+
+
+export const logoBox = style({
+  display: "flex",
+  justifyContent:'center',
+  gap: 20,
+  paddingBottom:20,
+  "@media": {
+    "screen and (max-width: 578px)": {
+      gap: 15,
+
+    },
+  },
+});
+
+export const logoLink = style({
+  width: 25,
+  filter: "invert(1)",
+  transition: "all 150ms linear",
+  opacity: 0.3,
+  "@media": {
+    "screen and (max-width: 578px)": {
+      width: 25,
+    },
+  },
+  ":hover": {
+    opacity: 1
+  },
 });

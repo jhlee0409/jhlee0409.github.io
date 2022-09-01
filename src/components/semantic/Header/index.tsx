@@ -9,17 +9,12 @@ import {
     Flex,
     innerHeaderStyle,
     rightHeaderSection,
-    progressbar,
     aboutMeBtn,
     searchBtn,logoMobileBox,
 } from "./header.css";
-import { useAppSelector } from "@/app/hooks";
 import search from "@/assets/icons/search.png";
 import Image from "next/image";
 const Header = ({ categories }: any) => {
-  const articleProgress = useAppSelector(
-    (state) => state.articleProgress.value
-  );
   const [click, setClick] = useState(true);
   return (
     <header className={headerStyle}>
@@ -53,9 +48,6 @@ const Header = ({ categories }: any) => {
           },
         })}`}
       />
-      <div className={progressbar}>
-        <div style={{ width: `${articleProgress}%` }} />
-      </div>
     </header>
   );
 };

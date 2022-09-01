@@ -7,7 +7,13 @@ import {
   subSection,
   headerTitle,
   headerBox,
+  logoBox,
+  logoLink
 } from "./nav.css";
+
+import Image from "next/image";
+import githubLogo from "@/assets/github.png";
+import linkedinLogo from "@/assets/linkedin.png";
 
 const Nav = ({ categories, className, setClick }: any) => {
   const router = useRouter();
@@ -18,6 +24,24 @@ const Nav = ({ categories, className, setClick }: any) => {
           <Link href={"/"}>
             <a className={headerTitle}>{`Le Jack`}</a>
           </Link>
+        </div>
+        <div className={logoBox}>
+          <a
+              className={logoLink}
+              href="https://github.com/jhlee0409"
+              target="_blank"
+              rel="noreferrer"
+          >
+            <Image src={githubLogo} alt="github" />
+          </a>
+          <a
+              className={logoLink}
+              href="https://www.linkedin.com/in/jhlee0409/"
+              target="_blank"
+              rel="noreferrer"
+          >
+            <Image src={linkedinLogo} alt="linkedin" />
+          </a>
         </div>
         {categories?.map(({ title: bigCategory, sub }: any, i: number) => {
           return (
@@ -37,6 +61,10 @@ const Nav = ({ categories, className, setClick }: any) => {
                             `${bigCategory}-${title}`
                               ? "point"
                               : "none",
+                          fontWeight:  router.query.categoryId ===
+                          `${bigCategory}-${title}`
+                              ? "bold"
+                              : "normal",
                         })}`}>{`${title
                         .replace(title[0], title[0].toUpperCase())
                         .replaceAll("_", " ")} (${count})`}</a>

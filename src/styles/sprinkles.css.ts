@@ -47,6 +47,7 @@ const colorModeProperties = defineProperties({
   },
   defaultCondition: "lightMode",
   properties: {
+    fontWeight: ['bold','normal'],
     color: vars.color,
     background: vars.color,
     backgroundColor: vars.color,

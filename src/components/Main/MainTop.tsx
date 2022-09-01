@@ -4,8 +4,7 @@ const MainTop = () => {
   return (
     <div className={mainTopWrapper}>
       <h1>
-        Welcome To <br />
-        Le Jack
+        Welcome to Le Jack Woooooorld
       </h1>
     </div>
   );

@@ -11,27 +11,3 @@ export const footerBox = style({
   gap: 20,
 });
 
-export const logoBox = style({
-  display: "flex",
-  gap: 20,
-  "@media": {
-    "screen and (max-width: 578px)": {
-      gap: 15,
-    },
-  },
-});
-
-export const logoLink = style({
-  width: 30,
-  filter: "invert(1)",
-  transition: "all 150ms linear",
-  opacity: 0.3,
-  "@media": {
-    "screen and (max-width: 578px)": {
-      width: 30,
-    },
-  },
-  ":hover": {
-    opacity: 1
-  },
-});

@@ -7,24 +7,6 @@ const Footer = () => {
   return (
     <div className={footerBox}>
       <p>ⓒ 2022. Le Jack All rights reserved</p>
-      <div className={logoBox}>
-        <a
-          className={logoLink}
-          href="https://github.com/jhlee0409"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Image src={githubLogo} alt="github" />
-        </a>
-        <a
-          className={logoLink}
-          href="https://www.linkedin.com/in/jhlee0409/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Image src={linkedinLogo} alt="linkedin" />
-        </a>
-      </div>
     </div>
   );
 };

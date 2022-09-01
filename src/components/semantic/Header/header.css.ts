@@ -10,11 +10,13 @@ export const headerStyle = style({
 });
 
 export const progressbar = style({
-  position: "absolute",
+  position: "fixed",
   top: 0,
   left: 0,
   width: "100%",
   height: 3,
+  zIndex:11
+
 });
 
 globalStyle(`${progressbar} > div`, {
