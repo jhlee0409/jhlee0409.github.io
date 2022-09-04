@@ -1,4 +1,4 @@
-import {keyframes, globalStyle, globalFontFace} from "@vanilla-extract/css";
+import { keyframes, globalStyle, globalFontFace } from "@vanilla-extract/css";
 
 const fadeInAnimation = keyframes({
   "0%": { transform: "translateX(30px)", opacity: 0 },
@@ -24,21 +24,19 @@ globalStyle("p, label, button, a, div", {
   color: "white",
 });
 
-
 // global font
 
-globalFontFace('MaplestoryOTFLight',{
-  src:  "url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff')"
-})
+globalFontFace("MaplestoryOTFLight", {
+  src: "url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff')",
+});
 
-globalFontFace('NEXONLv1GothicOTFRegular',{
-  src:  "url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff')"
-})
+globalFontFace("NEXONLv1GothicOTFRegular", {
+  src: "url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff')",
+});
 
-
-globalFontFace('D2Coding',{
-  src:  "url('https://cdn.jsdelivr.net/gh/everydayminder/assets/subset-D2Codingligature.woff') format('woff')"
-})
+globalFontFace("D2Coding", {
+  src: "url('https://cdn.jsdelivr.net/gh/everydayminder/assets/subset-D2Codingligature.woff') format('woff')",
+});
 
 // article css
 globalStyle("article", {
@@ -59,17 +57,17 @@ globalStyle("article pre code", {
   fontFamily: "D2Coding, sans-serif !important",
 });
 
-
 // article image
 
 globalStyle("article img", {
-  padding: 10,
   // width: '50%'
+  padding: 10,
 });
 
 globalStyle("article .markdown-image-box", {
-width:'100%',
-  display:'flex',
-  flexDirection:'column',
-  alignItems:'center'
+  width: "100%",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  gap: 5,
 });

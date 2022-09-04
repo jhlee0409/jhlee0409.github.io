@@ -1,13 +1,10 @@
-const ImageComponent = ({node,...props}:any) => {
-    console.log(node)
-
+const ImageComponent = ({ node, ...props }: any) => {
   return (
-      <div className='markdown-image-box'>
-          <img {...props}/>
-          <p> {`▲ ${node.properties.alt}`}</p>
-      </div>
+    <div className="markdown-image-box">
+      <img {...props} alt={props.alt} />
+      <p> {`▲ ${props.alt}`}</p>
+    </div>
+  );
+};
 
-  )
-}
-
-export default  ImageComponent
+export default ImageComponent;

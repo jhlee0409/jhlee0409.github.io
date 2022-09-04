@@ -1,7 +1,4 @@
-import { footerBox, logoBox, logoLink } from "./footer.css";
-import githubLogo from "@/assets/github.png";
-import linkedinLogo from "@/assets/linkedin.png";
-import Image from "next/image";
+import { footerBox } from "./footer.css";
 
 const Footer = () => {
   return (

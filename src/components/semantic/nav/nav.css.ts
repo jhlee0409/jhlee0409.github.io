@@ -9,7 +9,7 @@ export const nav = style({
   height: "100vh",
   position: "sticky",
   top: 0,
-  backgroundColor:'#202020',
+  backgroundColor: "#202020",
   "@media": {
     "screen and (max-width: 578px)": {
       display: "none",
@@ -96,7 +96,6 @@ export const headerBox = style({
   "@media": {
     "screen and (max-width: 578px)": {
       display: "none",
-
     },
   },
 });
@@ -109,16 +108,18 @@ export const headerTitle = style({
   cursor: "pointer",
 });
 
-
 export const logoBox = style({
   display: "flex",
-  justifyContent:'center',
+  justifyContent: "center",
   gap: 20,
-  paddingBottom:20,
+  padding: "10px 0",
+  marginBottom: 20,
+  borderTop: "1px solid white",
+  borderBottom: "1px solid white",
+  borderRadius: 2,
   "@media": {
     "screen and (max-width: 578px)": {
       gap: 15,
-
     },
   },
 });
@@ -134,6 +135,6 @@ export const logoLink = style({
     },
   },
   ":hover": {
-    opacity: 1
+    opacity: 1,
   },
 });

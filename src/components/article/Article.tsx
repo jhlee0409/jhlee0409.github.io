@@ -7,7 +7,7 @@ import remarkHeadings from "remark-autolink-headings";
 import remarkSlug from "remark-slug";
 import remarkSmartypants from "@silvenon/remark-smartypants";
 import remarkUnwrapImages from "remark-unwrap-images";
-import rehypeKatex  from 'rehype-katex'
+import rehypeKatex from "rehype-katex";
 
 import rehypeCodeTitles from "rehype-code-titles";
 import rehypeLinks from "rehype-external-links";
@@ -18,8 +18,16 @@ import { useEffect, useRef } from "react";
 import { useAppDispatch } from "@/app/hooks";
 import { checkProgress } from "@/feature/articleProgressSlice";
 import ImageComponent from "@/components/Img";
+import TableOfContents from "@/components/semantic/table-of-contents/TableOfContents";
+import {
+  H1Component,
+  H2Component,
+  H3Component,
+  H4Component,
+} from "@/components/headTag";
 const Article = ({ data, content }: any) => {
   const articleRef = useRef(null);
+  const contentRef = useRef(null);
   const dispatch = useAppDispatch();
 
   const handleCheckProgress = () => {
@@ -46,47 +54,52 @@ const Article = ({ data, content }: any) => {
   if (!content) return <span>로딩 중</span>;
   return (
     <div>
-      <div ref={articleRef}>
-        <ArticleFrontMatter data={data} />
-        <article className="markdown-body">
-          <ReactMarkdown
-            remarkPlugins={[
-              remarkGfm,
-              remarkHeadings,
-              remarkSlug,
-              remarkSmartypants,
-              remarkUnwrapImages,
-              [remarkTableofContents, { tight: true }],
-            ]}
-            rehypePlugins={[rehypeCodeTitles, rehypeLinks,rehypeKatex ]}
-
-            components={{
-              pre: Pre,
-              code: Code,
-                img: ImageComponent
-            }}>
-            {content}
-          </ReactMarkdown>
-        </article>
+      <div>
+        <div ref={articleRef}>
+          <ArticleFrontMatter data={data} />
+          <article className="markdown-body" ref={contentRef}>
+            <ReactMarkdown
+              remarkPlugins={[
+                remarkGfm,
+                remarkHeadings,
+                remarkSlug,
+                remarkSmartypants,
+                remarkUnwrapImages,
+                [remarkTableofContents, { tight: true }],
+              ]}
+              rehypePlugins={[rehypeCodeTitles, rehypeLinks, rehypeKatex]}
+              components={{
+                pre: Pre,
+                code: Code,
+                img: ImageComponent,
+                h1: H1Component,
+                h2: H2Component,
+                h3: H3Component,
+                h4: H4Component,
+              }}>
+              {content}
+            </ReactMarkdown>
+          </article>
+        </div>
+        <div className={line} />
+        <section
+          ref={(elem) => {
+            if (!elem) {
+              return;
+            }
+            const scriptElem = document.createElement("script");
+            scriptElem.src = "https://utteranc.es/client.js";
+            scriptElem.async = true;
+            scriptElem.setAttribute("repo", "jhlee0409/jhlee0409.github.io");
+            scriptElem.setAttribute("issue-term", "title");
+            scriptElem.setAttribute("theme", "github-dark");
+            scriptElem.setAttribute("label", "blog-comment");
+            scriptElem.crossOrigin = "anonymous";
+            elem.appendChild(scriptElem);
+          }}
+        />
       </div>
-      <div className={line} />
-
-      <section
-        ref={(elem) => {
-          if (!elem) {
-            return;
-          }
-          const scriptElem = document.createElement("script");
-          scriptElem.src = "https://utteranc.es/client.js";
-          scriptElem.async = true;
-          scriptElem.setAttribute("repo", "jhlee0409/jhlee0409.github.io");
-          scriptElem.setAttribute("issue-term", "title");
-          scriptElem.setAttribute("theme", "github-dark");
-          scriptElem.setAttribute("label", "blog-comment");
-          scriptElem.crossOrigin = "anonymous";
-          elem.appendChild(scriptElem);
-        }}
-      />
+      {/*<TableOfContents />*/}
     </div>
   );
 };
