@@ -12,15 +12,20 @@ const ArticleList = ({ data }: any) => {
         ) : !data ? (
           <div>존재하지 않는 카테고리 입니다.</div>
         ) : (
-          data?.map(({ data: item }: any, i: number) => {
-            return (
-              <ArticleCardOverview
-                data={item}
-                key={`${articleKey}-${item.title}`}
-                isLast={data.length - 1 === i}
-              />
-            );
-          })
+          data
+            ?.sort(
+              // @ts-ignore
+              (a: any, b: any) => new Date(b.data.date) - new Date(a.data.date)
+            )
+            .map(({ data: item }: any, i: number) => {
+              return (
+                <ArticleCardOverview
+                  data={item}
+                  key={`${articleKey}-${item.title}`}
+                  isLast={data.length - 1 === i}
+                />
+              );
+            })
         )}
       </div>
     </div>
