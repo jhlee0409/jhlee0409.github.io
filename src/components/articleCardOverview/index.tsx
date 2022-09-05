@@ -32,13 +32,12 @@ const ArticleCardOverview = ({ data, isLast }: ArticleCardOverviewType) => {
       href={`/${router.query.categoryId}/article/${data.title.replaceAll(
         " ",
         "-"
-      )}`}
-    >
+      )}`}>
       <div className={layout}>
         <div className={card}>
           <div className={line}>
-            <div className={dateBox}>{data.date}</div>
             <div className={cardTextBox}>
+              <div className={dateBox}>{data.date}</div>
               <h1 className={cardTitle}>{data.title}</h1>
               <p className={cardSummary}>{`- ${data.summary}`}</p>
               <div className={cardTagBox}>
@@ -48,15 +47,14 @@ const ArticleCardOverview = ({ data, isLast }: ArticleCardOverviewType) => {
                       key={`${tagKey}-${tag}`}
                       className={sprinkles({
                         color: `rainbow-${i + 1}00`,
-                      })}
-                    >{`#${tag}`}</span>
+                      })}>{`#${tag}`}</span>
                   );
                 })}
               </div>
             </div>
           </div>
         </div>
-        {!isLast && <span />}
+        {/*{!isLast && <span />}*/}
       </div>
     </Link>
   );

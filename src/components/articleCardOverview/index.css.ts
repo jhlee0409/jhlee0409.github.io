@@ -31,7 +31,6 @@ export const card = style({
   ":hover": {
     transition: "transform 0.1s ease-out",
     transform: "translateX(5px)",
-
   },
   "@media": {
     "screen and (max-width: 578px)": {
@@ -80,9 +79,9 @@ export const cardTextBox = style({
 });
 
 export const dateBox = style({
-  position: "absolute",
-  top: -30,
-  left: 20,
+  position: "relative",
+  color: "white",
+  left: 15,
   ":before": {
     content: "",
     position: "absolute",
@@ -123,11 +122,11 @@ export const cardTitle = style({
       fontSize: "1.2em",
     },
   },
-selectors: {
-    [`${card}:hover &`] : {
-      color: vars.color.point
-    }
-}
+  selectors: {
+    [`${card}:hover &`]: {
+      color: vars.color.point,
+    },
+  },
 });
 
 export const cardSummary = style({
@@ -140,5 +139,3 @@ export const cardSummary = style({
     },
   },
 });
-
-

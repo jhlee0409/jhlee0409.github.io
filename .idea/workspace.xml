@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: nav color / position article progress">
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: @supports 파헤치기">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/MainTop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/MainTop.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/Footer/footer.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Footer/footer.css.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Footer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/Header/header.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Header/header.css.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/nav/nav.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/nav/nav.css.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/HeadMeta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/HeadMeta.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/sprinkles.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/sprinkles.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-sitemap.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-sitemap.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/articleCardOverview/index.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/articleCardOverview/index.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/articleCardOverview/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/articleCardOverview/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,38 +49,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Project.color": "333f62",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/jacklee/Desktop/jhlee0409.github.io/src/components",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "/Users/jacklee/React/jhlee0409.github.io/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "C:\\Users\\jacklee\\Desktop\\jhlee0409.github.io\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Project.color&quot;: &quot;333f62&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jacklee/Desktop/jhlee0409.github.io/public/assets/posts/blockchain/solidity/스마트-계약-배포하기-및-트랜잭션하기&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\jacklee\\Desktop\\jhlee0409.github.io\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\jacklee\\Desktop\\jhlee0409.github.io\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\blockchain\solidity\스마트-계약-배포하기-및-트랜잭션하기" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\src\components" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\src\asset" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\til\react" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\CSS\스크롤바-커스텀하기" />
-      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\til\javascript" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\blockchain\solidity" />
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\blockchain\solidity" />
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\markdown\react-markdown에서-image-css-적용하기" />
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\til\markdown" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\AWS\AWS-CodeBuild-Webhook-이벤트-설정하기" />
-      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\til\AWS" />
-      <recent name="$PROJECT_DIR$/public/assets/icons" />
-      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\GA4\GA4-01" />
-      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\sample\GA4-01" />
     </key>
   </component>
   <component name="RunManager">
@@ -126,7 +122,13 @@
       <workItem from="1661435511573" duration="5300000" />
       <workItem from="1661611300598" duration="1132000" />
       <workItem from="1661860957363" duration="6154000" />
-      <workItem from="1662036641086" duration="8039000" />
+      <workItem from="1662036641086" duration="10911000" />
+      <workItem from="1662124411015" duration="6713000" />
+      <workItem from="1662204994900" duration="11468000" />
+      <workItem from="1662296710464" duration="6175000" />
+      <workItem from="1662305944293" duration="401000" />
+      <workItem from="1662389062447" duration="3744000" />
+      <workItem from="1662392909168" duration="1656000" />
     </task>
     <task id="LOCAL-00001" summary="fix: nav top css">
       <created>1659515728453</created>
@@ -317,7 +319,42 @@
       <option name="project" value="LOCAL" />
       <updated>1662047574500</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="fix: social link 위치 변경">
+      <created>1662050196188</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1662050196188</updated>
+    </task>
+    <task id="LOCAL-00029" summary="mdx : Solidity 컴파일 &amp; 디버깅">
+      <created>1662206683404</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1662206683404</updated>
+    </task>
+    <task id="LOCAL-00030" summary="mdx : Solidity 03 및 Solidity 02로 게시글 이름 수정">
+      <created>1662219732152</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1662219732152</updated>
+    </task>
+    <task id="LOCAL-00031" summary="mdx : 단항 더하기 연산자 (Unary + Operator)">
+      <created>1662300129297</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1662300129297</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fix: 카테고리 별 게시글 최신순 정렬">
+      <created>1662305960353</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1662305960354</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,14 +372,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: fix position that checking article progress logic" />
-    <MESSAGE value="fix: fix logic that check progress" />
-    <MESSAGE value="add: import 파헤치기" />
-    <MESSAGE value="mdx: export 파헤치기" />
-    <MESSAGE value="fix: 소스코드 복사시 line number 제거" />
-    <MESSAGE value="mdx: 부동-소수점" />
-    <MESSAGE value="remove: 방문 측정 임시 제거" />
-    <MESSAGE value="mdx: 네이밍 컨벤션 파헤치기" />
     <MESSAGE value="fix: 사이트 이름 변경 (주소는 그대로)" />
     <MESSAGE value="mdx: 스크롤바 커스텀하기" />
     <MESSAGE value="mdx-fix: 스크롤바 커스텀하기" />
@@ -360,7 +389,15 @@
     <MESSAGE value="mdx-fix: AWS CodeBuild Webhook 이벤트 설정하기" />
     <MESSAGE value="mdx-fix: article 이미지 설명 멘트" />
     <MESSAGE value="fix: nav color / position article progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: nav color / position article progress" />
+    <MESSAGE value="fix: social link 위치 변경" />
+    <MESSAGE value="mdx : react-markdown에서 image css 적용하기" />
+    <MESSAGE value="mdx : Solidity 컴파일 &amp; 디버깅" />
+    <MESSAGE value="mdx : Solidity 03 및 Solidity 02로 게시글 이름 수정" />
+    <MESSAGE value="mdx : 단항 더하기 연산자 (Unary + Operator)" />
+    <MESSAGE value="fix: 카테고리 별 게시글 최신순 정렬" />
+    <MESSAGE value="fix: 아티클 리스트 날짜 표시" />
+    <MESSAGE value="mdx: @supports 파헤치기" />
+    <option name="LAST_COMMIT_MESSAGE" value="mdx: @supports 파헤치기" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
