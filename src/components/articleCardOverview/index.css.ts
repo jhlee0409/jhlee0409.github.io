@@ -97,20 +97,19 @@ export const dateBox = style({
 
 export const cardTagBox = style({
   display: "flex",
-  gap: 10,
+  flexWrap: "wrap",
+  gap: "5px 15px",
   borderTop: `1px solid ${vars.color.point}`,
   paddingTop: 20,
   "@media": {
     "screen and (max-width: 578px)": {
       paddingTop: 10,
-      gap: 0,
       fontSize: "0.8em",
     },
   },
 });
 
 globalStyle(`${cardTagBox} > span`, {
-  padding: "1px 10px",
   borderRadius: 8,
 });
 
