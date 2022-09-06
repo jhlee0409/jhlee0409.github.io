@@ -1,31 +1,46 @@
 import HamburgerMenu from "@/components/hamburgerMenu";
 import { sprinkles } from "@/styles/sprinkles.css";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Nav from "../nav";
-import { headerTitle, navMobile} from "../nav/nav.css";
+import { headerTitle, navMobile } from "../nav/nav.css";
 import {
-    headerStyle,
-    Flex,
-    innerHeaderStyle,
-    rightHeaderSection,
-    aboutMeBtn,
-    searchBtn,logoMobileBox,
+  headerStyle,
+  Flex,
+  innerHeaderStyle,
+  rightHeaderSection,
+  aboutMeBtn,
+  searchBtn,
+  logoMobileBox,
 } from "./header.css";
 import search from "@/assets/icons/search.png";
 import Image from "next/image";
 const Header = ({ categories }: any) => {
   const [click, setClick] = useState(true);
+
+  const blockScroll = () => {
+    if (click) {
+      document.body.style.cssText = ``;
+    } else {
+      document.body.style.cssText = `  height: 100vh;
+      overflow-y: hidden;`;
+    }
+  };
+
+  useEffect(() => {
+    blockScroll();
+  }, [click]);
+
   return (
     <header className={headerStyle}>
       <div className={innerHeaderStyle}>
-       <div>
-           <div className={logoMobileBox}>
-               <Link href={"/"}>
-                   <a className={headerTitle}>{`Le Jack`}</a>
-               </Link>
-           </div>
-       </div>
+        <div>
+          <div className={logoMobileBox}>
+            <Link href={"/"}>
+              <a className={headerTitle}>{`Le Jack`}</a>
+            </Link>
+          </div>
+        </div>
         <div className={Flex}>
           <div className={rightHeaderSection}>
             <Link href={"/about"}>

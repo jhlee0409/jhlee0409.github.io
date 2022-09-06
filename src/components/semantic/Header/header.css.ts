@@ -4,9 +4,8 @@ export const headerStyle = style({
   height: "10vh",
   position: "sticky",
   top: 0,
-  zIndex: 10,
-  // backdropFilter: "blur(2px)",
   backgroundColor: vars.color.background,
+  zIndex: 10,
 });
 
 export const progressbar = style({
@@ -15,8 +14,7 @@ export const progressbar = style({
   left: 0,
   width: "100%",
   height: 3,
-  zIndex:11
-
+  zIndex: 11,
 });
 
 globalStyle(`${progressbar} > div`, {
@@ -85,7 +83,7 @@ export const aboutMeBtn = style({
 });
 
 export const logoMobileBox = style({
-  display:'none',
+  display: "none",
   "@media": {
     "screen and (max-width: 578px)": {
       display: "flex",
@@ -93,7 +91,6 @@ export const logoMobileBox = style({
     },
   },
 });
-
 
 export const searchBtn = style({
   filter: "invert(1)",
