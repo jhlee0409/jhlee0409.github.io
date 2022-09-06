@@ -86,3 +86,26 @@ export const getPosts = (folder: string) => {
 
   return fileContents;
 };
+
+export const getAllPost = () => {
+  const flatList = [];
+  const result = [];
+  let i = 0;
+  for (const file of files) {
+    flatList.push(
+      ...fs.readdirSync(path.join(`posts/${file}`)).map((item) => {
+        return `${file}-${item}`;
+      })
+    );
+  }
+  // @ts-ignore
+  for (const category of flatList) {
+    result.push(...getPosts(category));
+  }
+  return result
+    ?.sort(
+      // @ts-ignore
+      (a: any, b: any) => new Date(b.data.date) - new Date(a.data.date)
+    )
+    .slice(0, 5);
+};

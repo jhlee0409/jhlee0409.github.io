@@ -3,13 +3,14 @@ import Head from "next/head";
 import { main } from "./main.css";
 import MainContent from "./MainContent";
 import MainTop from "./MainTop";
+import ArticleList from "@/components/articleList";
 
-const MainComponent = () => {
+const MainComponent = ({ data }: any) => {
   return (
     <div className={main}>
       <HeadMeta title="" />
       <MainTop />
-      {/* <MainContent /> */}
+      <ArticleList data={data} />
     </div>
   );
 };

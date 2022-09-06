@@ -1,21 +1,29 @@
 import MainComponent from "@/components/Main";
-import { getPostCategory } from "@/helper/getPosts";
+import {
+  getAllPost,
+  getCategoryPaths,
+  getPostCategory,
+  getPosts,
+} from "@/helper/getPosts";
 import HeadMeta from "@/helper/HeadMeta";
-
-export const getStaticProps = () => {
+import { GetStaticPaths, GetStaticProps } from "next";
+export const getStaticProps: GetStaticProps = async ({ params }: any) => {
   const categories = getPostCategory();
+  const data = getAllPost();
   return {
     props: {
       categories,
+      data,
     },
   };
 };
 
-export default function Home() {
+export default function Home({ data }: any) {
   return (
     <>
       <HeadMeta title="" url="" />
-      <MainComponent />
+      {/*@ts-ignore*/}
+      <MainComponent data={data} />
     </>
   );
 }

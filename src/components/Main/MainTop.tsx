@@ -1,11 +1,9 @@
-import { mainTopWrapper } from "./main.css";
+import { mainTopWrapper, title } from "./main.css";
 
 const MainTop = () => {
   return (
     <div className={mainTopWrapper}>
-      <h1>
-        Welcome to Le Jack Woooooorld
-      </h1>
+      <p className={title}>LATEST</p>
     </div>
   );
 };
