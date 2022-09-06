@@ -19,7 +19,7 @@ export const getStaticProps: GetStaticProps = async ({ params }: any) => {
 export const getStaticPaths: GetStaticPaths = async () => {
   const data = getCategoryPaths();
   return {
-    paths: data.length === 1 ? data[0] : data[0].concat(data[1],data[2]),
+    paths: data.reduce((r, e) => (r.push(...e), r), []),
     fallback: false,
   };
 };
