@@ -34,6 +34,7 @@ export const innerHeaderStyle = style({
   "@media": {
     "screen and (max-width: 578px)": {
       padding: "0 35px 0px 20px",
+      height: 80,
     },
   },
 });

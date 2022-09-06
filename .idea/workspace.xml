@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: article list 전 태그 줄바꿈 처리">
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: article list date css">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/articleCardOverview/index.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/articleCardOverview/index.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/semantic/Header/header.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Header/header.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/semantic/nav/nav.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/nav/nav.css.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -385,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662480749179</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="fix: article list date css">
+      <created>1662480808843</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1662480808843</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,7 +411,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mdx-fix: setState 파헤치기" />
     <MESSAGE value="add: 구글 애드센스 코드" />
     <MESSAGE value="mdx: .env 파헤치기" />
     <MESSAGE value="mdx-fix: .env 파헤치기" />
@@ -428,7 +435,8 @@
     <MESSAGE value="fix: 카테고리 정렬 방식" />
     <MESSAGE value="fix: article list tag 줄바꿈 처리" />
     <MESSAGE value="fix: article list 전 태그 줄바꿈 처리" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: article list 전 태그 줄바꿈 처리" />
+    <MESSAGE value="fix: article list date css" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: article list date css" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

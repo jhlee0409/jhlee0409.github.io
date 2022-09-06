@@ -35,7 +35,7 @@ export const navMobile = style({
       top: 80,
       right: 0,
       width: "100%",
-      height: "max-content",
+      height: "calc(100vh - 80px)",
     },
   },
 });
@@ -90,9 +90,13 @@ export const categoryLink = style({
 
 export const innerNav = style({
   padding: vars.space["2x"],
-  height: "100%",
-  maxHeight: "80vh",
+  height: "calc(100vh - 106px)",
   overflow: "overlay",
+  "@media": {
+    "screen and (max-width: 578px)": {
+      height: "100%",
+    },
+  },
   "::-webkit-scrollbar": {
     width: 16,
   },
@@ -123,8 +127,6 @@ export const innerNav = style({
 export const headerBox = style({
   display: "flex",
   justifyContent: "center",
-  // borderBottom: "3px solid white",
-  marginBottom: 10,
   "@media": {
     "screen and (max-width: 578px)": {
       display: "none",
@@ -144,7 +146,8 @@ export const logoBox = style({
   display: "flex",
   justifyContent: "center",
   gap: 20,
-  padding: "10px 0",
+  alignItems: "center",
+  height: 50,
   borderTop: "1px solid white",
   borderBottom: "1px solid white",
   borderRadius: 2,
