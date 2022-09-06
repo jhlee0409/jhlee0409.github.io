@@ -93,6 +93,17 @@ export const dateBox = style({
     borderRadius: "100%",
     backgroundColor: vars.color.point,
   },
+  "@media": {
+    "screen and (max-width: 578px)": {
+      fontSize: "0.8em",
+      ":before": {
+        width: 4,
+        height: 4,
+        top: "50%",
+        left: -12,
+      },
+    },
+  },
 });
 
 export const cardTagBox = style({
