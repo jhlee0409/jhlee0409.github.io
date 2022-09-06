@@ -11,7 +11,9 @@ globalStyle(`${Base} > section`, {});
 
 export const tagWrapper = style({
   display: "flex",
-  gap: 10,
+  justifyContent: "center",
+  flexWrap: "wrap",
+  gap: "5px 10px",
   "@media": {
     "screen and (max-width: 578px)": {
       fontSize: "0.8em",
@@ -25,6 +27,7 @@ export const overviewWrapper = style({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
+  whiteSpace: "nowrap",
   gap: 10,
   padding: 20,
   borderRadius: 12,
