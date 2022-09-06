@@ -19,6 +19,8 @@ interface ArticleCardOverviewType {
     title: string;
     summary: string;
     tags: string[];
+    mainCategory: string;
+    subCategory: string;
   };
   isLast: boolean;
 }
@@ -29,10 +31,9 @@ const ArticleCardOverview = ({ data, isLast }: ArticleCardOverviewType) => {
   return (
     <Link
       passHref
-      href={`/${router.query.categoryId}/article/${data.title.replaceAll(
-        " ",
-        "-"
-      )}`}>
+      href={`/${
+        router.query.categoryId || `${data.mainCategory}-${data.subCategory}`
+      }/article/${data.title.replaceAll(" ", "-")}`}>
       <div className={layout}>
         <div className={card}>
           <div className={line}>

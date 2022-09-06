@@ -81,7 +81,11 @@ export const getPosts = (folder: string) => {
     const { data, content } = matter(
       fs.readFileSync(path.join(`posts/${big}/${sub}/${item}`), "utf8")
     );
-    return { data, content, path: data.title };
+    return {
+      data: Object.assign(data, { mainCategory: big, subCategory: sub }),
+      content,
+      path: data.title,
+    };
   });
 
   return fileContents;
