@@ -14,4 +14,10 @@ export const title = style({
   fontSize: 46,
   color: vars.color.point,
   borderBottom: "3px solid #202020",
+  "@media": {
+    "screen and (max-width: 578px)": {
+      marginBottom: 20,
+      fontSize: 40,
+    },
+  },
 });

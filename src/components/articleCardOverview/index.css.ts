@@ -116,9 +116,11 @@ globalStyle(`${cardTagBox} > span`, {
 export const cardTitle = style({
   color: "#ececec",
   transition: "color 300ms linear",
+  wordBreak: "keep-all",
   "@media": {
     "screen and (max-width: 578px)": {
       fontSize: "1.2em",
+      lineHeight: "1.5em",
     },
   },
   selectors: {
@@ -130,11 +132,13 @@ export const cardTitle = style({
 
 export const cardSummary = style({
   fontSize: "0.9em",
+  wordBreak: "keep-all",
   paddingBottom: 5,
   color: vars.color["gray-800"],
   "@media": {
     "screen and (max-width: 578px)": {
       fontSize: "0.8em",
+      lineHeight: "1.5em",
     },
   },
 });
