@@ -10,11 +10,9 @@ import {
   innerHeaderStyle,
   rightHeaderSection,
   aboutMeBtn,
-  searchBtn,
   logoMobileBox,
 } from "./header.css";
-import search from "@/assets/icons/search.png";
-import Image from "next/image";
+import Search from "@/components/search/Search";
 const Header = ({ categories }: any) => {
   const [click, setClick] = useState(true);
 
@@ -46,10 +44,7 @@ const Header = ({ categories }: any) => {
             <Link href={"/about"}>
               <a className={aboutMeBtn}>About me</a>
             </Link>
-
-            <button className={searchBtn} type={"button"}>
-              <Image src={search} alt="search" />
-            </button>
+            <Search />
           </div>
           <HamburgerMenu setClick={setClick} click={click} />
         </div>

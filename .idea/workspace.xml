@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: article list date css">
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: AbortController 파헤치기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/blockchain/solidity/Solidity-03.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/blockchain/solidity/[Solidity]-03.-스마트-계약-배포-및-트랜잭션.mdx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/semantic/Header/header.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Header/header.css.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/nav/nav.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/nav/nav.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/semantic/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/HeadMeta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/HeadMeta.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,11 +77,11 @@
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\CSS\스크롤바-커스텀하기" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\blockchain\solidity" />
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\blockchain\solidity\Solidity-04-Solidity-용어" />
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\blockchain\solidity\01" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\blockchain\solidity" />
-      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\markdown\react-markdown에서-image-css-적용하기" />
-      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\til\markdown" />
-      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\AWS\AWS-CodeBuild-Webhook-이벤트-설정하기" />
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\src\components\portal" />
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\src\components" />
     </key>
   </component>
   <component name="RunManager">
@@ -126,6 +131,9 @@
       <workItem from="1662389062447" duration="3744000" />
       <workItem from="1662392909168" duration="2117000" />
       <workItem from="1662458332074" duration="9182000" />
+      <workItem from="1662557035113" duration="7300000" />
+      <workItem from="1662633366328" duration="3570000" />
+      <workItem from="1662910396123" duration="1047000" />
     </task>
     <task id="LOCAL-00001" summary="fix: nav top css">
       <created>1659515728453</created>
@@ -393,7 +401,28 @@
       <option name="project" value="LOCAL" />
       <updated>1662480808843</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="fix: side nav &amp; mobile nav css">
+      <created>1662481171073</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1662481171073</updated>
+    </task>
+    <task id="LOCAL-00040" summary="mdx: HTML Elements 파헤치기">
+      <created>1662566794003</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1662566794003</updated>
+    </task>
+    <task id="LOCAL-00041" summary="mdx: AbortController 파헤치기">
+      <created>1662651436423</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1662651436423</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,9 +440,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add: 구글 애드센스 코드" />
-    <MESSAGE value="mdx: .env 파헤치기" />
-    <MESSAGE value="mdx-fix: .env 파헤치기" />
     <MESSAGE value="fix: 빅카테고리 증가에 따른 dynamic path 수정" />
     <MESSAGE value="mdx: 이미지를 어디에 저장할까" />
     <MESSAGE value="fix: 폰트 변경 및 레이아웃 변경" />
@@ -436,7 +462,10 @@
     <MESSAGE value="fix: article list tag 줄바꿈 처리" />
     <MESSAGE value="fix: article list 전 태그 줄바꿈 처리" />
     <MESSAGE value="fix: article list date css" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: article list date css" />
+    <MESSAGE value="fix: side nav &amp; mobile nav css" />
+    <MESSAGE value="mdx: HTML Elements 파헤치기" />
+    <MESSAGE value="mdx: AbortController 파헤치기" />
+    <option name="LAST_COMMIT_MESSAGE" value="mdx: AbortController 파헤치기" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
