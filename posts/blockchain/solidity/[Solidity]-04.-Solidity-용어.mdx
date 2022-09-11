@@ -1,0 +1,113 @@
+---
+title: "[Solidity] 04. Solidity 용어"
+date: "2022-09-12"
+tags: ["TIL", "Solidity", "Address", "Mapping", "Variables", "Modifier", "Constructor"]
+draft: false
+summary: "Solidity에서 주로 사용되는 용어를 알아보자"
+---
+
+## Address 주소
+
+- `20 byte` 형식의 변수 타입
+- 주소로 선언한 변수는 이더리움 주소가 되도록 설정한다.
+
+```solidity
+address wallet
+address payable[] wallets
+```
+
+## Mapping 매핑
+
+- 값에 대한 참조를 가진다.
+- 키-값 쌍으로 구성된 해시 테이블을 생성 (키-값을 쌍으로 저장)
+- 각 키를 추적할 수 있도록 테이블을 만든다.
+
+```solidity
+mapping(_KeyType => _ValueType)
+
+// 주소를 정수에 매핑
+mapping(address => uint) public balances;
+```
+
+![출처: 참조 링크로!, [Mappings in Solidity Explained in Under Two Minutes]](https://miro.medium.com/max/429/1*H415ldFYnS2aRTx1YIQiKg.png)
+
+
+## Scope of Variables 변수의 범위
+
+- `State Variables` (상태 변수)
+    - 값이 계약 저장소(contract storage)에 영구적으로 저장되는 변수입니다.
+    - 계약 저장소로 가도록 선언된 변수 = 상태 변수
+    - 모든 함수와 계약에서 접근 가능
+    - 변수로 선언된 것
+- `Local Variables` (지역 변수)
+    - 해당 함수 안에서 선언된 변수
+    - 선언된 함수 안에서만 접근 가능
+
+```solidity
+contract TestStroage {
+	uint balance;  // state variable
+
+	function set(uint x) public {
+		string value = 'data'; // local variable
+	}
+}
+```
+
+- Global Variables (전역 변수)
+    - `global namespace(전역 네임스페이스)`에 존재하는 특수 변수
+    - 블록체인에 존재하는 정보를 가져올 때 이 변수를 사용
+
+![전역 변수들](/assets/posts/blockchain/solidity/Solidity-04-Solidity-용어/01.png)
+
+## Modifier 제어자
+
+- 함수의 실행을 제어하거나 수정할 수 있게 해준다.
+
+```solidity
+contract Test {
+	address testAddress;
+	constructor() {
+		testAddress = msg.sender;
+	}
+	
+	// testAddress 와 mag.sender가 일치하는 경우에만 함수 실행
+    // 다양한 조건들을 걸 수 있다.
+	modifier onlyOwner {
+		if (msg.sender == testrAddress) {
+			_; // keep going!
+		}
+	}
+	// 사용법
+    // onlyOwner의 조건을 만족하는 경우에만 함수 실행
+	function testFn() public onlyOwner {
+		// ...
+	}
+}
+```
+
+## Constructor 생성자
+
+- `constructor`는 `constructor` 키워드를 사용하여 선언된 함수이다.
+- 계약 생성 시에만 실행됩니다.
+- `constructor`를 작성하지 않는 경우 `contract`는 기본 생성자로 간주됩니다.
+
+```solidity
+contract Test {
+	address testAddress;
+
+	constructor() {
+		testAddress = msg.sender;
+	}
+}
+```
+
+#
+
+### 참조
+
+- [Solidity - Variables](https://www.tutorialspoint.com/solidity/solidity_variables.htm)
+- [Mappings in Solidity Explained in Under Two Minutes](https://medium.com/upstate-interactive/mappings-in-solidity-explained-in-under-two-minutes-ecba88aff96e)
+
+#
+
+#### 피드백은 언제나 환영입니다.
