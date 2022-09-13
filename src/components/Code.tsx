@@ -1,5 +1,5 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { darcula } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import darcula from "react-syntax-highlighter/dist/cjs/styles/prism/darcula";
 const Code = ({ node, inline, className, children, ...props }: any) => {
   const match = /language-(\w+)/.exec(className || "");
   return !inline && match ? (
