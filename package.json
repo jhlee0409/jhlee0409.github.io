@@ -45,6 +45,7 @@
     "react-markdown": "^8.0.3",
     "react-portal": "^4.2.2",
     "react-redux": "^8.0.2",
+    "react-remove-scroll": "^2.5.5",
     "react-syntax-highlighter": "^15.5.0",
     "rehype-code-titles": "^1.1.0",
     "rehype-external-links": "^1.0.1",

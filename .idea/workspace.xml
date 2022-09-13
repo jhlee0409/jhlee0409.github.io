@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: AbortController 파헤치기">
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: [Next.js] Page Extensions / feat: page extensions">
+      <change afterPath="$PROJECT_DIR$/posts/til/Next.js/[Next.js]-Page-Extensions.mdx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/blockchain/solidity/Solidity-03.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/blockchain/solidity/[Solidity]-03.-스마트-계약-배포-및-트랜잭션.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/Header/header.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Header/header.css.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/HeadMeta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/HeadMeta.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/[categoryId]/article/[articleId].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/[categoryId]/article/[articleId].page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/[categoryId]/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/[categoryId]/index.page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sitemap-0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap-0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/portal/Portal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portal/Portal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search/Search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search/search.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search/search.css.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +140,8 @@
       <workItem from="1662458332074" duration="9182000" />
       <workItem from="1662557035113" duration="7300000" />
       <workItem from="1662633366328" duration="3570000" />
-      <workItem from="1662910396123" duration="1047000" />
+      <workItem from="1662910396123" duration="3863000" />
+      <workItem from="1663068430654" duration="3356000" />
     </task>
     <task id="LOCAL-00001" summary="fix: nav top css">
       <created>1659515728453</created>
@@ -422,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662651436423</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="mdx: [Solidity] 04. Solidity 용어, solidity 제목 변경">
+      <created>1662911648540</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1662911648540</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,9 +455,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: 빅카테고리 증가에 따른 dynamic path 수정" />
-    <MESSAGE value="mdx: 이미지를 어디에 저장할까" />
-    <MESSAGE value="fix: 폰트 변경 및 레이아웃 변경" />
     <MESSAGE value="mdx: AWS CodeBuild Webhook 이벤트 설정하기" />
     <MESSAGE value="fix: 폰트 수정 및 article image css" />
     <MESSAGE value="mdx-fix: AWS CodeBuild Webhook 이벤트 설정하기" />
@@ -465,7 +477,10 @@
     <MESSAGE value="fix: side nav &amp; mobile nav css" />
     <MESSAGE value="mdx: HTML Elements 파헤치기" />
     <MESSAGE value="mdx: AbortController 파헤치기" />
-    <option name="LAST_COMMIT_MESSAGE" value="mdx: AbortController 파헤치기" />
+    <MESSAGE value="mdx: [Solidity] 04. Solidity 용어, solidity 제목 변경" />
+    <MESSAGE value="feat: create Base Modal" />
+    <MESSAGE value="mdx: [Next.js] Page Extensions / feat: page extensions" />
+    <option name="LAST_COMMIT_MESSAGE" value="mdx: [Next.js] Page Extensions / feat: page extensions" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

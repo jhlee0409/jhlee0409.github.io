@@ -1,7 +1,11 @@
 import Portal from "@/components/portal/Portal";
 import Image from "next/image";
 import search from "@/assets/icons/search.png";
-import { searchBtn, innerContent } from "@/components/search/search.css";
+import {
+  searchBtn,
+  innerContent,
+  searchInput,
+} from "@/components/search/search.css";
 
 const Search = () => {
   return (
@@ -13,7 +17,7 @@ const Search = () => {
       }>
       <div className={innerContent}>
         <div>
-          <input placeholder={"입력해주세요"} />
+          <input placeholder={"입력해주세요"} className={searchInput} />
         </div>
         <div></div>
       </div>

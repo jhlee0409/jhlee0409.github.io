@@ -8,7 +8,14 @@ module.exports = withVanillaExtract({
   reactStrictMode: true,
   // assetPrefix: !debug ? `/${name}/` : "",
   experimental: { esmExternals: true },
-  pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+  pageExtensions: [
+    "page.ts",
+    "page.tsx",
+    "page.js",
+    "page.jsx",
+    "page.md",
+    "page.mdx",
+  ],
   images: {
     formats: ["image/avif", "image/webp"],
     loader: "akamai",

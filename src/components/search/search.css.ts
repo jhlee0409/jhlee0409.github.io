@@ -5,6 +5,20 @@ const fadeIn = keyframes({
   "100%": { transform: "translateY(0)", opacity: 1 },
 });
 
+export const searchInput = style({
+  height: 35,
+  padding: "0 20px",
+  outline: "none",
+  borderRadius: 4,
+  border: "1px solid #ececec",
+  width: "100%",
+  selectors: {
+    "&::placeholder": {
+      color: "#ececec",
+    },
+  },
+});
+
 export const searchBtn = style({
   filter: "invert(1)",
   width: 30,
@@ -20,9 +34,8 @@ export const searchBtn = style({
 });
 
 export const innerContent = style({
-  maxWidth: "50vw",
-  width: "100%",
-
+  width: "calc(100vw - 70px)",
+  maxWidth: 750,
   height: 500,
   borderRadius: 12,
   padding: 30,
