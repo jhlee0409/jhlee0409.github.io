@@ -20,26 +20,6 @@ import { useEffect } from "react";
 const Nav = ({ categories, className, setClick }: any) => {
   const router = useRouter();
 
-  const test = () => {
-    const controller = new AbortController();
-    const signal = controller.signal;
-
-    fetch("https://jsonplaceholder.typicode.com/todos/1", { signal })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-      })
-      .catch((err) => console.log("err: " + err))
-      .finally(() => {
-        controller.abort();
-      });
-    // controller.abort();
-  };
-
-  useEffect(() => {
-    test();
-  }, []);
-
   return (
     <div>
       <div className={`${className}`}>

@@ -13,7 +13,7 @@ export default class CustomDocument extends Document {
             crossOrigin="true"
           />
           <link
-            href="http://fonts.cdnfonts.com/css/tipo-press"
+            href="https://fonts.cdnfonts.com/css/tipo-press"
             rel="stylesheet"
           />
           <link
@@ -23,11 +23,11 @@ export default class CustomDocument extends Document {
           <link
             href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown-dark.min.css"
             rel="stylesheet"></link>
-          <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/katex@0.15.0/dist/katex.min.css"
-            integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"
-            crossOrigin="anonymous"></link>
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.2/katex.min.js"
+            integrity="sha512-CLi3JK94v6TUcogbWv4WT4xnfp6B8AET4PuBjGxXo5MZJ9xfNgMHgXaXH8QJe6JwN+kGxqR4//z8/2BYVnxRVw=="
+            crossOrigin="anonymous"
+            referrerPolicy="no-referrer"></script>
           <script
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6927905151492991"

@@ -1,5 +1,6 @@
 import { getPostCategory, getCategoryPaths, getPosts } from "@/helper/getPosts";
-import ArticleList from "@/components/articleList";
+import dynamic from "next/dynamic";
+
 import Head from "next/head";
 import { useRouter } from "next/router";
 import HeadMeta from "@/helper/HeadMeta";
@@ -23,6 +24,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     fallback: false,
   };
 };
+const ArticleList = dynamic(() => import("@/components/articleList"));
 
 const ArticleListPage: NextPage = ({ data }: any) => {
   const router = useRouter();
@@ -30,6 +32,7 @@ const ArticleListPage: NextPage = ({ data }: any) => {
   return (
     <>
       <HeadMeta title={categoryId.toUpperCase()} url={router.asPath} />
+      {/*// @ts-ignore*/}
       <ArticleList data={data} />
     </>
   );

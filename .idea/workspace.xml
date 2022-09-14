@@ -4,8 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx-fix: [Next.js] Page Extensions / reduce syntax highlight">
-      <change beforePath="$PROJECT_DIR$/src/components/Code.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Code.tsx" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: reduce syntax highlight">
+      <change afterPath="$PROJECT_DIR$/posts/tech/typescript/[Typescript]-tsconfig-절대경로-설정하기.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/[categoryId]/index.page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/[categoryId]/index.page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_document.page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/AWS/AWS-CodeBuild-Webhook-이벤트-설정하기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/AWS/AWS-CodeBuild-Webhook-이벤트-설정하기.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/CS/부동-소수점.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/CS/부동-소수점.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/CSS/@supports-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/CSS/@supports-파헤치기.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/CSS/스크롤바-커스텀하기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/CSS/스크롤바-커스텀하기.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/Google Analytics 4/GA4-세팅-01.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/Google Analytics 4/GA4-세팅-01.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/HTML/HTML-Elements-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/HTML/HTML-Elements-파헤치기.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/Next.js/[Next.js]-Page-Extensions.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/Next.js/[Next.js]-Page-Extensions.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/javascript/AbortController-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/javascript/AbortController-파헤치기.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/javascript/export-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/javascript/export-파헤치기.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/javascript/import-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/javascript/import-파헤치기.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/javascript/단항-더하기-연산자-(Unary-+-Operator).mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/javascript/단항-더하기-연산자-(Unary-+-Operator).mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/markdown/react-markdown에서-image-css-적용하기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/markdown/react-markdown에서-image-css-적용하기.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/programming/.env-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/programming/.env-파헤치기.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/programming/네이밍-컨벤션-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/programming/네이밍-컨벤션-파헤치기.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/react/setState-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/react/setState-파헤치기.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/til/react/이미지를-어디에-저장할까.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/react/이미지를-어디에-저장할까.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/portal/Portal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portal/Portal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +91,11 @@
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\CSS\스크롤바-커스텀하기" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\til" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\blockchain\solidity\Solidity-04-Solidity-용어" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\blockchain\solidity\01" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\blockchain\solidity" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\src\components\portal" />
-      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\src\components" />
     </key>
   </component>
   <component name="RunManager">
@@ -127,7 +148,8 @@
       <workItem from="1662557035113" duration="7300000" />
       <workItem from="1662633366328" duration="3570000" />
       <workItem from="1662910396123" duration="3863000" />
-      <workItem from="1663068430654" duration="7937000" />
+      <workItem from="1663068430654" duration="9702000" />
+      <workItem from="1663168325449" duration="4314000" />
     </task>
     <task id="LOCAL-00001" summary="fix: nav top css">
       <created>1659515728453</created>
@@ -437,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663081028250</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="fix: reduce syntax highlight">
+      <created>1663081387602</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1663081387602</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: 폰트 수정 및 article image css" />
     <MESSAGE value="mdx-fix: AWS CodeBuild Webhook 이벤트 설정하기" />
     <MESSAGE value="mdx-fix: article 이미지 설명 멘트" />
     <MESSAGE value="fix: nav color / position article progress" />
@@ -480,7 +508,8 @@
     <MESSAGE value="feat: create Base Modal" />
     <MESSAGE value="mdx: [Next.js] Page Extensions / feat: page extensions" />
     <MESSAGE value="mdx-fix: [Next.js] Page Extensions / reduce syntax highlight" />
-    <option name="LAST_COMMIT_MESSAGE" value="mdx-fix: [Next.js] Page Extensions / reduce syntax highlight" />
+    <MESSAGE value="fix: reduce syntax highlight" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: reduce syntax highlight" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -8,7 +8,7 @@ const Portal = ({ button, children }: any) => {
     <PortalWithState closeOnOutsideClick closeOnEsc>
       {({ openPortal, closePortal, isOpen, portal }: any) => (
         <RemoveScroll enabled={isOpen}>
-          <button onClick={openPortal}>{button}</button>
+          <div onClick={openPortal}>{button}</div>
           {portal(
             <>
               <div className={content}>{children}</div>
