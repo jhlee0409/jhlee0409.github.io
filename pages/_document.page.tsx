@@ -23,6 +23,7 @@ export default class CustomDocument extends Document {
           <link
             href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown-dark.min.css"
             rel="stylesheet"></link>
+          {/* eslint-disable-next-line @next/next/no-sync-scripts */}
           <script
             src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.2/katex.min.js"
             integrity="sha512-CLi3JK94v6TUcogbWv4WT4xnfp6B8AET4PuBjGxXo5MZJ9xfNgMHgXaXH8QJe6JwN+kGxqR4//z8/2BYVnxRVw=="

@@ -4,29 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: reduce syntax highlight">
-      <change afterPath="$PROJECT_DIR$/posts/tech/typescript/[Typescript]-tsconfig-절대경로-설정하기.mdx" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix : 포스트 카테고리">
+      <change afterPath="$PROJECT_DIR$/posts/platform/AWS/AWS-Amplify-Next.js-동적-경로(Dynamic-Routes)-설정하기.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/posts/til/AWS/AWS-Amplify-Next.js-동적-경로(Dynamic-Routes)-설정하기/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/posts/til/AWS/AWS-Amplify-Next.js-동적-경로(Dynamic-Routes)-설정하기/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/posts/til/AWS/AWS-Amplify-Next.js-동적-경로(Dynamic-Routes)-설정하기/03.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/[categoryId]/index.page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/[categoryId]/index.page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_document.page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/AWS/AWS-CodeBuild-Webhook-이벤트-설정하기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/AWS/AWS-CodeBuild-Webhook-이벤트-설정하기.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/CS/부동-소수점.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/CS/부동-소수점.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/CSS/@supports-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/CSS/@supports-파헤치기.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/CSS/스크롤바-커스텀하기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/CSS/스크롤바-커스텀하기.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/Google Analytics 4/GA4-세팅-01.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/Google Analytics 4/GA4-세팅-01.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/HTML/HTML-Elements-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/HTML/HTML-Elements-파헤치기.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/Next.js/[Next.js]-Page-Extensions.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/Next.js/[Next.js]-Page-Extensions.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/javascript/AbortController-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/javascript/AbortController-파헤치기.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/javascript/export-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/javascript/export-파헤치기.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/javascript/import-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/javascript/import-파헤치기.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/javascript/단항-더하기-연산자-(Unary-+-Operator).mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/javascript/단항-더하기-연산자-(Unary-+-Operator).mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/markdown/react-markdown에서-image-css-적용하기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/markdown/react-markdown에서-image-css-적용하기.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/programming/.env-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/programming/.env-파헤치기.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/programming/네이밍-컨벤션-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/programming/네이밍-컨벤션-파헤치기.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/react/setState-파헤치기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/react/setState-파헤치기.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/til/react/이미지를-어디에-저장할까.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/react/이미지를-어디에-저장할까.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/portal/Portal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portal/Portal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/tech/typescript/[Typescript]-tsconfig-절대경로-설정하기.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/typescript/[Typescript]-tsconfig-절대경로-설정하기.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,38 +49,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Project.color&quot;: &quot;333f62&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jacklee/Desktop/jhlee0409.github.io/public/assets/posts/blockchain/solidity/스마트-계약-배포하기-및-트랜잭션하기&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\jacklee\\Desktop\\jhlee0409.github.io\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\jacklee\\Desktop\\jhlee0409.github.io\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Project.color": "333f62",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/jacklee/Desktop/jhlee0409.github.io/public/assets/posts/til/AWS/AWS-Amplify-Next.js-동적-경로(Dynamic-Routes)-설정하기",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\jacklee\\Desktop\\jhlee0409.github.io\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Users\\jacklee\\Desktop\\jhlee0409.github.io\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\AWS\AWS-Amplify-Next.js-동적-경로(Dynamic-Routes)-설정하기" />
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\platform\AWS" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\blockchain\solidity\스마트-계약-배포하기-및-트랜잭션하기" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\src\components" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\src\asset" />
-      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\til\react" />
-      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\CSS\스크롤바-커스텀하기" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\platform" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\til" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\blockchain\solidity\Solidity-04-Solidity-용어" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\blockchain\solidity\01" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\blockchain\solidity" />
-      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\src\components\portal" />
     </key>
   </component>
   <component name="RunManager">
@@ -149,7 +134,8 @@
       <workItem from="1662633366328" duration="3570000" />
       <workItem from="1662910396123" duration="3863000" />
       <workItem from="1663068430654" duration="9702000" />
-      <workItem from="1663168325449" duration="4314000" />
+      <workItem from="1663168325449" duration="5829000" />
+      <workItem from="1663338270625" duration="4243000" />
     </task>
     <task id="LOCAL-00001" summary="fix: nav top css">
       <created>1659515728453</created>
@@ -466,7 +452,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663081387602</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="mdx: [Typescript] tsconfig 절대경로 설정하기 / fix : 포스트 카테고리">
+      <created>1663172820972</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1663172820972</updated>
+    </task>
+    <task id="LOCAL-00047" summary="fix : 포스트 카테고리">
+      <created>1663172841381</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1663172841381</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,8 +484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mdx-fix: AWS CodeBuild Webhook 이벤트 설정하기" />
-    <MESSAGE value="mdx-fix: article 이미지 설명 멘트" />
     <MESSAGE value="fix: nav color / position article progress" />
     <MESSAGE value="fix: social link 위치 변경" />
     <MESSAGE value="mdx : react-markdown에서 image css 적용하기" />
@@ -509,7 +507,9 @@
     <MESSAGE value="mdx: [Next.js] Page Extensions / feat: page extensions" />
     <MESSAGE value="mdx-fix: [Next.js] Page Extensions / reduce syntax highlight" />
     <MESSAGE value="fix: reduce syntax highlight" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: reduce syntax highlight" />
+    <MESSAGE value="mdx: [Typescript] tsconfig 절대경로 설정하기 / fix : 포스트 카테고리" />
+    <MESSAGE value="fix : 포스트 카테고리" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix : 포스트 카테고리" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

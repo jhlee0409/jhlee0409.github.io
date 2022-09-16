@@ -107,22 +107,24 @@ import path2 from '@_apis/member'
         ...
       },
     }
-    ======================================
-    // tsconfig.b.json
-    {
-      "compilerOptions": {
-        ...
-      },
-      "extends": "./tsconfig.a.json"
+    ```
+  ```json
+  // tsconfig.b.json
+  {
+    "compilerOptions": {
+      ...
     },
-    ======================================
-    // tsconfig.json
-    {
-      "compilerOptions": {
-        ...
-      },
-      "extends": "./tsconfig.b.json"
-    }
+    "extends": "./tsconfig.a.json"
+  }
+    ```
+  ```json
+  // tsconfig.json
+  {
+    "compilerOptions": {
+      ...
+    },
+    "extends": "./tsconfig.b.json"
+  }
     ```
 
 ## 사용법
