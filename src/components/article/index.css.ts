@@ -27,8 +27,10 @@ export const overviewWrapper = style({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  whiteSpace: "nowrap",
+  // whiteSpace: "nowrap",
+
   gap: 10,
+
   padding: 20,
   borderRadius: 12,
   marginBottom: 30,
@@ -43,6 +45,8 @@ export const overviewWrapper = style({
 globalStyle(`${overviewWrapper} > h1`, {
   fontWeight: "bold",
   fontSize: "1.6em",
+  lineHeight: "1.8em",
+  textAlign: "center",
   "@media": {
     "screen and (max-width: 578px)": {
       fontSize: "1.2em",

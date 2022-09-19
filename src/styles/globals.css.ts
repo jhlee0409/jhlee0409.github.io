@@ -14,6 +14,10 @@ globalStyle("body", {
   width: "100%",
 });
 
+globalStyle("body *", {
+  wordBreak: "keep-all",
+});
+
 globalStyle("main > div", {
   animation: `${fadeInAnimation} ease 500ms`,
   animationFillMode: "linear",
@@ -60,16 +64,19 @@ globalStyle("article pre code", {
 // article image
 
 globalStyle("article img", {
-  // width: '50%'
   padding: 10,
 });
 
 globalStyle("article .markdown-image-box", {
-  width: "100%",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
   margin: "0 auto",
   gap: 5,
+  "@media": {
+    "screen and (max-width: 578px)": {
+      width: "95% !important",
+    },
+  },
 });

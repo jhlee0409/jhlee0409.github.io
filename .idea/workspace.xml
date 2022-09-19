@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: 빅오 표기법">
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx-fix: [Programming] 프레임워크와 라이브러리의 차이">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/빅오-표기법-(Big-O-Notation).mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/빅오-표기법-(Big-O-Notation).mdx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/posts/tech/programming/[Programming]-프레임워크와-라이브러리의-차이.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/programming/[Programming]-프레임워크와-라이브러리의-차이.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/article/index.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/index.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/globals.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,14 +135,7 @@
       <workItem from="1663338270625" duration="4971000" />
       <workItem from="1663425410524" duration="1443000" />
       <workItem from="1663476696967" duration="3067000" />
-      <workItem from="1663592707254" duration="8372000" />
-    </task>
-    <task id="LOCAL-00001" summary="fix: nav top css">
-      <created>1659515728453</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1659515728453</updated>
+      <workItem from="1663592707254" duration="8938000" />
     </task>
     <task id="LOCAL-00002" summary="fix: footer social icon opacity">
       <created>1659515751631</created>
@@ -479,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663592731184</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="mdx-fix: [Programming] 프레임워크와 라이브러리의 차이">
+      <created>1663607875406</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1663607875406</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +498,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mdx : react-markdown에서 image css 적용하기" />
     <MESSAGE value="mdx : Solidity 컴파일 &amp; 디버깅" />
     <MESSAGE value="mdx : Solidity 03 및 Solidity 02로 게시글 이름 수정" />
     <MESSAGE value="mdx : 단항 더하기 연산자 (Unary + Operator)" />
@@ -522,7 +522,8 @@
     <MESSAGE value="fix : 포스트 카테고리" />
     <MESSAGE value="mdx: AWS Amplify Next.js 동적 경로(Dynamic Routes) 설정하기" />
     <MESSAGE value="mdx: 빅오 표기법" />
-    <option name="LAST_COMMIT_MESSAGE" value="mdx: 빅오 표기법" />
+    <MESSAGE value="mdx-fix: [Programming] 프레임워크와 라이브러리의 차이" />
+    <option name="LAST_COMMIT_MESSAGE" value="mdx-fix: [Programming] 프레임워크와 라이브러리의 차이" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
