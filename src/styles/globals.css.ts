@@ -69,5 +69,7 @@ globalStyle("article .markdown-image-box", {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
+  justifyContent: "center",
+  margin: "0 auto",
   gap: 5,
 });
