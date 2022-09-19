@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: 빅오 표기법">
-      <change afterPath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/빅오-표기법-(Big-O-Notation).mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/posts/til/DS&amp;Al/빅오/01.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Img.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Img.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/globals.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/빅오-표기법-(Big-O-Notation).mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/빅오-표기법-(Big-O-Notation).mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/tech/programming/[Programming]-프레임워크와-라이브러리의-차이.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/programming/[Programming]-프레임워크와-라이브러리의-차이.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,6 +134,7 @@
       <workItem from="1663338270625" duration="4971000" />
       <workItem from="1663425410524" duration="1443000" />
       <workItem from="1663476696967" duration="3067000" />
+      <workItem from="1663592707254" duration="8372000" />
     </task>
     <task id="LOCAL-00001" summary="fix: nav top css">
       <created>1659515728453</created>
@@ -473,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663347391740</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="mdx: 빅오 표기법">
+      <created>1663592731184</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1663592731184</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
