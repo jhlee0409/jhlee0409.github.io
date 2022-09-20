@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: 줄바꿈, 모바일 이미지 크기 수정">
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx-fix: [Programming] 프레임워크와 라이브러리의 차이">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/article/ArticleFrontMatter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/ArticleFrontMatter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/article/index.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/index.css.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,14 +135,7 @@
       <workItem from="1663425410524" duration="1443000" />
       <workItem from="1663476696967" duration="3067000" />
       <workItem from="1663592707254" duration="9578000" />
-      <workItem from="1663671536614" duration="605000" />
-    </task>
-    <task id="LOCAL-00003" summary="feat: set redux-toolkit / article progressbar / prettier">
-      <created>1659519684203</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1659519684203</updated>
+      <workItem from="1663671536614" duration="3327000" />
     </task>
     <task id="LOCAL-00004" summary="fix: fix position that checking article progress logic">
       <created>1659524059660</created>
@@ -478,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663608468614</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="mdx-fix: [Programming] 프레임워크와 라이브러리의 차이">
+      <created>1663679598438</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1663679598438</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,9 +521,9 @@
     <MESSAGE value="fix : 포스트 카테고리" />
     <MESSAGE value="mdx: AWS Amplify Next.js 동적 경로(Dynamic Routes) 설정하기" />
     <MESSAGE value="mdx: 빅오 표기법" />
-    <MESSAGE value="mdx-fix: [Programming] 프레임워크와 라이브러리의 차이" />
     <MESSAGE value="fix: 줄바꿈, 모바일 이미지 크기 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: 줄바꿈, 모바일 이미지 크기 수정" />
+    <MESSAGE value="mdx-fix: [Programming] 프레임워크와 라이브러리의 차이" />
+    <option name="LAST_COMMIT_MESSAGE" value="mdx-fix: [Programming] 프레임워크와 라이브러리의 차이" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
