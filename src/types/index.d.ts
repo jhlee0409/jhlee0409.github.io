@@ -5,3 +5,7 @@ declare global {
     gtag: any;
   }
 }
+
+export interface ProgressState {
+  value: number;
+}

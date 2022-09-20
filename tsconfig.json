@@ -24,7 +24,8 @@
       "@/styles/*": ["src/styles/*"],
       "@/helper/*": ["src/helper/*"],
       "@/assets/*": ["public/assets/*"],
-      "@/feature/*": ["src/feature/*"]
+      "@/feature/*": ["src/feature/*"],
+      "@/types/*": ["src/types/*"]
 
     }
   },

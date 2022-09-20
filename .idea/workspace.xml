@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx-fix: [Programming] 프레임워크와 라이브러리의 차이">
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: frontmatter design">
+      <change afterPath="$PROJECT_DIR$/pages/api/search.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/cache.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article/ArticleFrontMatter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/ArticleFrontMatter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article/index.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/index.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/feature/articleProgressSlice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/feature/articleProgressSlice.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,24 +51,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Project.color&quot;: &quot;333f62&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jacklee/Desktop/jhlee0409.github.io/public/assets/posts/til/AWS/AWS-Amplify-Next.js-동적-경로(Dynamic-Routes)-설정하기&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\jacklee\\Desktop\\jhlee0409.github.io\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\jacklee\\Desktop\\jhlee0409.github.io\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Project.color": "333f62",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/jacklee/Desktop/jhlee0409.github.io/public/assets/posts/til/AWS/AWS-Amplify-Next.js-동적-경로(Dynamic-Routes)-설정하기",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\jacklee\\Desktop\\jhlee0409.github.io\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Users\\jacklee\\Desktop\\jhlee0409.github.io\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\AWS\AWS-Amplify-Next.js-동적-경로(Dynamic-Routes)-설정하기" />
@@ -135,14 +141,7 @@
       <workItem from="1663425410524" duration="1443000" />
       <workItem from="1663476696967" duration="3067000" />
       <workItem from="1663592707254" duration="9578000" />
-      <workItem from="1663671536614" duration="3327000" />
-    </task>
-    <task id="LOCAL-00004" summary="fix: fix position that checking article progress logic">
-      <created>1659524059660</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1659524059660</updated>
+      <workItem from="1663671536614" duration="6391000" />
     </task>
     <task id="LOCAL-00005" summary="fix: fix logic that check progress">
       <created>1659524788164</created>
@@ -480,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663679598438</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="fix: frontmatter design">
+      <created>1663682299175</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1663682299175</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +504,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mdx : Solidity 03 및 Solidity 02로 게시글 이름 수정" />
     <MESSAGE value="mdx : 단항 더하기 연산자 (Unary + Operator)" />
     <MESSAGE value="fix: 카테고리 별 게시글 최신순 정렬" />
     <MESSAGE value="fix: 아티클 리스트 날짜 표시" />
@@ -523,7 +528,8 @@
     <MESSAGE value="mdx: 빅오 표기법" />
     <MESSAGE value="fix: 줄바꿈, 모바일 이미지 크기 수정" />
     <MESSAGE value="mdx-fix: [Programming] 프레임워크와 라이브러리의 차이" />
-    <option name="LAST_COMMIT_MESSAGE" value="mdx-fix: [Programming] 프레임워크와 라이브러리의 차이" />
+    <MESSAGE value="fix: frontmatter design" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: frontmatter design" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
