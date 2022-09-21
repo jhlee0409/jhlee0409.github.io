@@ -1,6 +1,16 @@
 import { vars } from "@/styles/vars.css";
 import { globalStyle, style } from "@vanilla-extract/css";
 
+export const mobileInteractionBox = style({
+  display: "none",
+  "@media": {
+    "screen and (max-width: 578px)": {
+      display: "flex",
+      padding: "10px 20px",
+    },
+  },
+});
+
 export const nav = style({
   width: 220,
   flexDirection: "column",

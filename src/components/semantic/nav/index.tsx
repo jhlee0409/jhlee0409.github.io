@@ -10,12 +10,13 @@ import {
   logoBox,
   logoLink,
   innerNav,
+  mobileInteractionBox,
 } from "./nav.css";
 
 import Image from "next/image";
 import githubLogo from "@/assets/github.png";
 import linkedinLogo from "@/assets/linkedin.png";
-import { useEffect } from "react";
+import Search from "@/components/search/Search";
 
 const Nav = ({ categories, className, setClick }: any) => {
   const router = useRouter();
@@ -28,6 +29,9 @@ const Nav = ({ categories, className, setClick }: any) => {
             <Link href={"/"}>
               <a className={headerTitle}>{`Le Jack`}</a>
             </Link>
+          </div>
+          <div className={mobileInteractionBox}>
+            <Search />
           </div>
           <div className={logoBox}>
             <a

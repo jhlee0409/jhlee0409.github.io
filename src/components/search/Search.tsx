@@ -1,27 +1,22 @@
 import Portal from "@/components/portal/Portal";
 import Image from "next/image";
 import search from "@/assets/icons/search.png";
-import {
-  searchBtn,
-  innerContent,
-  searchInput,
-} from "@/components/search/search.css";
+import { searchBtn } from "@/components/search/search.css";
+
+import SearchInnerForm from "@/components/search/SearchInnerForm";
 
 const Search = () => {
   return (
     <Portal
-      button={
-        <button className={searchBtn} type={"button"}>
-          <Image src={search} alt="search" />
-        </button>
-      }>
-      <div className={innerContent}>
-        <div>
-          <input placeholder={"입력해주세요"} className={searchInput} />
-        </div>
-        <div></div>
-      </div>
-    </Portal>
+      openComponent={(props: any) => {
+        return (
+          <button className={searchBtn} type={"button"} {...props}>
+            <Image src={search} alt="search" />
+          </button>
+        );
+      }}
+      render={(props: any) => <SearchInnerForm {...props} />}
+    />
   );
 };
 

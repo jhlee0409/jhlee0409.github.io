@@ -13,7 +13,7 @@ import rehypeCodeTitles from "rehype-code-titles";
 import rehypeLinks from "rehype-external-links";
 import remarkTableofContents from "remark-toc";
 import ArticleFrontMatter from "./ArticleFrontMatter";
-import { line } from "./index.css";
+import { line, markdownArticle } from "./index.css";
 import { useEffect, useRef } from "react";
 import { useAppDispatch } from "@/app/hooks";
 import { checkProgress } from "@/feature/articleProgressSlice";
@@ -57,7 +57,9 @@ const Article = ({ data, content }: any) => {
       <div>
         <div ref={articleRef}>
           <ArticleFrontMatter data={data} />
-          <article className="markdown-body" ref={contentRef}>
+          <article
+            className={`${markdownArticle} markdown-body`}
+            ref={contentRef}>
             <ReactMarkdown
               remarkPlugins={[
                 remarkGfm,

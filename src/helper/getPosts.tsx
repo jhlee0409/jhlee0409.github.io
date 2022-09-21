@@ -4,6 +4,65 @@ import fs from "fs";
 
 const files = fs.readdirSync(path.join("posts"));
 
+export const getSearchedAllPosts = (folder: string) => {
+  const [big, sub] = folder.split("-");
+  const posts = fs.readdirSync(path.join(`posts/${big}/${sub}`));
+  const fileContents = posts.map((item) => {
+    const { data, content } = matter(
+      fs.readFileSync(path.join(`posts/${big}/${sub}/${item}`), "utf8")
+    );
+    return {
+      data: Object.assign(data, { mainCategory: big, subCategory: sub }),
+      title: data.title,
+      id: `${big}-${sub}`,
+    };
+  });
+
+  return fileContents;
+};
+
+export const getSearchedPost = () => {
+  const flatList = [];
+  const result = [];
+  for (const file of files) {
+    flatList.push(
+      ...fs.readdirSync(path.join(`posts/${file}`)).map((item) => {
+        return `${file}-${item}`;
+      })
+    );
+  }
+  // @ts-ignore
+  for (const category of flatList) {
+    result.push(...getSearchedAllPosts(category));
+  }
+  return result?.sort(
+    // @ts-ignore
+    (a: any, b: any) => new Date(b.data.date) - new Date(a.data.date)
+  );
+};
+
+export const getAllPost = () => {
+  const flatList = [];
+  const result = [];
+  for (const file of files) {
+    flatList.push(
+      ...fs.readdirSync(path.join(`posts/${file}`)).map((item) => {
+        return `${file}-${item}`;
+      })
+    );
+  }
+  // @ts-ignore
+  for (const category of flatList) {
+    result.push(...getPosts(category));
+  }
+  return result
+    ?.sort(
+      // @ts-ignore
+      (a: any, b: any) => new Date(b.data.date) - new Date(a.data.date)
+    )
+    .slice(0, 5);
+};
+
 export const getPostCategory = () => {
   return files.map((bigCategory) => {
     return {
@@ -41,7 +100,7 @@ export const getPostPaths = () => {
           list.push({
             params: {
               categoryId: `${bigCategory}-${middleCategory}`,
-              articleId: mdx.split(".mdx")[0],
+              articleId: mdx.split(/\.mdx?/)[0],
             },
           });
         });
@@ -89,27 +148,4 @@ export const getPosts = (folder: string) => {
   });
 
   return fileContents;
-};
-
-export const getAllPost = () => {
-  const flatList = [];
-  const result = [];
-  let i = 0;
-  for (const file of files) {
-    flatList.push(
-      ...fs.readdirSync(path.join(`posts/${file}`)).map((item) => {
-        return `${file}-${item}`;
-      })
-    );
-  }
-  // @ts-ignore
-  for (const category of flatList) {
-    result.push(...getPosts(category));
-  }
-  return result
-    ?.sort(
-      // @ts-ignore
-      (a: any, b: any) => new Date(b.data.date) - new Date(a.data.date)
-    )
-    .slice(0, 5);
 };

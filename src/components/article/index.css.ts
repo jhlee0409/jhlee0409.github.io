@@ -68,3 +68,68 @@ export const line = style({
     },
   },
 });
+
+export const markdownArticle = style({});
+
+globalStyle(`${markdownArticle} h1`, {
+  "@media": {
+    "screen and (max-width: 578px)": {
+      fontSize: "1.4em",
+    },
+  },
+});
+
+globalStyle(`${markdownArticle} h2`, {
+  "@media": {
+    "screen and (max-width: 578px)": {
+      fontSize: "1.2em",
+    },
+  },
+});
+
+globalStyle(`${markdownArticle} h3`, {
+  "@media": {
+    "screen and (max-width: 578px)": {
+      fontSize: "1.1em",
+    },
+  },
+});
+globalStyle(`${markdownArticle} h4`, {
+  "@media": {
+    "screen and (max-width: 578px)": {
+      fontSize: "1em",
+    },
+  },
+});
+
+globalStyle(`${markdownArticle} p`, {
+  "@media": {
+    "screen and (max-width: 578px)": {
+      margin: "10px 0",
+    },
+  },
+});
+
+globalStyle(`${markdownArticle} li, p, span, a`, {
+  "@media": {
+    "screen and (max-width: 578px)": {
+      fontSize: "0.9em",
+    },
+  },
+});
+
+globalStyle(`${markdownArticle} ol`, {
+  "@media": {
+    "screen and (max-width: 578px)": {
+      padding: "0 0 0 15px",
+    },
+  },
+});
+
+globalStyle(`${markdownArticle} ul`, {
+  "@media": {
+    "screen and (max-width: 578px)": {
+      padding: "0 0 0 15px",
+    },
+  },
+});

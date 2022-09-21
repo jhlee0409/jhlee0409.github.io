@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: frontmatter design">
-      <change afterPath="$PROJECT_DIR$/pages/api/search.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/cache.js" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="feat: cached posts">
+      <change afterPath="$PROJECT_DIR$/pages/api/search.page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/search/searchInnerForm.css.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/root.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/feature/articleProgressSlice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/feature/articleProgressSlice.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search/SearchInnerForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/article/Article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/Article.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/article/index.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/index.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/portal/Portal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portal/Portal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search/Search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search/search.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search/search.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/semantic/nav/nav.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/nav/nav.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/getPosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/getPosts.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +60,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/jacklee/Desktop/jhlee0409.github.io/public/assets/posts/til/AWS/AWS-Amplify-Next.js-동적-경로(Dynamic-Routes)-설정하기",
+    "last_opened_file_path": "C:/Users/jacklee/Desktop/jhlee0409.github.io/src/components/search",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,11 +74,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\src\components\search" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\AWS\AWS-Amplify-Next.js-동적-경로(Dynamic-Routes)-설정하기" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\platform\AWS" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\blockchain\solidity\스마트-계약-배포하기-및-트랜잭션하기" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\src\components" />
-      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\src\asset" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\DS&amp;Al\빅오" />
@@ -141,14 +144,8 @@
       <workItem from="1663425410524" duration="1443000" />
       <workItem from="1663476696967" duration="3067000" />
       <workItem from="1663592707254" duration="9578000" />
-      <workItem from="1663671536614" duration="6391000" />
-    </task>
-    <task id="LOCAL-00005" summary="fix: fix logic that check progress">
-      <created>1659524788164</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1659524788164</updated>
+      <workItem from="1663671536614" duration="13173000" />
+      <workItem from="1663766843220" duration="7678000" />
     </task>
     <task id="LOCAL-00006" summary="add: import 파헤치기">
       <created>1660658917081</created>
@@ -486,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663682299175</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="feat: cached posts">
+      <created>1663687363747</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1663687363747</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +508,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mdx : 단항 더하기 연산자 (Unary + Operator)" />
     <MESSAGE value="fix: 카테고리 별 게시글 최신순 정렬" />
     <MESSAGE value="fix: 아티클 리스트 날짜 표시" />
     <MESSAGE value="mdx: @supports 파헤치기" />
@@ -529,7 +532,8 @@
     <MESSAGE value="fix: 줄바꿈, 모바일 이미지 크기 수정" />
     <MESSAGE value="mdx-fix: [Programming] 프레임워크와 라이브러리의 차이" />
     <MESSAGE value="fix: frontmatter design" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: frontmatter design" />
+    <MESSAGE value="feat: cached posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: cached posts" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

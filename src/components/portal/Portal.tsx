@@ -1,17 +1,21 @@
 // @ts-ignore
 import { PortalWithState } from "react-portal";
 import { layout, content } from "@/components/portal/portal.css";
-import { useEffect } from "react";
 import { RemoveScroll } from "react-remove-scroll";
-const Portal = ({ button, children }: any) => {
+import { memo } from "react";
+
+// eslint-disable-next-line react/display-name
+const Portal = memo(({ openComponent: Button, render: Component }: any) => {
   return (
     <PortalWithState closeOnOutsideClick closeOnEsc>
       {({ openPortal, closePortal, isOpen, portal }: any) => (
         <RemoveScroll enabled={isOpen}>
-          <div onClick={openPortal}>{button}</div>
+          <Button onClick={openPortal} />
           {portal(
             <>
-              <div className={content}>{children}</div>
+              <div className={content}>
+                <Component onClose={closePortal} />
+              </div>
               <div className={`${layout}`} onClick={closePortal}></div>
             </>
           )}
@@ -19,6 +23,6 @@ const Portal = ({ button, children }: any) => {
       )}
     </PortalWithState>
   );
-};
+});
 
 export default Portal;
