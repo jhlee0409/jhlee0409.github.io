@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
+    "build": "next build && next export ",
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
-    "cache-posts": "node scripts/cache.js",
-    "deploy": " next build && next export && fsutil file createnew out/.nojekyll 0 && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
+    "cache-posts": "node scripts/cache.mjs",
+    "deploy": "yarn cache-posts && next build && next export && fsutil file createnew out/.nojekyll 0 && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "husky": {
     "hooks": {

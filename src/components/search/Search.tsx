@@ -5,7 +5,7 @@ import { searchBtn } from "@/components/search/search.css";
 
 import SearchInnerForm from "@/components/search/SearchInnerForm";
 
-const Search = () => {
+const Search = ({ closeMobileMenu }: { closeMobileMenu: () => void }) => {
   return (
     <Portal
       openComponent={(props: any) => {
@@ -15,7 +15,9 @@ const Search = () => {
           </button>
         );
       }}
-      render={(props: any) => <SearchInnerForm {...props} />}
+      render={(props: any) => (
+        <SearchInnerForm {...props} closeMobileMenu={closeMobileMenu} />
+      )}
     />
   );
 };

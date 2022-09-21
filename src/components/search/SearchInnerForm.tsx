@@ -9,8 +9,8 @@ import Link from "next/link";
 import { useCallback, useRef, useState } from "react";
 import search from "@/assets/icons/search.png";
 import Image from "next/image";
-
-const SearchInnerForm = ({ onClose }: any) => {
+import { posts } from "@/cache/data";
+const SearchInnerForm = ({ onClose, closeMobileMenu }: any) => {
   const searchRef = useRef<HTMLDivElement>(null);
 
   const [query, setQuery] = useState("");
@@ -25,11 +25,16 @@ const SearchInnerForm = ({ onClose }: any) => {
     const query = inputRef.current.value.toLowerCase();
     setQuery(query);
     if (query.length) {
-      fetch(searchEndpoint(query))
-        .then((res) => res.json())
-        .then((res) => {
-          setResults(res.results);
-        });
+      const results: any[] = posts.filter((post) =>
+        post.title.toLowerCase().includes(query)
+      );
+      // @ts-ignore
+      setResults(results);
+      // fetch(searchEndpoint(query))
+      //   .then((res) => res.json())
+      //   .then((res) => {
+      //     setResults(res.results);
+      //   });
     } else {
       setResults([]);
     }
@@ -55,7 +60,6 @@ const SearchInnerForm = ({ onClose }: any) => {
             <div>
               <Image src={search} alt="search" />
             </div>
-            `
             <input
               ref={inputRef}
               placeholder={"검색할 제목을 입력해주세요."}
@@ -73,7 +77,12 @@ const SearchInnerForm = ({ onClose }: any) => {
                   key={`${id}-${title}`}
                   href={`/${id}/article/${title.replaceAll(" ", "-")}`}
                   passHref>
-                  <li onClick={onClose} className={searchLink}>
+                  <li
+                    onClick={() => {
+                      onClose();
+                      closeMobileMenu && closeMobileMenu();
+                    }}
+                    className={searchLink}>
                     <a>{title}</a>
                   </li>
                 </Link>

@@ -40,12 +40,12 @@ export const getSearchedPost = () => {
 
 const fileContents = `export const posts = ${getSearchedPost()}`;
 try {
-  fs.readdirSync("out/cache");
+  fs.readdirSync("cache");
 } catch (e) {
-  fs.mkdirSync("out/cache");
+  fs.mkdirSync("cache");
 }
 
-fs.writeFile("out/cache/data.js", fileContents, (err) => {
+fs.writeFile("cache/data.js", fileContents, (err) => {
   if (err) return console.log(err);
   console.log("Posts cached.");
 });

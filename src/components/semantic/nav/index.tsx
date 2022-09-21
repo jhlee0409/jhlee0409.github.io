@@ -31,7 +31,7 @@ const Nav = ({ categories, className, setClick }: any) => {
             </Link>
           </div>
           <div className={mobileInteractionBox}>
-            <Search />
+            <Search closeMobileMenu={() => setClick(true)} />
           </div>
           <div className={logoBox}>
             <a
@@ -62,7 +62,7 @@ const Nav = ({ categories, className, setClick }: any) => {
                     return (
                       <Link key={title + i} href={`/${bigCategory}-${title}`}>
                         <a
-                          onClick={setClick && setClick}
+                          onClick={() => setClick(true)}
                           className={`${categoryLink} ${sprinkles({
                             color:
                               router.query.categoryId ===

@@ -16,6 +16,7 @@ module.exports = withVanillaExtract({
     "page.md",
     "page.mdx",
   ],
+
   images: {
     formats: ["image/avif", "image/webp"],
     loader: "akamai",

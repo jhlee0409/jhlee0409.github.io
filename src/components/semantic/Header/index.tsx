@@ -35,7 +35,9 @@ const Header = ({ categories }: any) => {
         <div>
           <div className={logoMobileBox}>
             <Link href={"/"}>
-              <a className={headerTitle}>{`Le Jack`}</a>
+              <a
+                className={headerTitle}
+                onClick={() => setClick(true)}>{`Le Jack`}</a>
             </Link>
           </div>
         </div>
