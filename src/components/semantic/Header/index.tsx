@@ -46,7 +46,7 @@ const Header = ({ categories }: any) => {
             <Link href={"/about"}>
               <a className={aboutMeBtn}>About me</a>
             </Link>
-            <Search />
+            <Search closeMobileMenu={() => setClick(true)} />
           </div>
           <HamburgerMenu setClick={setClick} click={click} />
         </div>

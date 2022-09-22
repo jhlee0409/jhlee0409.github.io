@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="feat: search form / mobile article css">
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: ssg search function / mobile search function">
+      <change afterPath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/빅오로-보는-배열과-객체의-성능-평가.mdx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sitemap-0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap-0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/cache.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/cache.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search/Search.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/search/SearchInnerForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search/SearchInnerForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/semantic/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +52,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/jacklee/Desktop/jhlee0409.github.io/src/components/search",
+    "last_opened_file_path": "C:/Users/jacklee/Desktop/jhlee0409.github.io/posts/tech/Data_Structure_&_Algorithms",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,11 +66,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\tech\Data_Structure_&amp;_Algorithms" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\src\components\search" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\AWS\AWS-Amplify-Next.js-동적-경로(Dynamic-Routes)-설정하기" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\platform\AWS" />
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\blockchain\solidity\스마트-계약-배포하기-및-트랜잭션하기" />
-      <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\public\assets\posts\til\DS&amp;Al\빅오" />
@@ -143,14 +137,8 @@
       <workItem from="1663476696967" duration="3067000" />
       <workItem from="1663592707254" duration="9578000" />
       <workItem from="1663671536614" duration="13173000" />
-      <workItem from="1663766843220" duration="13333000" />
-    </task>
-    <task id="LOCAL-00007" summary="mdx: export 파헤치기">
-      <created>1660744980800</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1660744980800</updated>
+      <workItem from="1663766843220" duration="13653000" />
+      <workItem from="1663841783850" duration="7672000" />
     </task>
     <task id="LOCAL-00008" summary="fix: 소스코드 복사시 line number 제거">
       <created>1660746828332</created>
@@ -488,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663774935952</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="fix: ssg search function / mobile search function">
+      <created>1663780689993</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1663780689994</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +501,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: 아티클 리스트 날짜 표시" />
     <MESSAGE value="mdx: @supports 파헤치기" />
     <MESSAGE value="feat: sitemap" />
     <MESSAGE value="fix: front-matter tag css" />
@@ -531,7 +525,8 @@
     <MESSAGE value="fix: frontmatter design" />
     <MESSAGE value="feat: cached posts" />
     <MESSAGE value="feat: search form / mobile article css" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: search form / mobile article css" />
+    <MESSAGE value="fix: ssg search function / mobile search function" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: ssg search function / mobile search function" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

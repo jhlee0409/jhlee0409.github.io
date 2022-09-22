@@ -24,16 +24,24 @@ const SearchInnerForm = ({ onClose, closeMobileMenu }: any) => {
     if (!inputRef || !inputRef.current) return;
     const query = inputRef.current.value.toLowerCase();
     setQuery(query);
+
     if (query.length) {
-      const results: any[] = posts.filter((post) =>
+      // @ts-ignore
+      const results: never[] = posts.filter((post) =>
         post.title.toLowerCase().includes(query)
       );
-      // @ts-ignore
       setResults(results);
       // fetch(searchEndpoint(query))
       //   .then((res) => res.json())
       //   .then((res) => {
       //     setResults(res.results);
+      //   })
+      //   .catch(() => {
+      //     // @ts-ignore
+      //     const results: never[] = posts.filter((post) =>
+      //       post.title.toLowerCase().includes(query)
+      //     );
+      //     setResults(results);
       //   });
     } else {
       setResults([]);
