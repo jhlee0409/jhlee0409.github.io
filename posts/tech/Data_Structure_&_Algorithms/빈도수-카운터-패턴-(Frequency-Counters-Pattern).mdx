@@ -40,21 +40,21 @@ same([1, 2, 3, 2], [4, 1, 9, 4])
 
 ## 빈도  카운터 패턴 `O(n)`
 
-- 이중 반복문을 돌리는 대신 각 배열을 한번씩반 반복문 적용
+- 이중 반복문을 돌리는 대신 각 배열을 한번씩만 반복문 적용
 - 이중 반복문보다 빠르다.
-- 두 객체를 사용해서 각 배열 `value`의 빈도수를 체크 (`value`가 각 배열에서 몇 번나왔는지 알 수 있다.)
-- 만둘어진 객체의 `key`를 체크하는 반복문을 작성해서 하나의 객체에만 적용시켜주면 됨 (여기서는 `frequencyCounter1`)
+- 두 객체를 사용해서 각 배열 `value`의 빈도수를 체크 (`value`가 각 배열에서 몇 번 나왔는지 알 수 있다.)
+- 만둘어진 객체의 `key`를 체크하는 반복문을 작성해서 하나의 객체에만 적용시켜주면 된다. (여기서는 `frequencyCounter1`)
 ```js
 const same = (first, second) => {
     if (first.length !== second.length) return false;
     let frequencyCounter1 = {}; // {1: 1, 2: 2, 3: 1}
     let frequencyCounter2 = {}; // {1: 1, 4: 2, 9: 1}
     for (const val of first) {
-        // 없으면 1로 있으면 1씩 더함
+        // 없으면 1로, 있으면 1씩 더함
         frequencyCounter1[val] = (frequencyCounter1[val] || 0) + 1;
     }
     for (const val of second) {
-        // 없으면 1로 있으면 1씩 더함
+        // 없으면 1로, 있으면 1씩 더함
         frequencyCounter2[val] = (frequencyCounter2[val] || 0) + 1;
     }
     for (const key in frequencyCounter1) {
@@ -62,11 +62,12 @@ const same = (first, second) => {
         if (!(key ** 2 in frequencyCounter2)) {
             return false;
         }
-        // 해당 key를 이용해서 매칭되눈 value의 빈도수가 같은지 체크
+        // 해당 key를 이용해서 매칭되는 value의 빈도수가 같은지 체크
         if (frequencyCounter2[key ** 2] !== frequencyCounter1[key]) {
             return false;
         }
     }
+    // 모든 조건 통과시 true
     return true;
   };
 

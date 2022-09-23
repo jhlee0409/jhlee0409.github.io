@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="feat: change theme button">
-      <change afterPath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/빈도수-카운터-패턴-(Frequency-Counters-Pattern).mdx" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: 빈도수 카운터 패턴 (Frequency Counters Pattern)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/cache/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/빈도수-카운터-패턴-(Frequency-Counters-Pattern).mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/빈도수-카운터-패턴-(Frequency-Counters-Pattern).mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,14 +138,7 @@
       <workItem from="1663671536614" duration="13173000" />
       <workItem from="1663766843220" duration="13653000" />
       <workItem from="1663841783850" duration="13686000" />
-      <workItem from="1663940086885" duration="11199000" />
-    </task>
-    <task id="LOCAL-00011" summary="mdx: 네이밍 컨벤션 파헤치기">
-      <created>1660923996084</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1660923996084</updated>
+      <workItem from="1663940086885" duration="11622000" />
     </task>
     <task id="LOCAL-00012" summary="fix: 사이트 이름 변경 (주소는 그대로)">
       <created>1660970169731</created>
@@ -482,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663947854093</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="mdx: 빈도수 카운터 패턴 (Frequency Counters Pattern)">
+      <created>1663951951557</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1663951951557</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,7 +501,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: 카테고리 정렬 방식" />
     <MESSAGE value="fix: article list tag 줄바꿈 처리" />
     <MESSAGE value="fix: article list 전 태그 줄바꿈 처리" />
     <MESSAGE value="fix: article list date css" />
@@ -525,7 +525,8 @@
     <MESSAGE value="mdx: 빅오로 보는 배열과 객체의 성능 평가" />
     <MESSAGE value="mdx-fix: 빅오로 보는 배열과 객체의 성능 평가" />
     <MESSAGE value="feat: change theme button" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: change theme button" />
+    <MESSAGE value="mdx: 빈도수 카운터 패턴 (Frequency Counters Pattern)" />
+    <option name="LAST_COMMIT_MESSAGE" value="mdx: 빈도수 카운터 패턴 (Frequency Counters Pattern)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
