@@ -1,5 +1,6 @@
 import { vars } from "@/styles/vars.css";
 import { globalStyle, style } from "@vanilla-extract/css";
+import { themeVars } from "@/styles/theme.css";
 
 export const layout = style({});
 
@@ -80,7 +81,7 @@ export const cardTextBox = style({
 
 export const dateBox = style({
   position: "relative",
-  color: "white",
+  color: themeVars.colors.text.normal,
   left: 15,
   ":before": {
     content: "",
@@ -110,7 +111,7 @@ export const cardTagBox = style({
   display: "flex",
   flexWrap: "wrap",
   gap: "5px 15px",
-  borderTop: `1px solid ${vars.color.point}`,
+  borderTop: `1px solid ${themeVars.colors.text.main}`,
   paddingTop: 20,
   "@media": {
     "screen and (max-width: 578px)": {
@@ -125,7 +126,7 @@ globalStyle(`${cardTagBox} > span`, {
 });
 
 export const cardTitle = style({
-  color: "#ececec",
+  color: themeVars.colors.text.title,
   transition: "color 300ms linear",
   wordBreak: "keep-all",
   "@media": {
@@ -136,7 +137,7 @@ export const cardTitle = style({
   },
   selectors: {
     [`${card}:hover &`]: {
-      color: vars.color.point,
+      color: themeVars.colors.pointColor,
     },
   },
 });

@@ -1,9 +1,11 @@
 import { vars } from "@/styles/vars.css";
 import { globalStyle, style } from "@vanilla-extract/css";
+import { themeVars } from "@/styles/theme.css";
 
 export const LayoutWrapper = style({
   display: "flex",
   position: "relative",
+  backgroundColor: themeVars.colors.background,
 });
 export const contentLayout = style({
   maxWidth: "1400px",
@@ -41,7 +43,7 @@ export const bodyLayout = style({
   "::-webkit-scrollbar-thumb": {
     backgroundColor: "#ddd",
     borderRadius: 20,
-    border: "5px solid #1b1b1b",
+    border: `5px solid ${themeVars.colors.background}`,
     transition: "background-color 300ms ease-in",
   },
   "::-webkit-scrollbar-button": {

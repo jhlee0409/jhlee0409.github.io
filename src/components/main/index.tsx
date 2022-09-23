@@ -3,7 +3,7 @@ import Head from "next/head";
 import { main } from "./main.css";
 import MainContent from "./MainContent";
 import MainTop from "./MainTop";
-import ArticleList from "@/components/articleList";
+import ArticleList from "@/components/article-list";
 
 const MainComponent = ({ data }: any) => {
   return (

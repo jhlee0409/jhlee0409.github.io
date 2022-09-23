@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import ArticleCardOverview from "../articleCardOverview";
+import ArticleCardOverview from "../article-card-overview";
 import { articlesBox, wrapper } from "./index.css";
 
 const articleKey = nanoid();

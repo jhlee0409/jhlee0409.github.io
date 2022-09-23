@@ -38,7 +38,7 @@ const ArticleCardOverview = ({ data, isLast }: ArticleCardOverviewType) => {
         <div className={card}>
           <div className={line}>
             <div className={cardTextBox}>
-              <div className={dateBox}>{data.date}</div>
+              <p className={dateBox}>{data.date}</p>
               <h1 className={cardTitle}>{data.title}</h1>
               <p className={cardSummary}>{`- ${data.summary}`}</p>
               <div className={cardTagBox}>

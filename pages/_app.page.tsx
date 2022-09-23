@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "@/styles/globals.css";
 import "@/styles/reset.css";
-import Layout from "@/components/Layout";
+import Layout from "@/components/layouts";
 import { NextPage } from "next";
 import { getPostCategory } from "@/helper/getPosts";
-import LoadingPage from "@/components/Layout/Loading";
+import LoadingPage from "@/components/layouts/Loading";
 import { useRouter } from "next/router";
 import Script from "next/script";
 import { storeWrapper } from "@/app/store";
@@ -54,7 +54,6 @@ const MyApp: NextPage = ({ Component, pageProps }: any) => {
             `,
           }}
         />
-
         <Component {...pageProps} />
       </LoadingPage>
     </Layout>

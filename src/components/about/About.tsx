@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div>
-      <div>asd</div>
+      <div>계발하는 개발자</div>
     </div>
   );
 };

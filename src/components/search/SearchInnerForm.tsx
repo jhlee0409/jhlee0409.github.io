@@ -7,7 +7,7 @@ import {
 } from "@/components/search/searchInnerForm.css";
 import Link from "next/link";
 import { useCallback, useRef, useState } from "react";
-import search from "@/assets/icons/search.png";
+import search from "@/assets/icons/search.svg";
 import Image from "next/image";
 import { posts } from "@/cache/data";
 const SearchInnerForm = ({ onClose, closeMobileMenu }: any) => {

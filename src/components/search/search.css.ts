@@ -1,7 +1,8 @@
-import { style } from "@vanilla-extract/css";
+import { globalStyle, style } from "@vanilla-extract/css";
+import { themeVars } from "@/styles/theme.css";
 
 export const searchBtn = style({
-  filter: "invert(1)",
+  fill: themeVars.colors.text.normal,
   width: 30,
   padding: 5,
   display: "flex",
@@ -10,6 +11,6 @@ export const searchBtn = style({
   transition: "all 150ms linear",
   border: "2px solid transparent",
   ":hover": {
-    border: "2px solid black",
+    border: `2px solid ${themeVars.colors.text.normal}`,
   },
 });

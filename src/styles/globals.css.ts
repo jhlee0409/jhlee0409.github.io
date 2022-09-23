@@ -1,4 +1,5 @@
 import { keyframes, globalStyle, globalFontFace } from "@vanilla-extract/css";
+import { themeVars } from "@/styles/theme.css";
 
 const fadeInAnimation = keyframes({
   "0%": { transform: "translateX(30px)", opacity: 0 },
@@ -9,7 +10,6 @@ globalStyle("html, body", {
   fontFamily: "NEXONLv1GothicOTFRegular, sans-serif",
 });
 globalStyle("body", {
-  backgroundColor: "#1b1b1b",
   overflow: "auto",
   width: "100%",
 });
@@ -25,7 +25,7 @@ globalStyle("main > div", {
 });
 
 globalStyle("p, label, button, a, div", {
-  color: "white",
+  color: themeVars.colors.text.normal,
 });
 
 // global font

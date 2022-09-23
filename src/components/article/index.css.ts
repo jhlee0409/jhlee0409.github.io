@@ -1,5 +1,6 @@
 import { vars } from "@/styles/vars.css";
 import { style, globalStyle } from "@vanilla-extract/css";
+import { themeVars } from "@/styles/theme.css";
 
 export const Base = style({
   display: "flex",
@@ -72,6 +73,7 @@ export const line = style({
 export const markdownArticle = style({});
 
 globalStyle(`${markdownArticle} h1`, {
+  color: themeVars.colors.text.articleHTag,
   "@media": {
     "screen and (max-width: 578px)": {
       fontSize: "1.4em",
@@ -80,6 +82,7 @@ globalStyle(`${markdownArticle} h1`, {
 });
 
 globalStyle(`${markdownArticle} h2`, {
+  color: themeVars.colors.text.articleHTag,
   "@media": {
     "screen and (max-width: 578px)": {
       fontSize: "1.2em",
@@ -88,6 +91,7 @@ globalStyle(`${markdownArticle} h2`, {
 });
 
 globalStyle(`${markdownArticle} h3`, {
+  color: themeVars.colors.text.articleHTag,
   "@media": {
     "screen and (max-width: 578px)": {
       fontSize: "1.1em",
@@ -95,6 +99,7 @@ globalStyle(`${markdownArticle} h3`, {
   },
 });
 globalStyle(`${markdownArticle} h4`, {
+  color: themeVars.colors.text.articleHTag,
   "@media": {
     "screen and (max-width: 578px)": {
       fontSize: "1em",
@@ -111,6 +116,7 @@ globalStyle(`${markdownArticle} p`, {
 });
 
 globalStyle(`${markdownArticle} li, p, span, a`, {
+  color: themeVars.colors.text.articleHTag,
   "@media": {
     "screen and (max-width: 578px)": {
       fontSize: "0.9em",

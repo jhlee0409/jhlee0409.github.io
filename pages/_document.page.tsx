@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { bodyLayout } from "@/components/Layout/layout.css";
+import { bodyLayout } from "@/components/layouts/layout.css";
 export default class CustomDocument extends Document {
   render() {
     return (

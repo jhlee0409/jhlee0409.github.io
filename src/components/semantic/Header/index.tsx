@@ -1,4 +1,4 @@
-import HamburgerMenu from "@/components/hamburgerMenu";
+import HamburgerMenu from "@/components/hamburger-menu";
 import { sprinkles } from "@/styles/sprinkles.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -13,6 +13,7 @@ import {
   logoMobileBox,
 } from "./header.css";
 import Search from "@/components/search/Search";
+import SwtichThemeButton from "@/components/switch-theme-button/SwitchThemeButton";
 const Header = ({ categories }: any) => {
   const [click, setClick] = useState(true);
 
@@ -49,6 +50,7 @@ const Header = ({ categories }: any) => {
             <Search closeMobileMenu={() => setClick(true)} />
           </div>
           <HamburgerMenu setClick={setClick} click={click} />
+          <SwtichThemeButton />
         </div>
       </div>
       <Nav

@@ -1,4 +1,4 @@
-import MainComponent from "@/components/Main";
+import MainComponent from "@/components/main";
 import {
   getAllPost,
   getCategoryPaths,

@@ -1,5 +1,6 @@
 import { vars } from "@/styles/vars.css";
 import { globalStyle, style } from "@vanilla-extract/css";
+import { themeVars } from "@/styles/theme.css";
 
 export const mobileInteractionBox = style({
   display: "none",
@@ -20,7 +21,7 @@ export const nav = style({
   overflow: "hidden",
   height: "100%",
   top: 0,
-  backgroundColor: "#202020",
+  backgroundColor: themeVars.colors.secondary,
   "@media": {
     "screen and (max-width: 578px)": {
       display: "none",
@@ -41,7 +42,7 @@ export const navMobile = style({
       display: "flex",
       transition: "transform 100ms cubic-bezier(0.1, 0.57, 0.1, 1)",
       position: "fixed",
-      backgroundColor: "#202020",
+      backgroundColor: themeVars.colors.secondary,
       top: 80,
       right: 0,
       width: "100%",
@@ -66,7 +67,7 @@ export const bigTitle = style([
   {
     display: "inline-block",
     position: "relative",
-    color: vars.color["gray-800"],
+    color: themeVars.colors.text.main,
     textTransform: "uppercase",
   },
 ]);
@@ -118,7 +119,7 @@ export const innerNav = style({
   "::-webkit-scrollbar-thumb": {
     backgroundColor: "#ddd",
     borderRadius: 20,
-    border: "7px solid #202020",
+    border: `7px solid ${themeVars.colors.secondary}`,
     transition: "background-color 300ms ease-in",
   },
   "::-webkit-scrollbar-button": {

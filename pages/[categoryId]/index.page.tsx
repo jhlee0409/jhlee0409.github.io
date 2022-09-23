@@ -24,7 +24,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     fallback: false,
   };
 };
-const ArticleList = dynamic(() => import("@/components/articleList"));
+const ArticleList = dynamic(() => import("@/components/article-list"));
 
 const ArticleListPage: NextPage = ({ data }: any) => {
   const router = useRouter();

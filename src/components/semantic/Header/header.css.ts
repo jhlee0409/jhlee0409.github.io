@@ -1,10 +1,11 @@
 import { vars } from "@/styles/vars.css";
 import { fontFace, globalStyle, style } from "@vanilla-extract/css";
+import { themeVars } from "@/styles/theme.css";
 export const headerStyle = style({
   height: "10vh",
   position: "sticky",
   top: 0,
-  backgroundColor: vars.color.background,
+  backgroundColor: themeVars.colors.background,
   zIndex: 10,
 });
 
@@ -18,7 +19,7 @@ export const progressbar = style({
 });
 
 globalStyle(`${progressbar} > div`, {
-  backgroundColor: "white",
+  backgroundColor: themeVars.colors.text.normal,
   height: "100%",
 });
 

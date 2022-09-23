@@ -1,4 +1,4 @@
-import Pre from "@/components/Pre";
+import Pre from "@/components/pre";
 import ReactMarkdown from "react-markdown";
 import Code from "@/components/Code";
 

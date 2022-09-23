@@ -9,3 +9,7 @@ declare global {
 export interface ProgressState {
   value: number;
 }
+
+export interface ThemeState {
+  value: boolean;
+}
