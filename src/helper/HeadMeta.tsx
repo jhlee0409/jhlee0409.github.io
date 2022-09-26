@@ -25,6 +25,10 @@ const HeadMeta = ({ title = "", description, url, image }: HeadMetaType) => {
       />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta
+        name="google-site-verification"
+        content="iKa8TjmBLZGa1uOHFPoaAQZJ-aO4ftpY7zhcqo9cwkA"
+      />
+      <meta
         property="og:title"
         content={`${name} ${title ? `: ${title}` : ""}`}
       />

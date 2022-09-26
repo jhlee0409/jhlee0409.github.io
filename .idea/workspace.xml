@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx-fix: 다중 포인터 패턴 (Multiple Pointers Pattern)">
-      <change afterPath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/슬라이딩-윈도우-패턴-(Sliding-Window-Pattern).mdx" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: 슬라이딩 윈도우 패턴 (Sliding Window Pattern)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/cache/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/HeadMeta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/HeadMeta.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jacklee/Desktop/jhlee0409.github.io/posts/tech/Data_Structure_&amp;_Algorithms&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jacklee/til-study-notion-client&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -138,14 +139,9 @@
       <workItem from="1663766843220" duration="13653000" />
       <workItem from="1663841783850" duration="13686000" />
       <workItem from="1663940086885" duration="11622000" />
-      <workItem from="1664118162628" duration="2911000" />
-    </task>
-    <task id="LOCAL-00014" summary="mdx-fix: 스크롤바 커스텀하기">
-      <created>1661081765824</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1661081765824</updated>
+      <workItem from="1664118162628" duration="3224000" />
+      <workItem from="1664125042005" duration="625000" />
+      <workItem from="1664199407713" duration="4555000" />
     </task>
     <task id="LOCAL-00015" summary="mdx-fix: 스크롤바 커스텀하기 날짜 수정">
       <created>1661081901468</created>
@@ -483,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664025567798</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="mdx: 슬라이딩 윈도우 패턴 (Sliding Window Pattern)">
+      <created>1664124150115</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1664124150115</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +504,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: article list date css" />
     <MESSAGE value="fix: side nav &amp; mobile nav css" />
     <MESSAGE value="mdx: HTML Elements 파헤치기" />
     <MESSAGE value="mdx: AbortController 파헤치기" />
@@ -526,7 +528,8 @@
     <MESSAGE value="mdx: 빈도수 카운터 패턴 (Frequency Counters Pattern)" />
     <MESSAGE value="mdx: 다중 포인터 패턴 (Multiple Pointers Pattern)" />
     <MESSAGE value="mdx-fix: 다중 포인터 패턴 (Multiple Pointers Pattern)" />
-    <option name="LAST_COMMIT_MESSAGE" value="mdx-fix: 다중 포인터 패턴 (Multiple Pointers Pattern)" />
+    <MESSAGE value="mdx: 슬라이딩 윈도우 패턴 (Sliding Window Pattern)" />
+    <option name="LAST_COMMIT_MESSAGE" value="mdx: 슬라이딩 윈도우 패턴 (Sliding Window Pattern)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
