@@ -13,6 +13,10 @@ const name = "Le Jack";
 
 const HeadMeta = ({ title = "", description, url, image }: HeadMetaType) => {
   const route = useRouter();
+  const sumRange = (num) => {
+    if (num === 1) return 1;
+    return num + sumRange(num - 1);
+  };
 
   return (
     <Head>
