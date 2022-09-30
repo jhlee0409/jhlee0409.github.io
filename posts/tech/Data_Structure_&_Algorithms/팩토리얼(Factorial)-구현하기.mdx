@@ -1,0 +1,49 @@
+---
+title: "팩토리얼(Factorial) 구현하기"
+date: "2022-09-30"
+tags: ["TIL", "Udemy", "Algorithm", "팩토리얼", 'Factorial']
+draft: false
+summary: "반복문과 재귀 함수로 팩토리얼을 구현해보자"
+---
+
+&nbsp;
+
+# 팩토리얼(Factorial)
+
+- 재귀 함수를 이용한 가장 흔한 패턴은 팩토리얼을 구현하는 것이다.
+- 팩토리얼은 `n!`이며 n이 양의 정수일 때 1부터 n까지 그 수들을 모두 곱하는 것이다.  `0!의 경우 1이다.`
+- 단순 반복문과 재귀 함수로 팩토리얼을 구현해보자.
+
+
+# 1. 반복문으로  팩토리얼 구현하기
+
+```jsx
+const factorial = (num) => {
+    let result = 1;
+    for(let i = 1; i <= num; i++) {
+        result *= i;
+    }
+    return result
+}
+
+factorial(5) // 120
+```
+
+# 재귀 함수로 팩토리얼 구현하기
+
+- 해당 로직의 이해가 필요하다면 [이전 포스팅](https://jhlee0409.github.io/tech-Data_Structure_&_Algorithms/article/%EC%9E%AC%EA%B7%80-%ED%95%A8%EC%88%98-%EC%98%88%EC%A0%9C)에서 두 번째 재귀 함수 구현 부분을 보면 참고하면 된다.
+
+```jsx
+const factorial = (num) => {
+    // 0!과 1!은 1이기 때문에 종료조건을 아래와 같이 세팅
+    // 안걸면 음수까지 가면서 영원히 계산된다.
+    if (num <= 1) return 1;
+    return num * factorial(num-1);
+  }
+
+factorial(5) // 120
+```
+
+---
+
+#### 피드백은 언제나 환영입니다.
