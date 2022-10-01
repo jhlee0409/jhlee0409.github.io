@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: meta tag">
-      <change afterPath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/Helper-메소드-재귀-패턴.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jhlee0409.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jhlee0409.github.io.iml" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: Helper 메소드 재귀 패턴">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_document.page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/cache/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/Helper-메소드-재귀-패턴.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/Helper-메소드-재귀-패턴.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,14 +147,7 @@
       <workItem from="1664386561468" duration="12000" />
       <workItem from="1664453474016" duration="3733000" />
       <workItem from="1664535961544" duration="1378000" />
-      <workItem from="1664625865577" duration="8024000" />
-    </task>
-    <task id="LOCAL-00022" summary="mdx: 이미지를 어디에 저장할까">
-      <created>1661873143545</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1661873143545</updated>
+      <workItem from="1664625865577" duration="8716000" />
     </task>
     <task id="LOCAL-00023" summary="fix: 폰트 변경 및 레이아웃 변경">
       <created>1661873193750</created>
@@ -493,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664635670807</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="mdx: Helper 메소드 재귀 패턴">
+      <created>1664647986009</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1664647986009</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,7 +510,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mdx: [Typescript] tsconfig 절대경로 설정하기 / fix : 포스트 카테고리" />
     <MESSAGE value="fix : 포스트 카테고리" />
     <MESSAGE value="mdx: AWS Amplify Next.js 동적 경로(Dynamic Routes) 설정하기" />
     <MESSAGE value="mdx: 빅오 표기법" />
@@ -536,7 +534,8 @@
     <MESSAGE value="mdx: 팩토리얼(Factorial) 구현하기" />
     <MESSAGE value="fix: body scroll css" />
     <MESSAGE value="fix: meta tag" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: meta tag" />
+    <MESSAGE value="mdx: Helper 메소드 재귀 패턴" />
+    <option name="LAST_COMMIT_MESSAGE" value="mdx: Helper 메소드 재귀 패턴" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
