@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: 팩토리얼(Factorial) 구현하기">
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="fix: body scroll css">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/cache/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/layout.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/layout.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/HeadMeta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/HeadMeta.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,14 +146,7 @@
       <workItem from="1664386561468" duration="12000" />
       <workItem from="1664453474016" duration="3733000" />
       <workItem from="1664535961544" duration="1378000" />
-      <workItem from="1664625865577" duration="3554000" />
-    </task>
-    <task id="LOCAL-00020" summary="mdx-fix: .env 파헤치기">
-      <created>1661441182336</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1661441182336</updated>
+      <workItem from="1664625865577" duration="4223000" />
     </task>
     <task id="LOCAL-00021" summary="fix: 빅카테고리 증가에 따른 dynamic path 수정">
       <created>1661748533579</created>
@@ -492,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664455737836</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="fix: body scroll css">
+      <created>1664634972819</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1664634972819</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,7 +509,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mdx-fix: [Next.js] Page Extensions / reduce syntax highlight" />
     <MESSAGE value="fix: reduce syntax highlight" />
     <MESSAGE value="mdx: [Typescript] tsconfig 절대경로 설정하기 / fix : 포스트 카테고리" />
     <MESSAGE value="fix : 포스트 카테고리" />
@@ -535,7 +533,8 @@
     <MESSAGE value="mdx: 재귀 함수 예제" />
     <MESSAGE value="fix: 불필요 코드 제거" />
     <MESSAGE value="mdx: 팩토리얼(Factorial) 구현하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="mdx: 팩토리얼(Factorial) 구현하기" />
+    <MESSAGE value="fix: body scroll css" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: body scroll css" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
