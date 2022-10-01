@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: 콜 스택 (Call Stack)">
-      <change afterPath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/재귀-함수-예제.mdx" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: 팩토리얼(Factorial) 구현하기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cache/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/cache/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/HeadMeta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/HeadMeta.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/layout.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/layout.css.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,21 +145,9 @@
       <workItem from="1664280280291" duration="1792000" />
       <workItem from="1664372881424" duration="5083000" />
       <workItem from="1664386561468" duration="12000" />
-      <workItem from="1664453474016" duration="1426000" />
-    </task>
-    <task id="LOCAL-00018" summary="add: 구글 애드센스 코드">
-      <created>1661435912332</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1661435912332</updated>
-    </task>
-    <task id="LOCAL-00019" summary="mdx: .env 파헤치기">
-      <created>1661440827108</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1661440827108</updated>
+      <workItem from="1664453474016" duration="3733000" />
+      <workItem from="1664535961544" duration="1378000" />
+      <workItem from="1664625865577" duration="3554000" />
     </task>
     <task id="LOCAL-00020" summary="mdx-fix: .env 파헤치기">
       <created>1661441182336</created>
@@ -491,7 +478,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664383313818</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="mdx: 재귀 함수 예제">
+      <created>1664454939303</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1664454939303</updated>
+    </task>
+    <task id="LOCAL-00068" summary="fix: 불필요 코드 제거">
+      <created>1664455737836</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1664455737836</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,9 +510,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mdx: [Solidity] 04. Solidity 용어, solidity 제목 변경" />
-    <MESSAGE value="feat: create Base Modal" />
-    <MESSAGE value="mdx: [Next.js] Page Extensions / feat: page extensions" />
     <MESSAGE value="mdx-fix: [Next.js] Page Extensions / reduce syntax highlight" />
     <MESSAGE value="fix: reduce syntax highlight" />
     <MESSAGE value="mdx: [Typescript] tsconfig 절대경로 설정하기 / fix : 포스트 카테고리" />
@@ -534,7 +532,10 @@
     <MESSAGE value="feat: 구글 서치 콘솔 값 추가" />
     <MESSAGE value="mdx: 분할과 정복 패턴 (Divide and Conquer Pattern)" />
     <MESSAGE value="mdx: 콜 스택 (Call Stack)" />
-    <option name="LAST_COMMIT_MESSAGE" value="mdx: 콜 스택 (Call Stack)" />
+    <MESSAGE value="mdx: 재귀 함수 예제" />
+    <MESSAGE value="fix: 불필요 코드 제거" />
+    <MESSAGE value="mdx: 팩토리얼(Factorial) 구현하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="mdx: 팩토리얼(Factorial) 구현하기" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

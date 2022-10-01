@@ -26,11 +26,8 @@ export const contentLayout = style({
 
 export const contentWrapper = style({
   width: "100%",
-  // overflow: "hidden",
   position: "relative",
-});
-
-export const bodyLayout = style({
+  height: "100vh",
   overflow: "overlay",
   "::-webkit-scrollbar": {
     width: 16,
@@ -43,7 +40,9 @@ export const bodyLayout = style({
   "::-webkit-scrollbar-thumb": {
     backgroundColor: "#ddd",
     borderRadius: 20,
-    border: `5px solid ${themeVars.colors.background}`,
+    borderWidth: 5,
+    borderStyle: "solid",
+    borderColor: themeVars.colors.background,
     transition: "background-color 300ms ease-in",
   },
   "::-webkit-scrollbar-button": {
@@ -58,6 +57,8 @@ export const bodyLayout = style({
     },
   },
 });
+
+export const bodyLayout = style({});
 
 // 10vh + 2vw
 export const loadingLogoBox = style({
