@@ -1,0 +1,9 @@
+.footerBox {
+  width: 100%;
+  @include flexBox(column, 20);
+  align-items: center;
+  padding: 20px;
+  font-size: 0.8rem;
+  color:var(--textTitle);
+  @include transition1;
+}

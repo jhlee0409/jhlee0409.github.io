@@ -1,0 +1,118 @@
+.card {
+  position: relative;
+  @include transition1;
+  cursor:pointer;
+  overflow: hidden;
+  width: 100%;
+  &:before {
+    position: absolute;
+    content:'';
+    width: 3px;
+    height: 90%;
+    background-color: var(--point);
+    border-radius: 1.5px;
+    @include transition1;
+    transform: translate(-5px, 5%);
+    opacity: 0;
+  }
+  &:hover {
+    transform: translateX(5px);
+    & .cardTitle {
+      color: var(--point);
+    }
+    &:before {
+      transform: translate(5px, 5%);
+      opacity: 1;
+    }
+  }
+  @include mobile {
+    &:hover {
+      transform: translateX(10px);
+      &:before {
+        transform: translate(0, 5%);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.line {
+  position: relative;
+  @include  transition1;
+
+}
+
+.cardTextBox {
+  padding: 25px 20px;
+  @include flexBox(column, 15);
+  @include mobile {
+    padding: 10px;
+  }
+}
+
+
+.dateBox {
+  position: relative;
+  color: var(--textNormal);
+  left: 15px;
+  @include transition1;
+  &:before {
+    content:'';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: -15px;
+    top:55%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: var(--point);
+    @include transition1;
+  }
+  @include mobile {
+    font-size: 0.8rem;
+    &:before {
+      width: 4px;
+      height: 4px;
+      top:50%;
+      left: -12px;
+    }
+  }
+}
+
+.cardTagBox {
+  @include flexBox();
+  @include transition1;
+  gap: 5px 10px;
+  border-top: 1px solid var(--textMain);
+  padding-top: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+  @include mobile {
+    padding-top: 10px;
+    font-size: 0.8rem;
+  }
+  & > span {
+    border-radius: 8px;
+  }
+}
+
+.cardTitle {
+  color: var(--textTitle);
+  @include transition1;
+  word-break: keep-all;
+  @include mobile {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+}
+.cardSummary {
+  font-size: 0.9em;
+  word-break: keep-all;
+  color: var(--textNormal);
+  @include transition1;
+  @include mobile {
+    font-size: 0.8em;
+    line-height: 1.5em;
+  }
+
+}

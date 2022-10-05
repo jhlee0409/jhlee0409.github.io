@@ -1,0 +1,17 @@
+.mainTopWrapper {
+  @include flexBox();
+}
+
+.title {
+  font-weight: bold;
+  width: 100%;
+  letter-spacing: 4px;
+  font-size: 46px;
+  color: var(--textTitle);
+  border-bottom: 3px solid var(--textBigTitle);
+  @include transition1;
+  @include mobile {
+    margin-bottom: 20px;
+    font-size:40px;
+  }
+}

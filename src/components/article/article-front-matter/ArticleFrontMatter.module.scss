@@ -1,0 +1,35 @@
+.overviewWrapper {
+  @include flexBox(column, 10);
+   padding: 40px 20px;
+  background-color: rgba(0 0 0 / 20%);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  color: var(--textNormal);
+  @include transition1;
+  & > h1 {
+    font-weight: bold;
+    font-size: 1.8em;
+    line-height: 1.8em;
+  }
+  & > p {
+    font-size: 1em;
+  }
+  @include mobile {
+    padding: 10px;
+    & > h1 {
+      font-size: 1.2em;
+    }
+    & > p {
+      font-size: 0.8em;
+    }
+  }
+}
+
+.tagWrapper {
+  @include flexBox();
+  gap: 5px 10px;
+  flex-wrap: wrap;
+  @include mobile {
+    font-size: 0.8em;
+  }
+}

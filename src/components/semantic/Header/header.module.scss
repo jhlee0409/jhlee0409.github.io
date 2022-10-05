@@ -1,0 +1,70 @@
+.headerStyle {
+  height: 10vh;
+  position: sticky;
+  top:0;
+  background-color: var(--bg);
+  z-index: 10;
+  @include transition1;
+}
+
+
+.innerHeaderStyle {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2vw;
+  position: sticky;
+  height: inherit;
+ @include flexBox(row, 0, space-between, center);
+  @include mobile {
+    padding: 0 35px 0 20px;
+    height: 80px;
+  }
+}
+
+
+
+.rightHeaderSection {
+  @include flexBox(row, 15);
+}
+
+.rightInnerBox {
+  @include flexBox(row, 15,flex-start,center);
+  height: 100%;
+  @include mobile {
+    display: none;
+  }
+}
+
+.aboutMeButton {
+  transition: all 150ms ease-in-out;
+  position: relative;
+  padding: 8px 0;
+  color: var(--textNormal);
+  &:hover {
+    color: var(--point);
+    &:before {
+      transform: scaleY(1);
+    }
+  }
+  &:before {
+    position: absolute;
+    content:'';
+    bottom:0;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: #ececec;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform 250ms ease-in-out;
+    border-radius: 1px;
+  }
+}
+
+.logoMobileBox {
+  display: none;
+  @include mobile {
+    @include flexBox(rowm,0, center);
+  }
+}

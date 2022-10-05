@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@600&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swapl);
+//@import url(https://cdn.jsdelivr.net/gh/everydayminder/assets/subset-D2Codingligature.woff);
+
+// Font Variables
+$noto-sans: 'Noto Sans KR', sans-serif;
+
+$transition1: cubic-bezier(0.68, 0, 0.27, 1);
+$transition2: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+$primary-color: black;
+$primary-text-color: #769aed;
+$header-height: 90px;
+$mobile-header-height: 55px;
+
+
+$rainbows: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+$rainbowList : (
+  100: #FF9AA2,
+  200: #FFB7B2,
+  300: #FFDAC1,
+  400: #E2F0CB,
+  500: #B5EAD7,
+  600: #C7CEEA,
+  700: #FF9AA2,
+  800: #FFB7B2,
+  900: #FFDAC1,
+);
+
+
+
+
+:export {
+  primaryColor: $primary-color;
+
+  @keyframes upShow {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

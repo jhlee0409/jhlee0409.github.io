@@ -1,0 +1,30 @@
+.menuBox {
+  display: none;
+  @include mobile {
+    @include flexBox(column, 5, center);
+    position: relative;
+    width: 25px;
+    & > div {
+      width: 100%;
+      background-color: white;
+      height: 2px;
+      border-right: 1px;
+      @include transition1;
+      transform-origin: left;
+    }
+  }
+}
+
+.isOpen {
+  & > :nth-child(1) {
+    transform: rotate(45deg);
+  }
+  & > :nth-child(2) {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  & > :nth-child(3) {
+    transform: rotate(-45deg);
+    margin-top: 3px;
+  }
+}

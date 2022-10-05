@@ -1,0 +1,124 @@
+.mobileInteractionBox {
+  display: none;
+  @include mobile {
+    @include flexBox();
+    padding: 10px 20px;
+  }
+}
+
+.nav {
+  width: 280px;
+  overflow: hidden;
+  max-height: 100vh;
+  height: 100%;
+  background-color: var(--secondary);
+  @include transition1;
+  @include mobile {
+    display: none;
+  }
+
+  & h3 {
+    overflow: hidden;
+  }
+}
+
+.navMobile {
+  padding: 10px;
+  width: 270px;
+  display: none;
+  @include mobile {
+    @include flexBox(column, 10);
+    @include transition1;
+    position: fixed;
+    background-color: var(--secondary);
+    top:80px;
+    right:0;
+    width: 100%;
+    height: calc(100vh - 80px);
+  }
+}
+
+.subSection {
+  padding: 10px 0;
+  @include flexBox(column, 10)
+}
+
+.bigTitle {
+  display: inline-block;
+  position: relative;
+  color: var(--textMain);
+   text-transform: uppercase;
+  @include transition1;
+}
+
+.categoryLink {
+  position: relative;
+  @include transition1;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: var(--textNormal);
+  &:before {
+    position: absolute;
+    content:'';
+    bottom: 0;
+    height: 2px;
+    border-radius: 1px;
+    width: 100%;
+    left: 0;
+    background-color: var(--textNormal);
+    transform-origin: bottom right;
+    @include transition1;
+    transform: scaleX(0);
+  }
+  &:hover {
+    &:before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+}
+
+.innerNav {
+  padding: 20px;
+  height: calc(100vh - 106px);
+  overflow: overlay;
+  width: 100%;
+  @include scrollbar;
+}
+
+.headerBox {
+  @include  flexBox(row, 0, center);
+  @include mobile {
+    display: none;
+  }
+}
+
+.headerTitle {
+  font-family: Dancing Script, sans-serif;
+  font-size: 2rem;
+  padding: 10px 0;
+  cursor: pointer;
+  color:var(--textTitle);
+  @include transition1;
+}
+.logoBox {
+  @include flexBox(row, 20 ,center, center);
+  height: 50px;
+  @include mobile {
+    gap: 15px;
+  }
+}
+
+.logoLink {
+  width: 25px;
+  filter: invert(1);
+  transition: 200ms linear;
+  opacity: 0.3;
+  @include  mobile {
+    width: 25px;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}

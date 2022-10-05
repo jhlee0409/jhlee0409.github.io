@@ -1,0 +1,56 @@
+@import '../jhlee0409.github.io/styles/theme';
+$width: 30px;
+
+.iconImage {
+  width: calc( $width / 2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  transition: all 200ms ease-in-out;
+}
+
+.lightThemeIcon {
+  transform: translate(50%, -50%);
+}
+
+.darkThemeIcon {
+  transform: translate(-150%, -50%);
+}
+
+.themeButtonBox {
+  display: flex;
+  align-items: center;
+
+}
+
+.switchThemeButton {
+  width: calc($width * 2);
+  height: $width;
+  border-radius: calc( $width / 2);
+  position: relative;
+  background-color: white;
+  &:before {
+    transition: $transition2 320ms;
+    position: absolute;
+    content:'';
+    background-color: black;
+    border-radius: 50%;
+    width: $width - 10;
+    height: $width - 10;
+    top: 50%;
+    z-index:10
+  }
+}
+
+.isDarkTheme {
+  &:before {
+    transform: translate(15%, -50%);
+  }
+}
+
+.isLightTHeme {
+  &:before {
+    transform: translate(-115%, -50%);
+  }
+}

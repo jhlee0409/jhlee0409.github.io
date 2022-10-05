@@ -1,0 +1,17 @@
+.global {
+font-family: NEXONLv1GothicOTFRegular, sans-serif;
+
+  & article {
+    font-family: NEXONLv1GothicOTFRegular, sans-serif !important;
+  }
+
+  & article code {
+    //font-family: D2Coding, sans-serif !important;
+  }
+
+  article img {
+    padding: 10px
+  }
+}
+
+

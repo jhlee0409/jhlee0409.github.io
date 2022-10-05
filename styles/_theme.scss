@@ -1,0 +1,54 @@
+
+$themes: (
+  bg: (
+    lightTheme: #E8F6EF,
+    darkTheme:#1b1b1b,
+  ),
+  inverColor: (
+    lightTheme: #1b1b1b,
+    darkTheme:#E8F6EF,
+  ),
+  primary: (
+    lightTheme: #1E40AF,
+    darkTheme:#1b1b1b,
+  ),
+  secondary: (
+    lightTheme: #B8DFD8,
+    darkTheme:#202020,
+  ),
+  point: (
+    lightTheme: #3c3c3c,
+    darkTheme:#caf1f8,
+  ),
+  textNormal : (
+    lightTheme: #3c3c3c,
+    darkTheme:#c3c6c6,
+  ),
+  textMain : (
+    lightTheme: #213547,
+    darkTheme:#c3c6c6,
+  ),
+  textTitle : (
+    lightTheme: #3c3c3c,
+    darkTheme:#ececec,
+  ),
+  textBigTitle : (
+    lightTheme: #B8DFD8,
+    darkTheme: #caf1f8,
+  ),
+  textArticleHeadTag : (
+    lightTheme: #3c3c3c,
+    darkTheme:#c9d1d9,
+  )
+);
+
+@mixin styles($mode) {
+  @each $key, $map in $themes {
+    @each $prop, $color in $map {
+      @if $prop == $mode {
+        --#{$key}: #{$color};
+      }
+    }
+  }
+}
+
