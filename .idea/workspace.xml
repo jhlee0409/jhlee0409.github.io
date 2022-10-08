@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: Helper 메소드 재귀 패턴">
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: 선형 탐색 (Linear Search)">
+      <change afterPath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/나이브-문자열-검색-(Naive-String-Search).mdx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/cache/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/Helper-메소드-재귀-패턴.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/Helper-메소드-재귀-패턴.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
