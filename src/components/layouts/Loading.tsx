@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import loadingSVG from "@/assets/loading.svg";
 import Image from "next/image";
-import { loadingLogoBox } from "./layout.css";
+import styles from "./layout.module.scss";
 const LoadingPage = ({ children }: any) => {
   const router = useRouter();
 
@@ -24,7 +24,7 @@ const LoadingPage = ({ children }: any) => {
   return (
     <>
       {loading ? (
-        <div className={loadingLogoBox}>
+        <div className={styles.loadingLogoBox}>
           <div>
             <Image src={loadingSVG} alt="is loading ..." />
           </div>

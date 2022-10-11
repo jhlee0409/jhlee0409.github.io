@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { bodyLayout } from "@/components/layouts/layout.css";
 export default class CustomDocument extends Document {
   render() {
     return (
@@ -33,7 +32,7 @@ export default class CustomDocument extends Document {
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6927905151492991"
             crossOrigin="anonymous"></script>
         </Head>
-        <body className={bodyLayout}>
+        <body>
           <Main />
           <NextScript />
         </body>

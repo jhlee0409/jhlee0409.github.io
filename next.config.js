@@ -1,6 +1,6 @@
 const { createVanillaExtractPlugin } = require("@vanilla-extract/next-plugin");
 const withVanillaExtract = createVanillaExtractPlugin();
-
+const path = require("path");
 // const debug = process.env.NODE_ENV !== "production";
 // const name = "jhlee0409.github.io";
 
@@ -21,6 +21,10 @@ module.exports = withVanillaExtract({
     formats: ["image/avif", "image/webp"],
     loader: "akamai",
     path: "/",
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
+    prependData: `@import "styles/_variables.scss"; @import "styles/_mixins.scss"; @import "styles/_theme.scss";`,
   },
   webpack(config) {
     config.resolve.fallback = {

@@ -3,15 +3,8 @@ import { sprinkles } from "@/styles/sprinkles.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Nav from "../nav";
-import { headerTitle, navMobile } from "../nav/nav.css";
-import {
-  headerStyle,
-  Flex,
-  innerHeaderStyle,
-  rightHeaderSection,
-  aboutMeBtn,
-  logoMobileBox,
-} from "./header.css";
+import styles from "./header.module.scss";
+import navStyles from "../nav/nav.module.scss";
 import Search from "@/components/search/Search";
 import SwtichThemeButton from "@/components/switch-theme-button/SwitchThemeButton";
 const Header = ({ categories }: any) => {
@@ -31,32 +24,32 @@ const Header = ({ categories }: any) => {
   }, [click]);
 
   return (
-    <header className={headerStyle}>
-      <div className={innerHeaderStyle}>
+    <header className={styles.headerStyle}>
+      <div className={styles.innerHeaderStyle}>
         <div>
-          <div className={logoMobileBox}>
+          <div className={styles.logoMobileBox}>
             <Link href={"/"}>
               <a
-                className={headerTitle}
+                className={navStyles.headerTitle}
                 onClick={() => setClick(true)}>{`Le Jack`}</a>
             </Link>
           </div>
         </div>
-        <div className={Flex}>
-          <div className={rightHeaderSection}>
+        <div className={styles.rightHeaderSection}>
+          <div className={styles.rightInnerBox}>
             <Link href={"/about"}>
-              <a className={aboutMeBtn}>About me</a>
+              <a className={styles.aboutMeButton}>About me</a>
             </Link>
             <Search closeMobileMenu={() => setClick(true)} />
           </div>
-          <HamburgerMenu setClick={setClick} click={click} />
           <SwtichThemeButton />
+          <HamburgerMenu setClick={setClick} click={click} />
         </div>
       </div>
       <Nav
         setClick={setClick}
         categories={categories}
-        className={`${navMobile} ${sprinkles({
+        className={`${navStyles.navMobile} ${sprinkles({
           transform: {
             mobile: click ? "translateX(-100%)" : "translateX(0)",
           },

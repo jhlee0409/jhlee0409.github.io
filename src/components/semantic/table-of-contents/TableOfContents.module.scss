@@ -1,0 +1,7 @@
+.wrapper {
+  position: sticky;
+  top:100px;
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  width: 100%;
+}

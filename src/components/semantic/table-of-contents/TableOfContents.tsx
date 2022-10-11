@@ -1,4 +1,4 @@
-import { wrapper } from "./tableOfContents.css";
+import styles from "./TableOfContents.module.scss";
 import { useEffect, useState } from "react";
 
 const useHeadingsData = () => {
@@ -78,7 +78,7 @@ const Headings = ({ headings }: any) => (
 const TableOfContents = () => {
   const { nestedHeadings } = useHeadingsData();
   return (
-    <nav aria-label="Table of contents" className={wrapper}>
+    <nav aria-label="Table of contents" className={styles.wrapper}>
       <Headings headings={nestedHeadings} />
     </nav>
   );

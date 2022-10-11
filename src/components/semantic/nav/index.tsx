@@ -1,18 +1,7 @@
 import { sprinkles } from "@/styles/sprinkles.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import {
-  categoryLink,
-  bigTitle,
-  subSection,
-  headerTitle,
-  headerBox,
-  logoBox,
-  logoLink,
-  innerNav,
-  mobileInteractionBox,
-} from "./nav.css";
-
+import styles from "./nav.module.scss";
 import Image from "next/image";
 import githubLogo from "@/assets/github.png";
 import linkedinLogo from "@/assets/linkedin.png";
@@ -23,26 +12,26 @@ const Nav = ({ categories, className, setClick }: any) => {
 
   return (
     <div>
-      <div className={`${className}`}>
+      <div className={className}>
         <div>
-          <div className={headerBox}>
+          <div className={styles.headerBox}>
             <Link href={"/"}>
-              <a className={headerTitle}>{`Le Jack`}</a>
+              <a className={styles.headerTitle}>{`Le Jack`}</a>
             </Link>
           </div>
-          <div className={mobileInteractionBox}>
+          <div className={styles.mobileInteractionBox}>
             <Search closeMobileMenu={() => setClick && setClick(true)} />
           </div>
-          <div className={logoBox}>
+          <div className={styles.logoBox}>
             <a
-              className={logoLink}
+              className={styles.logoLink}
               href="https://github.com/jhlee0409"
               target="_blank"
               rel="noreferrer">
               <Image src={githubLogo} alt="github" />
             </a>
             <a
-              className={logoLink}
+              className={styles.logoLink}
               href="https://www.linkedin.com/in/jhlee0409/"
               target="_blank"
               rel="noreferrer">
@@ -50,20 +39,20 @@ const Nav = ({ categories, className, setClick }: any) => {
             </a>
           </div>
         </div>
-        <nav className={innerNav}>
+        <nav className={styles.innerNav}>
           {categories?.map(({ title: bigCategory, sub }: any, i: number) => {
             return (
               <div key={bigCategory + i}>
                 <h3>
-                  <span className={bigTitle}>{bigCategory}</span>
+                  <span className={styles.bigTitle}>{bigCategory}</span>
                 </h3>
-                <div className={subSection}>
+                <div className={styles.subSection}>
                   {sub.map(({ title, count }: any, i: number) => {
                     return (
                       <Link key={title + i} href={`/${bigCategory}-${title}`}>
                         <a
                           onClick={() => setClick && setClick(true)}
-                          className={`${categoryLink} ${sprinkles({
+                          className={`${styles.categoryLink} ${sprinkles({
                             color:
                               router.query.categoryId ===
                               `${bigCategory}-${title}`
@@ -81,7 +70,7 @@ const Nav = ({ categories, className, setClick }: any) => {
                     );
                   })}
                   {sub.length === 0 && (
-                    <div className={subSection}>
+                    <div className={styles.subSection}>
                       <p>No Category</p>
                     </div>
                   )}

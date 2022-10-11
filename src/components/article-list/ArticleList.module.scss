@@ -1,0 +1,31 @@
+
+.wrapper {
+  @include flexBox(row, 10);
+  & > :first-child {
+    flex: 4
+  };
+  & > :last-child {
+    flex: 15;
+  }
+}
+
+.articlesBox {
+  @include flexBox(column, 50);
+  padding-top: 30px;
+  @include mobile {
+    padding-top: 0;
+    gap: 20px;
+  }
+}
+
+.card {
+  position: relative;
+  border-radius: 12px;
+  @include transition1;
+  cursor: pointer;
+  box-shadow: rgb(255 255 255 / 4%) 0 4px 16px 0;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: rgb(255 255 255 / 4%) 0 8px 16px 0;
+  }
+}

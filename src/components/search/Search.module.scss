@@ -1,0 +1,14 @@
+
+
+.searchBtn {
+  fill: var(--textNormal);
+  width: 30px;
+  padding: 5px;
+  @include flexBox(row, 0, flex-start, center);
+  border-radius: 8px;
+  @include transition1();
+  border: 2px solid transparent;
+  &:hover {
+    border: 2px solid  var(--textNormal);
+  }
+}

@@ -1,13 +1,10 @@
 import HeadMeta from "@/helper/HeadMeta";
-import Head from "next/head";
-import { main } from "./main.css";
-import MainContent from "./MainContent";
-import MainTop from "./MainTop";
+import MainTop from "./MainTop/MainTop";
 import ArticleList from "@/components/article-list";
 
 const MainComponent = ({ data }: any) => {
   return (
-    <div className={main}>
+    <div>
       <HeadMeta title="" />
       <MainTop />
       <ArticleList data={data} />

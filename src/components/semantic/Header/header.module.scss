@@ -25,7 +25,7 @@
 
 
 .rightHeaderSection {
-  @include flexBox(row, 15);
+  @include flexBox(row, 15, center, center);
 }
 
 .rightInnerBox {

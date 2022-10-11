@@ -1,12 +1,13 @@
 import { nanoid } from "nanoid";
 import ArticleCardOverview from "../article-card-overview";
-import { articlesBox, wrapper } from "./index.css";
+
+import styles from "./ArticleList.module.scss";
 
 const articleKey = nanoid();
 const ArticleList = ({ data }: any) => {
   return (
-    <div className={wrapper}>
-      <div className={articlesBox}>
+    <div className={styles.wrapper}>
+      <div className={styles.articlesBox}>
         {data?.length === 0 ? (
           <div>등록된 게시물이 없습니다</div>
         ) : !data ? (

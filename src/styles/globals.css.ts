@@ -7,7 +7,7 @@ const fadeInAnimation = keyframes({
 });
 
 globalStyle("html, body", {
-  fontFamily: "NEXONLv1GothicOTFRegular, sans-serif",
+  // fontFamily: "NEXONLv1GothicOTFRegular, sans-serif",
 });
 globalStyle("body", {
   overflow: "auto",
@@ -38,9 +38,9 @@ globalFontFace("NEXONLv1GothicOTFRegular", {
   src: "url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff')",
 });
 
-globalFontFace("D2Coding", {
-  src: "url('https://cdn.jsdelivr.net/gh/everydayminder/assets/subset-D2Codingligature.woff') format('woff')",
-});
+// globalFontFace("D2Coding", {
+//   src: "url('https://cdn.jsdelivr.net/gh/everydayminder/assets/subset-D2Codingligature.woff') format('woff')",
+// });
 
 // article css
 globalStyle("article", {
@@ -50,33 +50,31 @@ globalStyle("article", {
 // article font
 
 globalStyle("article", {
-  fontFamily: "NEXONLv1GothicOTFRegular, sans-serif !important",
+  // fontFamily: "NEXONLv1GothicOTFRegular, sans-serif !important",
 });
 
 globalStyle("article code ", {
-  fontFamily: "NEXONLv1GothicOTFRegular, sans-serif !important",
+  // fontFamily: "NEXONLv1GothicOTFRegular, sans-serif !important",
 });
 
 globalStyle("article pre code", {
-  fontFamily: "D2Coding, sans-serif !important",
+  // fontFamily: "D2Coding, sans-serif !important",
 });
 
 // article image
 
-globalStyle("article img", {
-  padding: 10,
-});
+globalStyle("article img", {});
 
 globalStyle("article .markdown-image-box", {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  justifyContent: "center",
-  margin: "0 auto",
-  gap: 5,
-  "@media": {
-    "screen and (max-width: 578px)": {
-      width: "95% !important",
-    },
-  },
+  // display: "flex",
+  // flexDirection: "column",
+  // alignItems: "center",
+  // justifyContent: "center",
+  // margin: "0 auto",
+  // gap: 5,
+  // "@media": {
+  //   "screen and (max-width: 578px)": {
+  //     width: "95% !important",
+  //   },
+  // },
 });

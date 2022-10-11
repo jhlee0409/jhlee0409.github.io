@@ -1,15 +1,9 @@
-import {
-  innerContent,
-  searchedList,
-  searchInput,
-  searchInputBox,
-  searchLink,
-} from "@/components/search/search-inner-form/searchInnerForm.css";
 import Link from "next/link";
 import { useCallback, useRef, useState } from "react";
 import search from "@/assets/icons/search.svg";
 import Image from "next/image";
 import { posts } from "@/cache/data";
+import styles from "./SearchInnerForm.module.scss";
 const SearchInnerForm = ({ onClose, closeMobileMenu }: any) => {
   const searchRef = useRef<HTMLDivElement>(null);
 
@@ -62,16 +56,16 @@ const SearchInnerForm = ({ onClose, closeMobileMenu }: any) => {
 
   return (
     <>
-      <div className={innerContent}>
-        <div ref={searchRef}>
-          <div className={searchInputBox}>
+      <div className={styles.innerContent}>
+        <div ref={styles.searchRef}>
+          <div className={styles.searchInputBox}>
             <div>
               <Image src={search} alt="search" />
             </div>
             <input
               ref={inputRef}
               placeholder={"검색할 제목을 입력해주세요."}
-              className={`${searchInput}`}
+              className={`${styles.searchInput}`}
               onChange={onChange}
               onFocus={onFocus}
               value={query}
@@ -79,7 +73,7 @@ const SearchInnerForm = ({ onClose, closeMobileMenu }: any) => {
             />
           </div>
           {results.length > 0 && (
-            <ul className={`${searchedList} `}>
+            <ul className={`${styles.searchedList} `}>
               {results.map(({ id, title }: { id: string; title: string }) => (
                 <Link
                   key={`${id}-${title}`}
@@ -90,7 +84,7 @@ const SearchInnerForm = ({ onClose, closeMobileMenu }: any) => {
                       onClose();
                       closeMobileMenu && closeMobileMenu();
                     }}
-                    className={searchLink}>
+                    className={styles.searchLink}>
                     <a>{title}</a>
                   </li>
                 </Link>

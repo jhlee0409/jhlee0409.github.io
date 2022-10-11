@@ -114,5 +114,9 @@
     font-size: 0.8em;
     line-height: 1.5em;
   }
+}
+
+.tag {
+  @include transition1;
 
 }

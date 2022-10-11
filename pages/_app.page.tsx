@@ -8,7 +8,7 @@ import LoadingPage from "@/components/layouts/Loading";
 import { useRouter } from "next/router";
 import Script from "next/script";
 import { storeWrapper } from "@/app/store";
-
+import styles from "../styles/global.module.scss";
 export const getServerSideProps = () => {
   const categories = getPostCategory();
   return {
@@ -36,27 +36,29 @@ const MyApp: NextPage = ({ Component, pageProps }: any) => {
   }, [router.events]);
 
   return (
-    <Layout categories={pageProps.categories || []}>
-      <LoadingPage>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-GSXS4W26FH"
-        />
-        <Script
-          id="g-tag"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+    <div className={styles.global}>
+      <Layout categories={pageProps.categories || []}>
+        <LoadingPage>
+          <Script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-GSXS4W26FH"
+          />
+          <Script
+            id="g-tag"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-GSXS4W26FH', { page_path: window.location.pathname });
             `,
-          }}
-        />
-        <Component {...pageProps} />
-      </LoadingPage>
-    </Layout>
+            }}
+          />
+          <Component {...pageProps} />
+        </LoadingPage>
+      </Layout>
+    </div>
   );
 };
 

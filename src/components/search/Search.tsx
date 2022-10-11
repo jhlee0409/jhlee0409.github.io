@@ -1,16 +1,14 @@
 import Portal from "@/components/portal/Portal";
-import Image from "next/image";
-import search from "@/assets/icons/search.svg";
-import { searchBtn } from "@/components/search/search.css";
+import styles from "./Search.module.scss";
 
-import SearchInnerForm from "@/components/search/SearchInnerForm";
+import SearchInnerForm from "@/components/search/search-inner-form/SearchInnerForm";
 
 const Search = ({ closeMobileMenu }: { closeMobileMenu: () => void }) => {
   return (
     <Portal
       openComponent={(props: any) => {
         return (
-          <button className={searchBtn} type={"button"} {...props}>
+          <button className={styles.searchBtn} type={"button"} {...props}>
             <svg
               version="1.1"
               id="Capa_1"

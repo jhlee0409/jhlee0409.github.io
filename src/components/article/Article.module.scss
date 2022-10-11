@@ -1,0 +1,47 @@
+
+.base {
+  @include flexBox(row, 40);
+  height: 100vh;
+}
+
+.line {
+  height: 4px;
+  background-color: white;
+  width: 100%;
+  margin-top: 2em;
+  border-radius: 12px;
+  @include transition1;
+  @include mobile {
+    border-radius: 8px;
+  }
+}
+.markdownArticle {
+  & h1 , h2, h3, h4, li, p, a {
+    @include transition1;
+    color: var(--textArticleHeadTag);
+  }
+@include mobile {
+  & h1 {
+    font-size: 1.4em;
+  }
+  & h2{
+    font-size: 1.2em;
+
+  }
+  & h3 {
+    font-size: 1.1em;
+  }
+  & h4 {
+    font-size: 1em;
+  }
+  & p {
+    margin: 10px 0;
+  }
+  & p, span, a {
+    font-size: 0.9em;
+  }
+  & ol, ul {
+    padding: 0 0 0 15px;
+  }
+}
+}

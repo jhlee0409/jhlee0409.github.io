@@ -1,6 +1,6 @@
 // @ts-ignore
 import { PortalWithState } from "react-portal";
-import { layout, content } from "@/components/portal/portal.css";
+import styles from "./Portal.module.scss";
 import { RemoveScroll } from "react-remove-scroll";
 import { memo } from "react";
 
@@ -13,10 +13,10 @@ const Portal = memo(({ openComponent: Button, render: Component }: any) => {
           <Button onClick={openPortal} />
           {portal(
             <>
-              <div className={content}>
+              <div className={styles.content}>
                 <Component onClose={closePortal} />
               </div>
-              <div className={`${layout}`} onClick={closePortal}></div>
+              <div className={`${styles.layout}`} onClick={closePortal}></div>
             </>
           )}
         </RemoveScroll>

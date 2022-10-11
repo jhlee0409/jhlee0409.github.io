@@ -2,13 +2,20 @@
 
 
 
-@mixin rainbowSet($colorName) {
-  color: map-get($rainbowList, $colorName);
+@mixin rainbowDarkSet($colorName) {
+  color: map-get($rainbowDarkList, $colorName);
+}
+
+@mixin rainbowLightSet($colorName) {
+  color: map-get($rainbowLightList, $colorName);
 }
 
 @each $color in $rainbows {
-  .rainbow-#{$color} {
-    @include rainbowSet($color);
+  .rainbow-dark-#{$color} {
+    @include rainbowDarkSet($color);
+  }
+  .rainbow-light-#{$color} {
+    @include rainbowLightSet($color);
   }
 }
 
@@ -115,7 +122,7 @@ $desktop: 1199.98px;
   border-width: 5px;
   border-style: solid;
   border-color: var(--bg);
-  transition:cubic-bezier(0.68, -0.55, 0.27, 01.55) 420ms;
+  transition: all cubic-bezier(0.68, 0, 0.27, 1) 420ms;
 }
 &::-webkit-scrollbar-button {
   display: none;
