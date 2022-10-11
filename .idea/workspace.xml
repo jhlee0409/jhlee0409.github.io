@@ -4,67 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: 나이브 문자열 검색 (Naive String Search)">
-      <change afterPath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/나이브-문자열-검색-(Naive-String-Search).mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/article-list/ArticleList.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/article/Article.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/portal/Portal.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/search/Search.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/semantic/table-of-contents/TableOfContents.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/cache/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/_next/static/chunks/pages/_app-6755c90a31608176.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/_next/static/chunks/pages/_app-6755c90a31608176.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/tech-Next.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/tech-Next.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/tech-Next.js/article/[Next.js]-Page-Extensions.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/tech-Next.js/article/[Next.js]-Page-Extensions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_document.page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/이진-탐색-(Binary-Search).mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/이진-탐색-(Binary-Search).mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Code.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Img.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article-card-overview/articleCardOverview.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article-card-overview/articleCardOverview.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article-card-overview/index.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article-card-overview/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article-card-overview/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article-list/index.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article-list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article-list/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article/Article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/Article.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article/ArticleFrontMatter.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article/index.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hamburger-menu/index.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hamburger-menu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hamburger-menu/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/headTag.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/Loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/Loading.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/layout.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/MainTop.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/main.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/portal/Portal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portal/Portal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/portal/portal.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pre/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pre/pre.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search/Search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search/SearchInnerForm.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search/search-inner-form/SearchInnerForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search/search-inner-form/SearchInnerForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search/search-inner-form/searchInnerForm.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search/search.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search/searchInnerForm.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/Footer/footer.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Footer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/Header/header.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/Header/header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Header/header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/Header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/nav/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/nav/nav.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/table-of-contents/TableOfContents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/table-of-contents/TableOfContents.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/semantic/table-of-contents/tableOfContents.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/switch-theme-button/SwitchThemeButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/switch-theme-button/SwitchThemeButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/switch-theme-button/switchThemeButton.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/globals.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: 선형 탐색 (Linear Search)">
+      <change beforePath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/선형-탐색-(Linear-Search).mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/선형-탐색-(Linear-Search).mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,25 +43,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "NewWatcherDialog.advanced.open": "true",
-    "Project.color": "333f62",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/jacklee/Desktop/jhlee0409.github.io/posts/tech/Data_Structure_&_Algorithms",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\jacklee\\Desktop\\jhlee0409.github.io\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "watcher.settings",
-    "ts.external.directory.path": "C:\\Users\\jacklee\\Desktop\\jhlee0409.github.io\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;NewWatcherDialog.advanced.open&quot;: &quot;true&quot;,
+    &quot;Project.color&quot;: &quot;333f62&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jacklee/Desktop/jhlee0409.github.io/posts/tech/Data_Structure_&amp;_Algorithms&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\jacklee\\Desktop\\jhlee0409.github.io\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\jacklee\\Desktop\\jhlee0409.github.io\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jacklee\Desktop\jhlee0409.github.io\posts\tech\Data_Structure_&amp;_Algorithms" />
