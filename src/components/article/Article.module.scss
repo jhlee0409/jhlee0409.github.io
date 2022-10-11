@@ -20,6 +20,9 @@
     @include transition1;
     color: var(--textArticleHeadTag);
   }
+  &  a {
+   text-decoration: underline;
+  }
 @include mobile {
   & h1 {
     font-size: 1.4em;

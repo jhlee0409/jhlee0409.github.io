@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: 선형 탐색 (Linear Search)">
-      <change beforePath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/선형-탐색-(Linear-Search).mdx" beforeDir="false" afterPath="$PROJECT_DIR$/posts/tech/Data_Structure_&amp;_Algorithms/선형-탐색-(Linear-Search).mdx" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx-fix : 선형 탐색 구현 포스트 복구">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/cache/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/article/Article.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/Article.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,13 +151,6 @@
       <workItem from="1664625865577" duration="8716000" />
       <workItem from="1664780491835" duration="5245000" />
       <workItem from="1665483518584" duration="5272000" />
-    </task>
-    <task id="LOCAL-00023" summary="fix: 폰트 변경 및 레이아웃 변경">
-      <created>1661873193750</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1661873193750</updated>
     </task>
     <task id="LOCAL-00024" summary="mdx: AWS CodeBuild Webhook 이벤트 설정하기">
       <created>1662046335580</created>
@@ -493,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664647986009</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="mdx-fix : 선형 탐색 구현 포스트 복구">
+      <created>1665499746066</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1665499746066</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,7 +513,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="mdx: AWS Amplify Next.js 동적 경로(Dynamic Routes) 설정하기" />
     <MESSAGE value="mdx: 빅오 표기법" />
     <MESSAGE value="fix: 줄바꿈, 모바일 이미지 크기 수정" />
     <MESSAGE value="mdx-fix: [Programming] 프레임워크와 라이브러리의 차이" />
@@ -536,7 +537,8 @@
     <MESSAGE value="fix: meta tag" />
     <MESSAGE value="mdx: Helper 메소드 재귀 패턴" />
     <MESSAGE value="mdx: 나이브 문자열 검색 (Naive String Search)" />
-    <option name="LAST_COMMIT_MESSAGE" value="mdx: 나이브 문자열 검색 (Naive String Search)" />
+    <MESSAGE value="mdx-fix : 선형 탐색 구현 포스트 복구" />
+    <option name="LAST_COMMIT_MESSAGE" value="mdx-fix : 선형 탐색 구현 포스트 복구" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

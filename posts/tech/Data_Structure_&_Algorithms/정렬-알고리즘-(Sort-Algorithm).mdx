@@ -1,0 +1,116 @@
+---
+title: "정렬 알고리즘 (Sort Algorithm)"
+date: "2022-10-12"
+tags: ["TIL", "Udemy", "Algorithm", "정렬 알고리즘", 'Sort Algorithm']
+draft: false
+summary: "정렬 알고리즘과 JS의 배열 내장 메소드인 sort에 대해 알아보자"
+---
+
+&nbsp;
+
+# 정렬이란?
+
+- 정렬은 간단히 배열과 같은 컬렉션(collection)의 항목을 재배열하는 과정을 말한다.
+- 배열, 목록, 트리와 같은 다른 데이터 구조도 정렬 가능하다.
+
+    > e.g. 숫자를 오름차순, 내림차순으로 정렬하기
+    >
+
+    > e.g. 문자를 알파벳순, ㄱㄴㄷ순으로 정렬하기
+    >
+
+    > e.g. 개봉 연도 또는 수익 … 을 기준으로 영화 정렬하기
+    >
+
+- [접근 방식에 따른 정렬 알고리즘 YOUTUBE 영상](https://youtu.be/kPRA0W1kECg)
+
+&nbsp;
+
+# 왜 정렬을 배우는 게 필요한가?
+
+- 정렬은 프로그래밍을 함에 있어서 흔히 접하기 때문에 동작 방식을 아는 게 좋다.
+    - 각 언어의 내장된 정렬 메소드를 쓸 때 동작 방식을 알아야 어느 상황 때 어느 메소드를 쓰는 게 좋은지 판단이 가능하다.
+- 다양한 방식의 정렬이 있고 각각 장단점이 있다.
+- 객관적으로 빠른 정렬이 있는 반면, 특정 상황에서 뛰어난 성능을 보여주는 정렬도 있다.
+- [Sorting Algorithms Animations](https://www.toptal.com/developers/sorting-algorithms)에서 어느 상황 때 어느 정렬 알고리즘이 좋은지 시각적 잘 보여준다.
+
+&nbsp;
+
+# Javascript의 배열 내장 메소드인 Array.sort()
+
+- `sort`메소드는 의도한 상황대로 정상적으로 작동하지 않을 때가 있다.
+- 기본적인 `sort`의 동작 방식은 숫자의 순서를 이해하지 못한다.
+- 왜 이해하지 못할까? [MDN Array.prototype.sort()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)를 보면 다음과 같은 이유 때문이다.
+    > 기본 정렬 순서는 문자열의 유니코드 코드 포인트를 따릅니다.
+- 그렇기에 숫자를 의도한 대로 정렬하기 위해서는 추가적인 로직 작성이 필요하다.
+
+```jsx
+// 추가 로직 작성 전
+
+// 오름차순으로 정렬하고자 할 때
+[2, 12, 5, 10].sort(); 
+
+// 원하는 결과
+[2, 5, 10, 12]
+
+// 실제 결과
+[10, 12, 2, 5]
+```
+
+&nbsp;
+
+## 추가적인 작업
+
+- `sort()`는 인자로 `선택적 비교 함수(optional comparator function)`를 받을 수 있다.
+- `선택적 비교 함수`를 통해 우리가 원하는 정렬 방식을 전달할 수 있다.
+- `선택적 비교 함수`는 `A와 B`를 비교하고 반환되는 값을 기반으로 정렬한다.
+    - 만약 `음수`를 반환하면 `A는 B보다 앞에 정렬`된다.
+    - 만약 `양수`를 반환하면 `A는 B보다 뒤에 정렬`된다.
+    - 만약 `0`을 반환하면 `A와B는 같은 값이기 때문에 변화는 없다.`
+
+```jsx
+// 오름차순으로 정렬하고자 할 때
+[2, 12, 5, 10].sort((a,b) => {
+	return a - b;
+});
+
+// 음수 이기에 2는 12 앞에 정렬
+[2, 12] => 2 - 12 = -10  // [2, 12]
+
+// 양수 이기에 12는 5 뒤에 정렬
+[12, 5] => 12 - 5 = 7  // [2, 5, 12]
+
+// 양수 이기에 12는 10 뒤에 정렬
+[12, 10] => 12 - 10 = 2 // [2, 5, 10, 12]
+
+
+// result
+[2, 5, 10, 12]
+
+```
+
+&nbsp;
+
+- 문자열의 경우에도 어떤 비교함수를 작성하느냐에 따라 정렬 방식을 다양하게 할 수 있다
+
+> e.g. 문자의 길이를 기준으로 정렬하는 경우
+
+```jsx
+["Apple", "Pear", "Strawberry", "Cheery"].sort((a,b)=> {
+	// 반환되는 값은 0, 음수, 양수
+	return a.length - b.length; 
+})
+
+// 양수 이기에 Apple은 Pear 뒤에 정렬
+['Apple', 'Pear'] => 5 - 4 = 1 // ['Pear', 'Apple']
+
+// 음수 이기에 Apple은 Strawberry 앞에 정렬
+['Apple', 'Strawberry'] => 5 - 10 = -4  // ['Pear', 'Apple', 'Strawberry']
+
+//양수 이기에 Strawberry는 Cherry 뒤에 정렬
+["Strawberry", "Cheery"] => 10 - 6 = 4 // ['Pear', 'Apple', 'Cheery', 'Strawberry']
+
+
+// result
+['Pear', 'Apple', 'Cheery', 'Strawberry']
+```
