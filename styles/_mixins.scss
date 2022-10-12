@@ -111,7 +111,7 @@ $desktop: 1199.98px;
   color: rgba(0, 0, 0, 0);
   transition: color .3s ease;
   &:hover {
-    color: rgba(0, 0, 0, 0.3);
+    color: var(--textNormal);
   }
   &::-webkit-scrollbar, &::-webkit-scrollbar-thumb {
     width: 18px;
