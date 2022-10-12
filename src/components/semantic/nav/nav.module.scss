@@ -82,8 +82,9 @@
 .innerNav {
   padding: 20px;
   height: calc(100vh - 106px);
-  overflow: overlay;
+  overflow: auto;
   width: 100%;
+
   @include scrollbar;
 }
 

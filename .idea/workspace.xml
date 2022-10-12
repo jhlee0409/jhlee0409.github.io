@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="mdx: 정렬 알고리즘 (Sort Algorithm)">
-      <change afterPath="$PROJECT_DIR$/src/components/markdown/pre/Pre.module.scss" afterDir="false" />
+    <list default="true" id="e7c39904-a7f1-4ea9-a4b9-e9131b927adb" name="변경" comment="feat: code css (mac style)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/cache/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/markdown/code/Code.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/markdown/code/Code.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/markdown/pre/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/markdown/pre/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/markdown/pre/pre.css.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/semantic/nav/nav.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/semantic/nav/nav.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/_mixins.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,13 +151,7 @@
       <workItem from="1664625865577" duration="8716000" />
       <workItem from="1664780491835" duration="5245000" />
       <workItem from="1665483518584" duration="5272000" />
-    </task>
-    <task id="LOCAL-00025" summary="fix: 폰트 수정 및 article image css">
-      <created>1662046394664</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1662046394664</updated>
+      <workItem from="1665574148870" duration="1532000" />
     </task>
     <task id="LOCAL-00026" summary="mdx-fix: AWS CodeBuild Webhook 이벤트 설정하기">
       <created>1662047107763</created>
@@ -498,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665504124308</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="feat: code css (mac style)">
+      <created>1665507976563</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1665507976563</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +514,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: 줄바꿈, 모바일 이미지 크기 수정" />
     <MESSAGE value="mdx-fix: [Programming] 프레임워크와 라이브러리의 차이" />
     <MESSAGE value="fix: frontmatter design" />
     <MESSAGE value="feat: cached posts" />
@@ -541,7 +538,8 @@
     <MESSAGE value="mdx: 나이브 문자열 검색 (Naive String Search)" />
     <MESSAGE value="mdx-fix : 선형 탐색 구현 포스트 복구" />
     <MESSAGE value="mdx: 정렬 알고리즘 (Sort Algorithm)" />
-    <option name="LAST_COMMIT_MESSAGE" value="mdx: 정렬 알고리즘 (Sort Algorithm)" />
+    <MESSAGE value="feat: code css (mac style)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: code css (mac style)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
